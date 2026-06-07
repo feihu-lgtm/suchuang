@@ -415,7 +415,10 @@ class ProxyHandler(BaseHTTPRequestHandler):
             return
 
         # ─── /gallery/list  云端共享画廊 ───
-        if path == "/gallery/list":
+if path == "/ping":
+            self._send_json(200, {"ok": True, "status": "running"})
+            return        
+if path == "/gallery/list":
             self._send_json(200, {"records": gj_list()})
             return
 
