@@ -77,6 +77,58 @@ def set_gallery_dir(new_path):
         pass
     return str(p.resolve())
 
+# ════════════════════════════════════════════════════════════
+# 云端共享画廊 — gallery.json（与 IndexedDB 双写，共享给所有用户）
+# ════════════════════════════════════════════════════════════
+GALLERY_JSON = Path(os.path.dirname(os.path.abspath(__file__))) / "gallery.json"
+_GALLERY_LOCK = threading.Lock()
+
+def _gj_read():
+    try:
+        if GALLERY_JSON.exists():
+            return json.loads(GALLERY_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    return []
+
+def _gj_write(records):
+    GALLERY_JSON.write_text(
+        json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+def gj_list():
+    with _GALLERY_LOCK:
+        return _gj_read()
+
+def gj_save(record):
+    """新增或覆盖更新（按 id 匹配）"""
+    with _GALLERY_LOCK:
+        records = _gj_read()
+        rid = record.get("id")
+        for i, r in enumerate(records):
+            if r.get("id") == rid:
+                records[i] = {**r, **record}
+                _gj_write(records)
+                return
+        records.insert(0, record)
+        _gj_write(records)
+
+def gj_delete(record_id):
+    with _GALLERY_LOCK:
+        records = _gj_read()
+        records = [r for r in records if r.get("id") != record_id]
+        _gj_write(records)
+
+def gj_update(record_id, patch):
+    """局部更新（只改传入的字段，比如 tags）"""
+    with _GALLERY_LOCK:
+        records = _gj_read()
+        for i, r in enumerate(records):
+            if r.get("id") == record_id:
+                records[i] = {**r, **patch, "id": record_id}
+                _gj_write(records)
+                return
+
 def pick_folder_dialog(initial=None):
     """弹出系统原生「选择文件夹」窗口，返回选中的路径；用户取消返回 ""。
     没有 tkinter / 无图形界面时抛 RuntimeError，由调用方退回手填。"""
@@ -190,43 +242,6 @@ POLL_INTERVAL = 2
 HELIAR_BASE = "https://img.heliar.top"
 HELIAR_UPLOAD = HELIAR_BASE + "/upload?uploadChannel=telegram&uploadNameType=default&autoRetry=true&uploadFolder="
 POLL_TIMEOUT = 7200  # 2 小时. 生图可能很慢, 不再卡死在 6 分钟; 这只是防服务器僵死的兜底
-
-# ════════════════════════════════════════════════════════════
-# apimart 配置
-# ════════════════════════════════════════════════════════════
-APIMART_BASE = "https://api.apimart.ai"
-APIMART_SUBMIT_PATH = "/v1/images/generations"
-APIMART_TASK_PATH = "/v1/tasks"
-APIMART_KEY = os.environ.get("APIMART_KEY", "").strip() or "sk-mR14RRzBjb8rmFCU3YlxPu7sk0tj3IT8sOCXeHx8WovyTcD5"
-
-# ════════════════════════════════════════════════════════════
-# Provider 切换 — "wuyinkeji" | "apimart"，持久化到 .provider
-# ════════════════════════════════════════════════════════════
-_PROVIDER_CFG = Path(os.path.dirname(os.path.abspath(__file__))) / ".provider"
-_VALID_PROVIDERS = ("wuyinkeji", "apimart", "apimart-official")
-
-def _read_provider():
-    try:
-        if _PROVIDER_CFG.exists():
-            p = _PROVIDER_CFG.read_text(encoding="utf-8").strip()
-            if p in _VALID_PROVIDERS:
-                return p
-    except Exception:
-        pass
-    return "wuyinkeji"
-
-PROVIDER = _read_provider()
-
-def set_provider(name):
-    global PROVIDER
-    if name not in _VALID_PROVIDERS:
-        raise ValueError(f"未知 provider: {name}")
-    PROVIDER = name
-    try:
-        _PROVIDER_CFG.write_text(name, encoding="utf-8")
-    except Exception:
-        pass
-    log(f"  🔀 切换 provider → {name}")
 
 # ── 异步任务表: 浏览器提交即返回 task_id, 后台线程轮询写状态, 前端短轮询查 ──
 TASKS = {}
@@ -399,6 +414,28 @@ class ProxyHandler(BaseHTTPRequestHandler):
             self._send_json(200, {"urls": results})
             return
 
+        # ─── /gallery/list  云端共享画廊 ───
+        if path == "/gallery/list":
+            self._send_json(200, {"records": gj_list()})
+            return
+
+        # ─── /log/tail  最近N行日志 ───
+        if path.startswith("/log/tail"):
+            try:
+                from urllib.parse import parse_qs
+                qs = parse_qs(urlparse(self.path).query)
+                n = int(qs.get("n", ["100"])[0])
+            except Exception:
+                n = 100
+            lines = []
+            try:
+                if LOG_FILE.exists():
+                    lines = LOG_FILE.read_text(encoding="utf-8", errors="ignore").splitlines()[-n:]
+            except Exception:
+                pass
+            self._send_json(200, {"lines": lines})
+            return
+
         # ─── /get-provider  返回当前 provider ───
         if path == "/get-provider":
             self._send_json(200, {"provider": PROVIDER, "valid": list(_VALID_PROVIDERS)})
@@ -509,6 +546,39 @@ class ProxyHandler(BaseHTTPRequestHandler):
                 msg = body.get("msg") or ""
                 lvl = body.get("level") or "info"
                 log(f"  [前端·{tag}] {msg}", lvl if lvl in ("info", "warning", "error") else "info")
+                self._send_json(200, {"ok": True})
+            except Exception as e:
+                self._send_json(500, {"error": str(e)})
+            return
+
+        # ─── /gallery/save  新增或更新画廊记录 ───
+        if path == "/gallery/save":
+            length = int(self.headers.get("Content-Length", 0))
+            try:
+                record = json.loads(self.rfile.read(length).decode("utf-8"))
+                gj_save(record)
+                self._send_json(200, {"ok": True})
+            except Exception as e:
+                self._send_json(500, {"error": str(e)})
+            return
+
+        # ─── /gallery/delete  删除画廊记录 ───
+        if path == "/gallery/delete":
+            length = int(self.headers.get("Content-Length", 0))
+            try:
+                body = json.loads(self.rfile.read(length).decode("utf-8"))
+                gj_delete(body.get("id"))
+                self._send_json(200, {"ok": True})
+            except Exception as e:
+                self._send_json(500, {"error": str(e)})
+            return
+
+        # ─── /gallery/update  局部更新（如标签）───
+        if path == "/gallery/update":
+            length = int(self.headers.get("Content-Length", 0))
+            try:
+                body = json.loads(self.rfile.read(length).decode("utf-8"))
+                gj_update(body.get("id"), body)
                 self._send_json(200, {"ok": True})
             except Exception as e:
                 self._send_json(500, {"error": str(e)})
@@ -698,10 +768,8 @@ class ProxyHandler(BaseHTTPRequestHandler):
             except Exception:
                 pass
 
-        # 1. 提交（按当前 provider 路由）
-        _provider = PROVIDER
-        _pname = {"wuyinkeji": "速创", "apimart": "apimart", "apimart-official": "apimart官方"}.get(_provider, _provider)
-        emit("status", {"phase": "submitting", "msg": f"提交任务到 {_pname}..."})
+        # 1. 提交
+        emit("status", {"phase": "submitting", "msg": "提交任务到速创..."})
         prompt_preview = body.get("prompt") or ""
         if isinstance(prompt_preview, str):
             prompt_preview = prompt_preview.replace("\n", " ").strip()[:60]
@@ -714,27 +782,21 @@ class ProxyHandler(BaseHTTPRequestHandler):
             if k in body:
                 _exp.append(f"{k}={body[k]}")
         _exp_str = (" | 🧪 " + " ".join(_exp)) if _exp else ""
-        log(f"  🎨 [{_pname}] 开始生成 | 尺寸 {body.get('size','?')} | 参考图 {n_refs} 张{_exp_str} | {prompt_preview}")
+        log(f"  🎨 开始生成 | 尺寸 {body.get('size','?')} | 参考图 {n_refs} 张{_exp_str} | {prompt_preview}")
         try:
-            if _provider in ("apimart", "apimart-official"):
-                task_id, _, used_key = self._submit_task_apimart(body)
-            else:
-                task_id, _, used_key = self._submit_task(body)
-            log(f"  ✓ [{_pname}] 已提交 task_id={task_id}")
+            task_id, _, used_key = self._submit_task(body)
+            log(f"  ✓ 已提交 task_id={task_id}")
             emit("status", {"phase": "submitted", "msg": "已提交,开始轮询", "task_id": task_id})
         except Exception as e:
-            log(f"  ✗ [{_pname}] 提交失败: {e}")
+            log(f"  ✗ 提交失败: {e}")
             emit("error", {"msg": f"提交失败: {e}"})
             return
 
         # 2. 流式轮询（用提交时同一个 key 查任务）
         try:
-            if _provider in ("apimart", "apimart-official"):
-                self._stream_poll_apimart(task_id, emit, poll_key=used_key)
-            else:
-                self._stream_poll(task_id, emit, poll_key=used_key)
+            self._stream_poll(task_id, emit, poll_key=used_key)
         except Exception as e:
-            log(f"  ✗ [{_pname}] 轮询失败: {e}")
+            log(f"  ✗ 轮询失败: {e}")
             emit("error", {"msg": str(e), "task_id": task_id})
 
     def _save_image_locally(self, body):
@@ -1184,156 +1246,6 @@ class ProxyHandler(BaseHTTPRequestHandler):
         # 复用 _upload_to_heliar 的转发逻辑（同样的 header/解析）
         return self._upload_to_heliar(body, f"multipart/form-data; boundary={boundary}")
 
-    def _submit_task_apimart(self, body):
-        """提交到 apimart /v1/images/generations，返回 (task_id, raw_resp, used_key)
-        支持两个 provider: apimart (gpt-image-2) 和 apimart-official (gpt-image-2-official)"""
-        body = dict(body)
-        use_key = (body.pop("user_key", "") or "").strip() or APIMART_KEY
-        is_official = (PROVIDER == "apimart-official")
-
-        # 构建 apimart 请求体（字段名与速创不同）
-        apimart_body = {
-            "model": "gpt-image-2-official" if is_official else "gpt-image-2",
-            "prompt": body.get("prompt", ""),
-            "n": min(max(int(body.get("n") or 1), 1), 4 if is_official else 1),
-        }
-        size = (body.get("size") or "1:1").strip()
-        if size and size != "auto":
-            apimart_body["size"] = size
-        resolution = (body.get("resolution") or "1k").strip()
-        if resolution:
-            apimart_body["resolution"] = resolution
-        # urls → image_urls
-        urls = body.get("urls") or []
-        if urls:
-            apimart_body["image_urls"] = urls
-        # 官方渠道专有字段（其他字段会被普通渠道静默忽略，传了也没害）
-        for field in ("quality", "moderation", "output_format", "output_compression", "mask_url", "background"):
-            val = body.get(field)
-            if val is not None and val != "":
-                apimart_body[field] = val
-
-        url = f"{APIMART_BASE}{APIMART_SUBMIT_PATH}"
-        req = urllib.request.Request(
-            url,
-            data=json.dumps(apimart_body).encode("utf-8"),
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {use_key}",
-            },
-            method="POST",
-        )
-
-        data = None
-        last_err = None
-        for attempt in range(4):
-            try:
-                with urllib.request.urlopen(req, timeout=30, context=SSL_CTX) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
-                break
-            except urllib.error.HTTPError as e:
-                last_err = e
-                if e.code in (429, 503, 502, 500):
-                    wait = 2 * (attempt + 1)
-                    log(f"  ⚠ apimart 提交限流 (HTTP {e.code}, 尝试 {attempt+1}/4)，等 {wait}s 重试")
-                    time.sleep(wait)
-                    continue
-                # 读取错误详情
-                try:
-                    err_data = json.loads(e.read().decode("utf-8"))
-                    err_msg = (err_data.get("error") or {}).get("message") or f"HTTP {e.code}"
-                    raise RuntimeError(f"apimart: {err_msg}")
-                except RuntimeError:
-                    raise
-                except Exception:
-                    pass
-                raise RuntimeError(f"apimart HTTP {e.code}")
-        if data is None:
-            raise RuntimeError(f"apimart 提交多次失败 (HTTP {getattr(last_err,'code','?')})")
-
-        if data.get("code") != 200:
-            err = data.get("error") or {}
-            raise RuntimeError((err.get("message") if isinstance(err, dict) else None) or str(data))
-
-        # 响应: { code: 200, data: [{ status: "submitted", task_id: "..." }] }
-        arr = data.get("data")
-        task_id = None
-        if isinstance(arr, list) and arr:
-            task_id = arr[0].get("task_id")
-        if not task_id:
-            raise RuntimeError(f"apimart 响应无 task_id: {data}")
-        return task_id, data, use_key
-
-    def _stream_poll_apimart(self, task_id, emit, poll_key=None):
-        """apimart 流式轮询: GET /v1/tasks/{id}，status: submitted→processing→completed/failed"""
-        poll_key = poll_key or APIMART_KEY
-        start = time.time()
-        poll_count = 0
-
-        # apimart 建议首次查询延迟 10~20s，先等 8s
-        emit("poll", {"elapsed": 0, "poll_count": 0, "status": "submitted",
-                      "progress": 0, "raw": {"msg": "等待 apimart 处理（预计 30~60s）"}})
-        time.sleep(8)
-
-        while time.time() - start < POLL_TIMEOUT:
-            poll_count += 1
-            elapsed = time.time() - start
-            url = f"{APIMART_BASE}{APIMART_TASK_PATH}/{urllib.parse.quote(str(task_id))}"
-            req = urllib.request.Request(
-                url,
-                headers={"Authorization": f"Bearer {poll_key}"},
-                method="GET",
-            )
-            try:
-                with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
-            except urllib.error.HTTPError as e:
-                if e.code == 404:
-                    time.sleep(POLL_INTERVAL)
-                    continue
-                raise RuntimeError(f"apimart 轮询 HTTP {e.code}")
-            except Exception as e:
-                log(f"  ⚠ apimart 轮询异常 #{poll_count}: {e}")
-                time.sleep(POLL_INTERVAL)
-                continue
-
-            inner = data.get("data") if isinstance(data.get("data"), dict) else {}
-            status = inner.get("status")
-            progress = inner.get("progress")
-            log(f"  apimart 轮询#{poll_count} {elapsed:.1f}s status={status} progress={progress}", "debug")
-
-            emit("poll", {
-                "elapsed": round(elapsed, 1),
-                "poll_count": poll_count,
-                "status": status,
-                "progress": progress,
-                "raw": inner,
-            })
-
-            if status == "completed":
-                img_url = ""
-                try:
-                    img_url = inner["result"]["images"][0]["url"][0]
-                except Exception:
-                    img_url = self._extract_image_url(inner) or ""
-                if img_url:
-                    log(f"  ✅ apimart 完成 | 耗时 {elapsed:.1f}s | URL={img_url}")
-                else:
-                    log(f"  ✅ apimart 完成 | 耗时 {elapsed:.1f}s | ⚠未解析到URL")
-                    log(f"  [RAW] {json.dumps(inner, ensure_ascii=False)}")
-                emit("done", data)
-                return
-
-            if status == "failed":
-                err = inner.get("error") or {}
-                err_msg = (err.get("message") if isinstance(err, dict) else str(err)) or "任务失败"
-                raise RuntimeError(f"apimart 任务失败: {err_msg}")
-
-            # submitted / processing / in_progress → 继续轮询
-            time.sleep(POLL_INTERVAL)
-
-        raise RuntimeError(f"apimart 轮询超时 ({POLL_TIMEOUT}s)")
-
     def _submit_task(self, body):
         # 前端可能带 user_key（朋友填的自己的 key）；带了就优先用它，没带用预置 API_KEY。
         # user_key 是本工具自定义字段，必须从转发给上游的 body 里剔除。
@@ -1543,10 +1455,11 @@ def main():
         sys.exit(1)
 
     masked = API_KEY[:4] + "•" * (len(API_KEY) - 8) + API_KEY[-4:]
-    server = ThreadingHTTPServer(("127.0.0.1", PORT), ProxyHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), ProxyHandler)
     log("━" * 50)
     log("  速创代理服务已启动")
-    log(f"  http://127.0.0.1:{PORT}")
+    log(f"  本地: http://127.0.0.1:{PORT}")
+    log(f"  公网: http://<你的IP>:{PORT}")
     log(f"  Key: {masked}")
     log(f"  📝 日志: {LOG_FILE}")
     log(f"  💾 图片: {LOG_DIR}")
