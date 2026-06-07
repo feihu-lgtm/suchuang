@@ -1373,7 +1373,7 @@ setTimeout(() => {
 // 本地（127.0.0.1 / localhost / file://）→ 连本机代理
 // 云端（Cloudflare Pages 等）→ 连阿里云服务器
 const _isLocal = ['127.0.0.1', 'localhost', ''].includes(window.location.hostname);
-const PROXY_ORIGIN = _isLocal ? 'http://127.0.0.1:7788' : 'http://8.208.99.252:7788';
+const PROXY_ORIGIN = _isLocal ? 'http://127.0.0.1:7788' : 'https://requires-walks-rolls-badge.trycloudflare.com';
 const PROXY_URL = PROXY_ORIGIN + '/generate';
 
 // —— 用户自己的 API Key（存浏览器 localStorage，出图时随请求带给 proxy）——
