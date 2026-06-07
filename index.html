@@ -1,0 +1,4470 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAq1ElEQVR4nGW7d5ydx3nf+515y6l7tvfFAtgFsOiNiw6CJAiCEDsJkqJCyZIlOVKk2PGN7Rv7Jo4V5/r64+QT2584arZsy7JESqJIU6xiJwiiEGXR2wLbe9/Tz3nLzP3jPbsQk/0D2M+e95wz88wz8/zKM0IIwcKPQCAk+L5CkKCpfCW7t9zHzvVbefTQVrQWmtLjGhAaDCFBgEKDCl7RQgRPaBBaB58sBAvvFQi0VujF3/XtMQiBJvgaf3Fct/8ROvjcxTGI0ns0aAlCKwwpxevvXOL4+fN81PUak+l+HDWFlICWaD71fWJxUAoFGjYue4DH7nmC++/cQV11TOfyDoMDSfp655GGBERp8CCELA1ALX6wWJgpmtL8b/9NBL8ppdGoYPJaIKUoBWrxnQgtgsCyGLvbEdHBxBcCgb4dlfaVFSxpiWPbFlMzOfHR6XP85M3nuTzwHggHye0glAIgAIUpK/nCZ77B73/lN6mrjnPl2pg+dWaUrqsDzOXnmEjeWoz44qrq24OWQpYmB0FO/Nqwxe2wSCFQSoOyUTgIqUBIQJc+E7TWi5lA6W9SBiutlEJKuRjA4NkgJYWWVCeWUxUpZ/v6Njq3NLBmTb2YnMnzvZ+8yQ9e+XPy7ihSBEEQQgikBK1i/MGzf8F/+ObTzM4k9WuvdXOkq5trk+eZyFzH10Wk0JiGgdYSIRYSeGFlNfm8hxCCcMgA5O00/fXVQyClxHM0X/vCZzlz4TKnzp8nFLZLW0F/ekUXl1yRL7gIIYmEDDS3t4oGtFYIofGVxldgyQgNsVWsqtvI/u1ruf++ZdTUVIi/fe5d/vh7v43PHCiBCeD7Jl+47w/43a8+ztj4tP7ZC1d5u+skN2ePUfTniVllhMxyTGmVVur2j9bBAjmu5sF77qVYhGPnj2DaanEbLAQDwBAC3/NYvnwNX/3qk6w9upae7mmwigjk4nmgUYvhE0LjOoKHD9xLvpDnaNfHhEKytPqlBNG3zwPPd3G8AsOZs0zlexidH2Bi8k6eeqJDf+3zB0R33+/zD2/8CVL6mFprNi0/yP/zzS+SzWf1T356mVdOvc5A8gyV0UoqzSV4vocGfK3RyittgcVTALSPdqMc2LmfQtbko9Nnkdb8p19HIIRE+xEMIpy7OsjrL13gw48vk8kYROMVCFFEiVxw0AmC9RUagcJ3yji46yDzqXk+PHUKZRdQ6vZhCxrla3xfYdsWIStGxI5TdPPcmP2Q3OkkCM1XvhTWv/uVp8Spy0e4PPgWpmUkOHzwME2NcX7wT5/wq65jDKfPE7PLaW9YSSqfZWx2FNuy0TpYlWALgK88pDAQQiLtPP/l23/NI9ufYVlTE4NTSSzLwFOasKgjLMswZYSta++gsa4aX3lsXr6GchpYUbsGU0qu3+rn5sh1lHTJe3N4IokhJcWiz4rWVk6dvMlLx1/ADjloLdAolFaYwsT1fcpjUarKK7g5NEgkFMZXCtsMY0qTwVQXb3UlqK+N8xtf2MKThw7T/ffHMZvKt/LAXbu4dHlEf3z2On3zJ4hYEUJmmFtjvYDANE08z0drgTSCGqA1lEcqybs5PN/DNCxShRH6py7xma0P8703R4iJWhqrlrN7y2Z2726nosagtqqMkG1g2AJh+nSsreK+g+1oX5LK7CCVztN/K8nRE9c5c+0S09k+wrbDQ3c8zNvn36OopgibFp7yiNoxbBkiWZzDc31+45FH2b97K1/8D39KJp/BNE2UUghpUBYupz/ZxcdnV7Bje5N+cP9e8bc/24h5/55HaKqL6ed+0cfV8S60ymEbdfjKJzggJdl8nkM79tHetJTv/fJ5IiELx/NZWt3OVHqC4blBDBkiES3nzK0LLK/dwMNbn2bz5lbu3NNGRY3N7FSO+fksJ84N0ts3QyqfRSiwbIN4JEzEDrNsdYKKWot162vYe/dBhnp38dZ7V5meyjA4Nc2VwSvEI2W4fgHXc6mvbiZshpkdm8KyDN74+CiXe7pJZdNYVjD50hGJbYbIu3PcnL7K6TOreeAzK/ShPY8Jc83yZUzO5Dh95SYz+UFidjmaoLT4ysfExDJN+sZGmU2lEQI838cyLc4PnmJtQyeyMsp4ahTDqGJF5TralzTwxDNrcFWR7qszfPDmNNMTaVK5HKligcrKOHVNcaQUTE1k6RuboDwWYurYLMqHcNimvrGCdVtq+MpXdlDMCv75R120JDYy63QjcFnf1MlcdoZb6WtYhoXWmp7BYa739hEJh28fplqTL+axTZuwGWYq18fJ873su7OVNW1LMB8+uJHr3bNMJafwdQbTqMRTLpWxau5Zv583u95Ek6dvdICck+eO5TvwfI+ro5eIhqL0T99kW/s+DFnO8sr1fP1LB1i9JcalrlFOfzBKMpMhHDFI+XlcS7HnjpXs2dlObW0UgOmZPGe6Bjh2shtp+8TiIZT2GBubZnIkyYXaCTbtbOAbv7uNde828f0fv4oIzWFKzVTmOmErQq6Yo3PZTuaz8/TP3SwBs4Uyqtm5ppP+8SFm03Pk3TnmcrOMjWV45P6tmKZl6J6eWWZyk4sQEyS5YparQ1fxlItAYJmShFlG3/Qt7li6C5TJjfFrSMvkymAvT2x7imd+YxPS8nnxH64xNjJPS2uEWCLGzaFp4okojx9Yz9q19QwPp/jVu9eQEla3NXHw3tXEoyHeeOciWc9BK1Cupqk2Tjozz3u/TDNwI809Dy2lvv5JnvvxOT649TqmDOG6RXa03YnSiuH5AQwhPzV5Q5o8tu9efvnRB0zMB3B4LDXKje4Z1q6p0aLnzV79/M8v8Y/vfJ+UO0XUKkPpAGG5vott2kghA+CPga98JDaHNj5Cxilwtvsmj25/mN/5vT1MjqZ5+xc9KKNINCqxTIOJuTy+1Dz72e3U1pRx/GQ/7390lULBAaGJRSPcuXMNiWgMafvUN4YpFnzOXRih6/wgvu/RXF2OoSSxaBkPP7uKbFbx3//be5we/JD7Nu9kYm6So91vYxi34TGA5zsIwJQ2Ch8hJAU3S2Wohd/6zFc4/NhqpChBWSElEmMRd0kpCduRAKPL22DGlCag+fDaEaKhCj6763P823+3h4mRNG/+vBttFrBMSTrr0j00w9DkPHfuWkVDQ4K33rnOq7/qQgqP8oRFyJKEQgahkGDN+gpaWxMUCopEPMpjD27ky5/fw8b1SxmZTeJoj3wxw4v/eA3bEnz9G3t5aOOTJPN5Ttw6jmWZn5q8EIqmmgZM0ypNPnhNyoC7LHAzUys+he4CNhY8rLSD59oIZWKEihjSAi0IGRG0NknNwL//+gYmxlK889JNrIiPFCYzqSypYpE1q5uIh2OsXFHLze5pjn3STTxiojS4rqBz60ru3rcKAXx0vJez5wZI53JUVsTZsLqFXdvbOPzIJhobynnvg6s0VEgQOX7542s8/bV17D+4gv/6Pz/BNkNopXApBHDY1/hFm6ol5cwk59ElsiYXeQ9oLVAKpK9UCXcvYMnbMNdzbJ6+70m++czX8fJxCgUHqS00kubYer7x1YNIu8h7L/cgQwFCHJ/LYEQtPvv4dg4/spWVbfWEIyY3+sbxPBfLNKmuqODpw9v4zH3r6L41wXf/4QjvfniJXC5D1DLIprO8f/QK3/3hEa7eGGf39nY2b1zKZDKLbRt4Ose7L/WyZXcVT91zkIhoQAgDoSTpbJGldav51r/7PcamHIqOu7iwQkgEMshqDUprTKWDaATYUy3GAqGQOk5rYxutTfU8teeLTGeHOXurC68Y4ZE772btlnJe+sfraMMlZFlMzaexoxZPPdZJQ10Z73xwg5GJOVZ17Fosq8IQPP7oZspiEX7xahdnz/ciFcTjFqZl4vsaz1GUx22ScylefqOLuuoEmze0cvHyAIWiRyRiMTY6y6WTkzz4ZBvXevfx1uUXqa9q4ZHVnTRWN7KybTkN5a3MpocWcrt0LPqLZ71WYAYEosTXhUZrhdJ+8Lg1y7ef+wFC2zTWVfPQtsfYsa6TweE5HnpiFZdOT5JJZ0iUWcynHdJ5lyfu20BdbRkvvNzF8dM36VhVD0i0EqACzSQStfjlmxc4c+4WiXiExoYqDuzvoKGunHzO5eTpPi5eGcI0JOlMlrHpeRpqKvFR+EqhFURjBudPjrJqYyWPP7YJ01JsWdfKtYFenn//F/zwDU1W9WNYAVPSekGoKdHtElczheZTYgaLGaGR0sZlGkMYDEzM8O1Xv83WZfv4nWcPE6+QXD07iWlrUJJUpkBTcwUdq+o4d36Y85f6qU6EMKSB5wffphbIEZJkOk1ZPMzuHSvZs2MlA0OzvPH2NTata+bB+zexad0Sjpy8wblLA0gpcYoKoYLKImVAubPK4+ivBjl0eAUD3R383Ws/YWjmKrblo6SDIUGrEsXWenFeiED5EoAZrLy4TarQSOPXcgQDJTSWCeAwk5yjutWk+/ws+XweKwKeUnjKJxI1CYdtBkansQwBCzW5xO4WhBTXUTQ3VnPo3o2saq/nnY9u8Mbb5ykWily40s8dm5azb9cq/tUTO1nZ1sjshMfVqX4sQxIN2fga8kWNYUnGh5LMTuepW26RzRWIRy1c31/M6OAbJQtq3sJ4Fo46EwkIgRbBi0JC0SmitSZkh9DKR4ggItqPsXfjNhobYlw4NoxpB2XFkMHhGaRnSepSgTK0wOsLjrcob7muz8G71nH2cj/dvZNs27SMirjNidO99A1McuyT61y/NcrOznZ2bmknl3cZ/XAGx/NxfR9TGuhS6Va+R//NWTo7m9jQuokTvQMIg0WKLITA9QIwZxrmwsouZryptC6lSbBCRdelua4O0zAZGBvDNkOARBohomYtK1fWMTeTZXYyix028XUAMKQEz1V4nqI8FsPXGonGdRSeq2msSyAE5AsOtm3w7tFrvPvRJdCQSeZ54OBG2pbWcfZCPyfOdDMzk+KNty9w9cYYTz60lYcPrcN1HUaGpmlvrkYpsCxBqMJk8GaS1RvqWb6kgbP95fhiFq09EBLXc2ioqKfgFEjm04EIC6BLuCCo+7cxgOd5/M4Xn+U//puvITECVKgk6VyRmFnP+tVN5DJFBBopBUZJFI2FQ4yNJRkdS7J5fStl5VE8XzEzm+GDY9fpXL+Mww93EolYaA39w1NEQyZlMZve4Qlm5zO8f+wGWzYs5UvP3MWm9cuIRkwGBid54bUzaA27OleCNCgWPSzTxDAEpiko5h209tnYsRS8BLl8EaVESb8QfHbv0+xbe1eQCQuVvsQXTH5dltYa0zD54Yu/JGSHcPwijWXLaavdwNLmWmJGC7Fyk4GrWSzbwJQCLYOY1leWMZvO89GxWxx+dAsP3b+Zl1/vIp8r8NGJa4xNJHnwwAaWPV2L7wYihmXEkFJSlSgnEUtw4kwPp7t6+MJTO3n8M1v4wXNZ1Mw8Q8MzXO0eZd2qFhKJMJmCQ1VFDMdxQQqkEEwM5WleHuPQ9j1oex1j47OcGzyO4yV5/ewbZPJZTMPE185tNVmDXCj8CxQ4ZNtc7eml6+pVIqEIRTfPRHKMkcksFWVx6pbYOEUX0wik7FBIUlVlY1uSsrDFXCrHhfNjLG+u5kuf20P78noMBJev9fHdHx5hcjJHfV0Vu7cvYeNmg/UbFSvWuPRPXeTObS1UxsvoH8gSj8awLRvH9RFak87lME2Jr4JaYpsS2zSwTaOkMyoalkSxZJSB8RkGpnpAKyzD4sZIN2NzY1iGCVqjSmVRaDC1UoG2WzqslVJEwmEyuRyP3ruf7p5RLt24xtDUKJYoA70VKcAqpZ/2oVhQuJ4iU/B49MBKfFfyyq8ucd89a/jsI9s5frqHycksifIiR06/zMtH++gbHuTm8FUMYVAWKsc2ItTV1rG8uYO5/Bz9oybtrQ0MDU9RcApIKUpyO1imRMgA2VmWwHMVhgXFoubYpXMMZ8/g+xkOP3A3p85fYWhsHNM0g0xf1DODymTepsALEBB85RO2Q7zzURcIn1g0jlYhYiEbIQUYGtOWWJakfkkFUyMp8sUc4bBNQ105fQMznDp/k8GxCR7c38m+vW08/+YPee6915mamcFxXFxchDQwjTBChojaMXoH+7jR141lmnz/Fy737TzA7s576e5xqUqUkUoVcYs+dtyivCqGEZJMDQfao0AjhCYaDhF2w2jt88HHF8gXHUwrKMe/LuYuKMqSxWmL0ocEB6FpGGxavZVkModWCsd18ZRCaI1pCgxD0rKqmq2H6mlbVxP4BSIoo1qDFBo8uHC9i2/+6Zf56cs/IZsuoE3wTA8tfAwJhgHzmWluTXXTUrOUNS0b0IbG0UV+9s7P+Kuf/9+0tE+zoaONrot9FPIFmhoq6NhVw+b99VRUx4OUFqB8TdH18DyfbDZHWayc9SvXkM5kSs4Ti+dd4GqBeZtC6kUiZEiLLas7+b3ffYb5b2XJFxX4NvVV1WitSgOXTA+lufKxZGowRVk8RGFkhtGROVatqmbL+pVgDPKrEz8kIZuoqqhkaHYIt7Tl8oUCBeFQtFzQilg4yuBsDwWviKs8DMOgoqKCguPztz/7G0xDk5teSV1lHNuG3gszhCM2+UyBsG0gJRgmLK1rIVruk0rP8ezTd7NkSTU3evspqrnFqnCb+AnMRbOztBVc12PFkrX8269/gW3bV/KHf/hFhm7OQNEmISoQUqF8jRTBeTF6cw4tFYlEiOqyMJ+c66Ft6T527i7nP/3l37Or9UGKOsmVi2cwpYlhQNF1iEfj+L6P6wcsMlvIEYnogISVSpTrudiWhRCS7z3/HZ594MtsXXsPmXyS1GSOpJ/DtATKB+1rymImD967GbN8DToO99y9mvJElMH+eb7zgx+RY+ZT3qNGB8bIrxmumKbBjYFL/P4f/zl/9p9+jz/64+9TcHMYxGir20D7hsNU10XJJgtIAwwzwNhSQkdbDWevTPDJxQs89/afUhdqpaG6ibcuHicRTlBURbKFApYRiBeWaWIrC9f3KBSLSMchGgojhcZTXok1SBQeUpi8+P5PWPnFFURCDTheAWEGfqJpCSpqIpw9PcH//PHL5BhjZnaSL3/+UdraGvgv//2vKasMjNxfq/gLZbCUFVKU4KHCNA3SuRm+851fMJ3twWMehynGpscZHcrQ0BZFIDDMIJOMEhawTcG9u1dx7PxLTIzMM+dO8M7lf2Hr8j2sX3IH+WKeWDhM2LIxpCzZ8RLLNEnEyhBC4vk+SnvYhkXYjGBJA8/3cHWRydlZXj76POXVJiiBNAKD1g4blNeYdF+fIe3MUXAnMUNp3vngfV546S2McKFU7fViBiy4VhICD98o0USQAftyi6Tyk8QiUZT2MYVB0pnkdFcfpmkRKbNKju1tiak8kaBoDNB19RO0BcOzQzhenuU1K/F9QSJSjiEMpJCELBvLMLCkgSkNDCkIWSZFt0BVtJamxFIcr4ijHJTQgfkSMvjk4ln6xq8TL4sR8Mtg9TNJuHCtj6KaxRBGYNLGJROzo1iW+X/0IAgCmVMuOqwLYkjpPNTCZ01LOyFhUyj6FF3JkoYaTGUhLUlVfQh8gopgCaQpCSfgX468wHRyhlQhiSFsZrLj/Pj4d5hIjvDktq+xomEdthHG8zwMedsSN4RJXWwJVbE6QkYYVzs4yqXouSWyJvGUy3w2xceX36WszFo0RWuaI8xOFamtiFNXWUOu6JEpFGhrbqaptgLHcT+F/hZ6FpTWSF2ShhYis5AdAsmtiT6KruZg5wEe3fUwj+y8m+HJWU58NELzigqkIYM0lIqyWJSbIxf56OzHGCED5fsgFI7yGJ7vI12c5cOrrxKSUbYt20dHwwYMaVAerqTg5NjVdog7Vz0BWjOWGmYiNUzItIPhqIVD1ydk2xw/f4rZ/DBhK0QkZlFRHeO1N64gTI/H9xzi8d2Ps6XtDm729zMxNYdpGos4YIELiNJBaAYNDgvRUYsAwTAlm5o7mZo8RsQOkS0k+d5r7+L5FhE7zM49DVTWR0nNBhhbySITc4NUllUwn09hGyamYVL0HCJWlLyXZiYzRbowS0W0mpbKNQzN9lFwCziuw3xhmrncHBlnDq0NhDQWlRxPeRjYRI0qkt4EmXwaT+SxtUlLR5TBvhRnLnZzcfw4ZeEIh7btQytY0dpGPp2nd3wQ27Q/tQ0Wfky1WBsXTgeFYZh4vsfg7DWQaV478TpoSSQcIRyK88H5Y2x5u5H99y3h/JEsdthiJjfI5Pw4c+kklm1imxZK+6A1lmmglUZpQd7LkE0mGZ0fREtNIZekLhLl0uhJtO8RtqNk8jmkkkghMKRBJpvjc489yZ5te/iPf/YtZjKjXLx6jYf3baCizuaf/ukUPdNXiIYVWWeMnx15nqKXJ1y+FM91saRdkvtKvURolCqdAYE6qgKZSAiEFBQch3QuTyQaJZ1zcPwCkbCBEJqCk0eEcly5OMH8nM+ytTVk83kcL83pK104voOQAlOYgegoJb7SJExBfTRM2AoRMm1ME1xfsb62mvaqClwPonYUIYK+oAVzJjibFVNT0wwMj+KoHEppum6dZfmGMq6cTjKfTOOQwfUcTGlgWYJ0LkskEiVkRZhNp4MJi/99/UVJDyh9mRSCYtGlvbWKp+7bQkU4wQP7VrNzYyP5YpGim6c8muChzn1cH7vOj350hqrGGI3tZXzUdYTBsRHsUAhdWnW0xtCCXDaLqVxCUhI2LBJ2hIhpI31Yv341uzo34BUcTBngaKukyemSEWuaBh+fOcJfffevyOVTmIZJOj/DuU8G+e4/v080prlr7U5836foOpTHJZ97cCuNlWUsqa/hCw9tIR4WeF6gYYhF0FsKwEJVdD1FbU2Up3c9THv4UWJlKarlGu5cfj8719ViyzIObNnHsesnuDDYxftdp3j+n6/QtCzBwPgwrfXNoAO6GjZMcsU8zeUxtrc288x9+2htqMXwPSrCEcpDEaJSMJpMU/QUVSGJJQxsw8RTPgYSicD3fEzDJFNI0bmxk4fv/Cyep7g5cIvX3j1F98QNXjn9Oo7nsHf1XgxT8MyBnext+DzlspaacA2bE4d5dO8WEF6pmap0EmqNXGBHUgjyTpEdq9qwUqvYvbaT+Nxe2qLbIL2a1c1LCYcVRy8f5/rwVUKWJutP0nWhnxd+/jEV8ThzqSSO64DWhEwLyy8yPHqLnvEBctkUe9pbaY5axA1JzLJoKYtQHYuzYd0K6stj5HNpQoaFVj6mlBhC4voOnu/TvqQDp+AyNT+JNAQVZQnSziha5NEUOHrtfa6N3GTlsjJiXhttDavoKNtPs7qTKrmKGrGOtsYIhYIfbCutQIBUKqCRGo1tWlzu7Sft99N1aoyV9e2kkxrMSXrGRplMTjE6N0DEtsgVM6xsaEXJPCcvnKehpg7Hd/F8H88PVlC7DhhhlFHJ//vC28zl53nqoX1saK3C1prNbUsoMy22L2vi648c5DNb14MPUSsUiBdopAhAWaKsnCsD5zh6/h1Cts3qZWuJGB4rGloougVsUzI630f/8BRzuV6uXBiiTFZQZleQLs4xX+xjZDqDVaLGqgQGAjqsAkU3ZJvcGk3RNfkmKnGDwbEMKjLNkPc+H1y6SdiOICSk8klWNa5CKZez/afwXI+T58+SyWYxpUnRc5nOJKmNl/NHhx/iwPZ76Wjs5MZYnl13buGZ33yc3//mE9y9bwuZyQEO/1//mb9/822ilsfqugSmESZmhwDB9HySfNHh3JVT+NohHAqRzeeYnp2m4LvErDBNlc04XpGIbTCfFfzq8nHS0VMMjM+ScgqkQsd49eIRcgUDQ6oFOIhGBZpg0MQoUEoRC0d46/RN/C0vsaH+Ls6Nd/HhpUsYMorGxZQ2a1tXMZ0eI5XP4vmavFNJ3nFJxCqZz05jSZPx9BRL4zU0tFSRaG1jojvDqiUVaEOifWhuW0JlZRlUtjBZTJFLx/iLl96ic2kdtXYlhhUmmcvw5Xu3cfxaDyPJ4qKu73gOUgYtMP2zV0jnMxTdHMKHSMiiezDDL71fcmhDFpTilRNv0jucJWKbJZme0jYQARIM4GiAAZTySUSivPHJVVLGTSZSOfIFjW2C67vEw3H2rt1BujCP0nmULuBrj0Q0QUNFU+ALaE0ql2dgZpQPztygo9blyUMreeDe1fglzJFJ5ymrqWTPrnvY176bdQ2r2d6xj4lcgdnkNCBpiUX48o5t/OHTD6FVsLUgkOOSqQz5fA4tHWZyY6xfuo7GykYc1yEeCXGpf57BQg8Xxy5zuXeebR3r+Nz+xxALLQALsngJ+C8CoQAJKqLhEJd75sA3MAxNtphFCMVsZoZ/eu+nuH4eUCA8RmdnaK5ZiWmYREIRZpJJdq5Zzt/81lOoTJLyihg79zVQWR9GeRopJaZpUCwUWdZgs2f9MtY1NfNHv/UwX99/N0vqluMqn7jh0lBfx3w6i+f7aA2e8ljZtBpPKXrGBskXwZCwa9V2Opo6Fp+LhkzGJjWTc4JI2MQ2Q1SWVQYtsgvOkNZIIWVJJwwQ4UJZVMqnY2kHsVA1Wmt2tO0jEa7C1z4KB4XC0x6GFEzNjzIx59Fa10ZVWTVV8QbW1lWydu0qZgp5fvTW+4hwlHAoQj6bQXkuQig8x6cqqtm+xeCRA9WsaQgxmRMI02ZidoLKlq08d/Iy/+0Xr2OYFoaQZHJpwqEyahJ1lMWamEtPI6TkJ0d/zvHu44RtG43C9z1aG5tYWteClJILvdf5zsv/jK+90nYPyL/JYsftgmBYAgiGoLuvl3Q2i2GY+At2KkHfXdDHKfC1wjAlV4euIcUmNizbTTR8iVfP9JPlA7BqeendC5y71sfXPv8oW9auwtOwYEAaXoTqsjhONsfzL77JmSuXmfJt4gmT+oo7+MXHzzGVKxILRXF9j5aaVoLKFWJsdoailw+yycvjeg5KayKhCKZpcbNvAOUHOMIyTWxTUPC8BX824AILrrkuwc+i62AYBr6naWiqIDYf4fpoN2f6jmGWCI7yFco3MK0ga5TWmKbk0sA5ZjPLWFq7hrryVt7+5AQbW+rZ1bGGgalpvvonf8Nj93Zy19ZNWCKgon1j0xzrusS1nkFuTU7TVNfCrbGbtLU0c+LGP1JeaaFGNEIYSGFSHW/ANsMUvQhTqVulOGo832dZQzOVZeVc7OnG9xQtSyvIzhXx+n2wFFrL25ynJIOZt62iIAGeuespLvdf5dTNMwyPTpErFDEMg4gdQWmF4zrUVzayY912Xjn6OiErtGiqWLbJ6Gwfs+lJEpFK9m97ijPdr1AY9GitqSXvKV579X3+7sV3iCEJ2SHG0xm+fHAHj9+1g58dOcXFoV6kYRIKWVSVVzCbytNYvYTldavR2kITIuc4DEzfRJYcX88vUvQcWuubWNXaxrmbV5CGYHBoAs8NNMbAAA8Ur0UZUCtMrQOXNbCTYWh6hPlMipAlWbdmLTNTc9wc7ilNUiH8CJ9/7HEOP7SP/uExLvZ2YdsWpcYCbMui4KXRBUWu2E+5bVIdT3Cqr4fGiMFDW3fz6qWziIolXO8f4K9/+3N86cu/QbGQ5+kH9/Ob3/pLTvaM86UHnsJ35hmbdjDxmErP4akiM+kRHC+PIQPK7Pke1fEaMoU0Ry+d4eNLXViWhesX6WhbAx50D/Xh+QpDLt4RKHENgVRKleRihRDw0ZWPuTVxg4fueYAtFY+zsuIAm1etIZvPIYREyQIvvPEmf/ntF7jUfx7LNkptJwpf+3jaw/M0nSvbmJ7tp76sClcrZjOzHOjooDs5x+N77mHn0sc5uKKRhw7tZ3xykompKaqamviTf/0s2ity+uI1io5gcCzFwMw4g9O3mEyOBVjEMJFS4LguoCmPlmMaFoYUmKYkV8hx/+672NP8NNV6N3fdsZ2iWyhZPwpd6hpTykfatkE0bGFb5fgKIpbFk4ceZlP8SXbd3URLQyPrqx9k14bNOK6HbZkMTw7x4ruvYRg+Svso5QckqESX1y5bTjY3iKk08UiU6+MjbKxJkCs4PHTfbg4e3I3vXeYLD95FKJFAeR4h2yaVzrJmRRt3tNaSLUqSWZtcMUTBSWGZRklCEyAU6WyadS1b0L7BjbFr5J0cUhi4rst9e/ayt/FzbN3WwJL6epaED3Bgxw5838X3FVGrimjIJBwykSOjc6JjZS3N5StwfZeqigSVYiXXB0e5eHkU7UrGpyVNiQ5CtonvK6QE0/ZLsrLEEBaUhMtENE5tOSST09TEK5hOpxidm2YuU8CsiHDnnm0sa2/mM/uXMJIrMj+foiwWQXlBIOOxKMuXtjI9P8HJy2Oc7e0m76ZLh62P1j7aN9jfeS9//mff4ImDDxE1yhd7mGNRm6ZYB5d7pjl3dQy34DM5Lik3lxKP2vi+z9KqFaxsr6J3YFLIo6d6WNKYoKGyjqhdycjkFB9efJU5dZNf/mKAD48N4Ji3+PDiWyVxUQeD0OB4RVY3bGBdy2aKroNWkk3L2xmd6KEqXoGHZiKVxPUKdI1NUFZbR8I2mR6f4KfvnuPvXjnJH//Fj/jwRBdRy2J+eBzX80mUxUkmx7DDDqn8LJYhA9DFQr+PwvO90g03gizUgdWWyRV5/eRLDKbP8cpL/RzvGse1ezl25T1mkkni4UoaKmuorY1z7HQv5unrp3jyga10ruvgdG8LY8nLDE0OE7I+Zl1jDb5f5NLAUeay84Qsu6TUKCRgGgY9U9eRMmik2Ny2glx+DKmgPBplJpNlPDmD57m01DTTdWWI7z//KsevDfDJ1R52rFjFXLrIf/7uizx7dw+dLQ20rliGZVhgmDRVhoiF4vjKXaxcIBCGz5GuD/G+BV03T4GhMLFQWmGZBvPZFD3TH7B5SQypTc6PvMVkchZPu9TFl3DH2nYkcObGUeTHF95jZCIjtmyoY8OSrUjDxDQFN4b7uTH5FpdHfsXwzBghy1qMtO8rPOUihSTnZEjl56iKV1EdsxgeH6ChvJpsocBMNkUqnyJiR2mva8Uwy7h8S3P6Wh81iThT6XnG5qdQwuS//uRfkJWVFJMZxobGWbu0nWRqmhXNtRSchaYGHQRDQyIe5/SN4xgmGMLA9YtBi5/ysU2TkekJro2/y42pdxmYGMUyBFobbFyylbUdVQyNz4uPLxxBJou9vPzORzTXV4nOVWvZ0nwP6UKWiG1zfaibgekBwnYIpRW+8onb5fyrvV+kMlaLp5yg68JXdLQs5cbQNeLhKL5S5D2P+Vw6qBzaZzIzx/jcFDfGbhGLWKxuWkZTRR0IyfBkP49tWENtpIwLZy5z8tYQRU+TKRRorqjCMkOlW2GCylgNQgh83ydk3256akg0YZWUX18pInaI/okhesb6iUeizGZn2LJkF7vWr6O6qly88t6HZN1+pFJpXvjwp1y5OsX997azZ+1e1jftDRqKhMI27UWILADXd+iZ6MNxC4jSXT8QRG0TcHB8TbJQYC6bYS4zj2XYhK0KRubGuTHax+Whq9TEK7GkIFPIM53LsSwR5fN7djM/Ocsnl65RWVWFgcfKxpWkMnO01TeSKxYImWG2t+8mZEbwlYfSGqV8LMPmwPr7qY7XlDITFIqwbWMYmqnMFKsbO3mg8yDbtzVz8eoEr574F5QuIKWUTKZO8j9+/L+Qflg89sBqHtl5P4fWP4VlxEkVUgHGVj6GYeGqIse7PyDvZjGlVfIGNfMZjeNB0SuQKhSYSM3g+i4t1RvY1PYg8VAFlmFTEU1QFk1QcDUTmTTpXBLXquG97n6Gh4Y4OzxPVXkrPWND2GGLvokhltdVYZshim6BI9feoehmMQ0j+G5D4ngFXjz9cybT41iGia9dPN8hmZ8HbO5be5gndx5m3+52XMcUf/n8/2IydWrB1hMlUKA41Pk1/r/f/gNM29XHPxnk4s0hzvd1MTB/naKXwvVyi40GC7xJCIHru9QlWqiOxRmZOVcyMwSNlWtwtU0sFCeVvs5MepjW2maqowlmcmn6p0YImWFaqluYzUzjF2dZ2rKXqeQ0heIQD+94gPcvXKStoYK+aU3/ZD9SfvpOwELXi9KBT6i1wDKihMwoy6rW0Nm+lY0dy9m6qRmnaIg/+pv/wfvn/xZDCtSCOiyERJZuXe7ueJZ//7lv0LGyjrlUWt/oneXKrVHmsmkGJ24s3vEFShWh1FuiFVVlzUzND1H05qkvX048UsnIXB9hs4zp1Bi2aVAWieH5PuliHscpEg2VIWVw0TZbyNJU1cp8dhaBS2NlHelCAcdzqStvYGp+PLi8QXCNVi3aXQHWl0agIbbWrKA8Uk7HskZWraikLB4XN3sm+auffpcT15+jpL4vLOBCNIMPUUpRGVnNoc6neeDuu2iqqdTlCZuZuTwTUwWkUdIPFrrLF+xEIYMbGsJECgOtPZRSmKaF53kBm5PB5Ut0cH844OU+emESCDwvOFgRAk/5tw1bfGzDWuQsixlYQgigkFIgBVSWh6iuipDNugxPzIs3Pz7Om5+8yEy2CyllcG9Z6FKjyP9ml0gh8EvtWDFzJevadnNf5wHu37ueaMzSgZeoFy3mRUdNiNLq/Jr/VipdCxmy8IwoteWqRb9e3O7jXfhfa4L78JQGG2zT263NJTt/oRNcB3eGNZDPe+KdE1c5ev4jznUfIe30Ak5w4XqhRa407/8fMsqHW66eEosAAAAASUVORK5CYII=">
+<meta charset="UTF-8">
+<title>速创 · GPT-Image-2 生图</title>
+<style>
+  :root {
+    --bg: #0a0712;
+    --bg2: #120c1f;
+    --panel: rgba(28, 18, 48, 0.55);
+    --panel-solid: #160e26;
+    --border: #4a2f7a;
+    --border-bright: #a474ff;
+    --text: #ece6ff;
+    --muted: #9a86c4;
+    --accent: #a474ff;
+    --accent-dim: #6b4aa8;
+    --glow: rgba(164, 116, 255, 0.55);
+    --error: #ff6b9b;
+    --success: #8a7fff;
+    --hud-line: rgba(164, 116, 255, 0.22);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, system-ui, sans-serif;
+    background:
+      linear-gradient(rgba(10,7,18,0.92), rgba(10,7,18,0.96)),
+      repeating-linear-gradient(0deg, transparent 0, transparent 23px, var(--hud-line) 23px, var(--hud-line) 24px),
+      repeating-linear-gradient(90deg, transparent 0, transparent 23px, var(--hud-line) 23px, var(--hud-line) 24px),
+      radial-gradient(ellipse at 30% 0%, #1d1136 0%, #0a0712 60%);
+    background-attachment: fixed;
+    color: var(--text);
+    min-height: 100vh;
+  }
+  /* 全局扫描线叠层 */
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9998;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 2px, rgba(164,116,255,0.025) 3px);
+    mix-blend-mode: screen;
+  }
+  .container {
+    max-width: 1600px; margin: 0 auto; padding: 20px;
+    display: grid; grid-template-columns: 360px minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 20px;
+    min-height: calc(100vh - 40px);
+  }
+  /* 折叠提示词工坊：中栏收起，右栏吃掉空间 */
+  #ws-expand-handle {
+    display: none; align-self: start; position: sticky; top: 20px;
+    writing-mode: vertical-rl; width: auto; padding: 14px 6px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--accent); font-size: 12px;
+    letter-spacing: 2px; cursor: pointer;
+  }
+  body.ws-collapsed .container { grid-template-columns: 360px auto minmax(0, 1fr); }
+  body.ws-collapsed #col-mid { display: none; }
+  body.ws-collapsed #ws-expand-handle { display: block; }
+  @media (max-width: 1200px) {
+    .container { grid-template-columns: 340px 1fr; }
+    .col-right { grid-column: 1 / -1; }
+    body.ws-collapsed .container { grid-template-columns: 340px auto 1fr; }
+  }
+  @media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    .col-mid, .col-right { grid-column: 1; }
+  }
+
+  /* 左栏 aside: 滚动内容 + 固定底部 */
+  aside.panel {
+    display: flex; flex-direction: column;
+    max-height: calc(100vh - 40px);
+    min-width: 0;
+  }
+  .panel-scroll {
+    flex: 1; overflow-y: auto; min-height: 0;
+    padding-right: 4px; margin-right: -4px;
+  }
+  .panel-footer {
+    flex-shrink: 0; padding-top: 12px;
+    border-top: 1px solid var(--border); margin-top: 8px;
+  }
+
+  /* 中栏 工坊 */
+  .col-mid {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: 18px;
+    max-height: calc(100vh - 40px); overflow-y: auto;
+    min-width: 0;
+  }
+
+  /* 右栏 画廊 + 终端 */
+  .col-right {
+    display: flex; flex-direction: column; gap: 0;
+    max-height: calc(100vh - 40px); min-width: 0;
+  }
+  .col-right .gallery-wrap {
+    flex: 1; overflow-y: auto; min-height: 80px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px 8px 0 0; padding: 14px;
+  }
+  /* 拖拽分割线 */
+  .col-right .resize-handle {
+    flex-shrink: 0; height: 6px; cursor: ns-resize;
+    background: var(--border);
+    border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    transition: background .15s;
+  }
+  .col-right .resize-handle:hover, .col-right .resize-handle.dragging {
+    background: var(--accent-dim);
+  }
+  .col-right .resize-handle::after {
+    content: ''; display: block;
+    width: 28px; height: 2px; border-radius: 2px;
+    background: var(--muted); opacity: .5;
+  }
+  .col-right .terminal {
+    flex-shrink: 0; overflow-y: auto;
+    border-radius: 0 0 8px 8px; margin-top: 0;
+  }
+  .col-right .gen-bar {
+    flex-shrink: 0; display: flex; flex-direction: column; gap: 6px; margin-top: 8px;
+  }
+  .col-right .gen-bar #generate-btn { width: 100%; }
+  .gen-bar-row { display: flex; gap: 6px; }
+  .gen-bar-row #generate-btn { flex: 1; min-width: 0; }
+  .grind-controls { display: flex; gap: 4px; flex-shrink: 0; }
+  #grind-n {
+    width: 52px; padding: 0 6px; font-size: 12px;
+    background: var(--bg); color: var(--text);
+    border: 1px solid #6b2222; border-radius: 6px;
+    outline: none; cursor: pointer;
+  }
+  #grind-btn {
+    background: linear-gradient(135deg, #5c1414 0%, #8b2020 100%);
+    border: 1px solid #b03030; color: #ffcccc;
+    border-radius: 6px; padding: 0 13px;
+    font-weight: 700; cursor: pointer;
+    letter-spacing: 2px; white-space: nowrap;
+    font-size: 13px; transition: all .2s;
+  }
+  #grind-btn:hover {
+    background: linear-gradient(135deg, #8b2020 0%, #b03030 100%);
+    border-color: #e05050; color: #fff;
+  }
+  #grind-btn.grind-active {
+    background: linear-gradient(135deg, #b03030 0%, #e04040 100%);
+    border-color: #ff6060; color: #fff;
+    animation: grind-pulse .9s ease-in-out infinite alternate;
+  }
+  @keyframes grind-pulse {
+    from { box-shadow: 0 0 5px #e0404066; }
+    to   { box-shadow: 0 0 16px #ff6060cc; }
+  }
+
+  /* 渠道切换 */
+  .provider-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .provider-toggle { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .provider-toggle button {
+    flex: 1; padding: 5px 10px; font-size: 11px; font-weight: 600;
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    transition: all .15s; white-space: nowrap;
+  }
+  .provider-toggle button.active {
+    background: var(--accent-dim); color: #fff;
+  }
+  #provider-label { font-size: 11px; color: var(--muted); flex: 1; }
+  #resolution-row { display: none; }
+  #resolution-row.visible { display: block; }
+
+  main { min-width: 0; overflow: hidden; }
+  .terminal { min-width: 0; }
+  .log-line { min-width: 0; }
+  .log-msg { overflow-wrap: anywhere; word-break: break-all; }
+
+  h1 { font-size: 18px; margin: 0 0 12px; font-weight: 500; }
+  h2 { font-size: 12px; margin: 20px 0 8px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 18px; }
+
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .hint { font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+  .hint a { color: var(--accent); text-decoration: none; }
+  .hint a:hover { text-decoration: underline; }
+
+  textarea, input, select {
+    width: 100%; background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    padding: 10px 12px; font: inherit; font-size: 14px;
+    outline: none; transition: border-color .15s;
+  }
+  textarea { resize: vertical; min-height: 100px; font-family: inherit; }
+  textarea:focus, input:focus, select:focus { border-color: var(--accent); }
+
+  .row { margin-bottom: 14px; }
+  .row-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  /* 提示词寄存区 */
+  #fav-wrap summary { cursor: pointer; font-size: 13px; display: flex; align-items: center; }
+  .fav-item { display: flex; align-items: center; gap: 6px; background: rgba(10,7,20,0.5); border: 1px solid var(--border); padding: 6px 8px; border-radius: 0; clip-path: polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px); }
+  .fav-item .fav-text { flex: 1; font-size: 11px; color: var(--text); cursor: pointer; line-height: 1.4; word-break: break-all; }
+  .fav-item .fav-text:hover { color: var(--accent); }
+  .fav-item .fav-use { width: auto; padding: 3px 8px; font-size: 11px; background: var(--accent-dim); flex-shrink: 0; }
+  .fav-item .fav-del { width: 20px; height: 20px; padding: 0; font-size: 11px; background: var(--border); flex-shrink: 0; }
+  .fav-item .fav-tagsel { width: auto; max-width: 72px; font-size: 10px; padding: 2px 4px; flex-shrink: 0; clip-path: none; }
+  .fav-item { cursor: grab; }
+  .fav-item.dragging { opacity: .4; }
+
+  /* 参考图列表 */
+  .ref-list { display: flex; flex-direction: column; gap: 6px; }
+
+  /* 素材库分组 tab 条 */
+  .grp-bar {
+    display: flex; gap: 4px; margin-top: 8px; overflow-x: auto;
+    padding-bottom: 4px; scrollbar-width: thin;
+  }
+  .grp-bar .grp-tab {
+    flex-shrink: 0; padding: 3px 10px; font-size: 11px; border-radius: 12px;
+    background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+    cursor: pointer; white-space: nowrap; width: auto; transition: all .15s;
+  }
+  .grp-bar .grp-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .grp-bar .grp-tab.drop-hover { background: var(--accent-dim); color: #fff; border-color: var(--accent); transform: scale(1.08); }
+  .grp-bar .grp-cfg { flex-shrink: 0; padding: 3px 8px; font-size: 12px; background: none; border: 1px dashed var(--border); border-radius: 12px; color: var(--muted); cursor: pointer; width: auto; }
+  .lib-item { cursor: grab; }
+  .lib-item:active { cursor: grabbing; }
+  .lib-item.dragging { opacity: .4; }
+
+  /* 左下 fixed 中等预览框（固定不滚）*/
+  .lib-preview {
+    position: fixed; left: 16px; bottom: 16px; z-index: 2100;
+    width: 300px; background: var(--panel-solid); border: 1px solid var(--border-bright);
+    border-radius: 8px; padding: 8px;
+    box-shadow: 0 0 30px rgba(164,116,255,0.4), 0 8px 40px rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+  }
+  .lib-preview-head { display: flex; align-items: center; margin-bottom: 6px; }
+  .lib-preview-grp { font-size: 11px; color: var(--muted); }
+  .lib-preview-head button { margin-left: auto; width: 22px; height: 22px; padding: 0; background: var(--border); border-radius: 4px; line-height: 1; }
+  .lib-preview img { width: 100%; max-height: 50vh; object-fit: contain; border-radius: 6px; display: block; background: #000; }
+  .lib-preview-actions { display: flex; gap: 6px; margin-top: 8px; }
+  .lib-preview-actions button, .lib-preview-actions a {
+    flex: 1; text-align: center; font-size: 11px; padding: 6px; border-radius: 6px;
+    background: var(--accent-dim); color: #fff; text-decoration: none; cursor: pointer;
+  }
+
+  /* 批量归类面板 */
+  .sorter-overlay {
+    position: fixed; inset: 0; z-index: 2000; background: rgba(6,4,12,0.8);
+    display: flex; align-items: center; justify-content: center; backdrop-filter: blur(3px);
+  }
+  .sorter-box {
+    width: min(900px, 92vw); height: min(620px, 88vh);
+    background: var(--panel-solid); border: 1px solid var(--border-bright);
+    display: flex; flex-direction: column;
+    clip-path: polygon(0 16px, 16px 0, calc(100% - 16px) 0, 100% 16px, 100% calc(100% - 16px), calc(100% - 16px) 100%, 16px 100%, 0 calc(100% - 16px));
+    box-shadow: 0 0 50px rgba(164,116,255,0.4);
+  }
+  .sorter-head {
+    display: flex; align-items: center; padding: 14px 20px; font-size: 14px; font-weight: 600;
+    border-bottom: 1px solid var(--border); color: var(--accent); text-shadow: 0 0 8px var(--glow);
+  }
+  .sorter-head button { margin-left: auto; width: 28px; height: 28px; padding: 0; background: var(--border); }
+  .sorter-body { flex: 1; display: flex; min-height: 0; }
+  .sorter-tags {
+    width: 38%; border-right: 1px solid var(--border); padding: 12px;
+    overflow-y: auto; display: flex; flex-direction: column; gap: 8px;
+  }
+  .sorter-tag {
+    padding: 12px 14px; font-size: 13px; background: rgba(10,7,20,0.5);
+    border: 1px solid var(--border); cursor: default; color: var(--text);
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    display: flex; align-items: center; gap: 8px; transition: all .15s;
+  }
+  .sorter-tag .cnt { margin-left: auto; font-size: 11px; color: var(--muted); }
+  .sorter-tag .del-tag { width: 18px; height: 18px; padding: 0; font-size: 11px; background: var(--border); flex-shrink: 0; }
+  .sorter-tag.drop-hover { background: var(--accent-dim); border-color: var(--border-bright); box-shadow: 0 0 16px var(--glow); transform: scale(1.03); }
+  .sorter-addtag { display: flex; gap: 6px; margin-top: 4px; }
+  .sorter-addtag input { flex: 1; font-size: 12px; min-width: 0; }
+  .sorter-addtag button { width: auto; padding: 6px 12px; font-size: 12px; flex-shrink: 0; }
+  .sorter-grid {
+    width: 62%; padding: 12px; overflow-y: auto; min-width: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    grid-auto-rows: 84px; gap: 8px; align-content: start;
+  }
+  .sorter-cell {
+    position: relative; width: 100%; height: 100%; min-width: 0;
+    cursor: grab; border: 1px solid var(--border); overflow: hidden;
+  }
+  .sorter-cell:active { cursor: grabbing; }
+  .sorter-cell.dragging { opacity: .4; }
+  .sorter-cell img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; display: block; }
+  .sorter-cell .badge {
+    position: absolute; bottom: 2px; left: 2px; font-size: 8px; padding: 1px 4px;
+    background: rgba(164,116,255,0.9); color: #fff; max-width: 90%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; pointer-events: none;
+  }
+  .ref-item { display: flex; gap: 6px; align-items: center; }
+  .ref-item input { flex: 1; font-size: 12px; }
+  .ref-item .preview {
+    width: 36px; height: 36px; border-radius: 4px;
+    background: var(--bg); border: 1px solid var(--border);
+    object-fit: cover; flex-shrink: 0;
+  }
+  .ref-item .preview.empty {
+    background-image:
+      linear-gradient(45deg, var(--border) 25%, transparent 25%, transparent 75%, var(--border) 75%),
+      linear-gradient(45deg, var(--border) 25%, transparent 25%, transparent 75%, var(--border) 75%);
+    background-size: 8px 8px; background-position: 0 0, 4px 4px;
+  }
+  .ref-item .preview.loading {
+    background: var(--border) !important;
+    background-image: none !important;
+    animation: pulse 1.2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+  .ref-item button {
+    width: 28px; height: 36px; padding: 0; flex-shrink: 0;
+    background: var(--border); color: var(--muted); font-size: 14px;
+  }
+
+  /* 文件上传区 */
+  .upload-zone {
+    border: 1px dashed var(--border); border-radius: 6px;
+    padding: 14px; text-align: center;
+    font-size: 12px; color: var(--muted);
+    cursor: pointer; transition: all .15s;
+    margin-top: 8px;
+  }
+  .upload-zone:hover, .upload-zone.dragover {
+    border-color: var(--accent); color: var(--accent); background: rgba(108,138,255,.05);
+  }
+  .upload-zone input[type=file] { display: none; }
+
+  .add-ref-row { display: flex; gap: 6px; margin-top: 6px; }
+  .add-ref-row button {
+    flex: 1; padding: 6px; font-size: 12px;
+    background: transparent; border: 1px dashed var(--border); color: var(--muted);
+    cursor: pointer; border-radius: 6px;
+  }
+  .add-ref-row button:hover { border-color: var(--accent); color: var(--accent); }
+
+  button {
+    width: 100%; padding: 12px; font: inherit; font-size: 14px; font-weight: 500;
+    background: var(--accent); color: white;
+    border: none; border-radius: 6px; cursor: pointer;
+    transition: background .15s;
+  }
+  button:hover { background: var(--accent-dim); }
+  button:disabled { background: var(--border); color: var(--muted); cursor: not-allowed; }
+
+  .status { font-size: 13px; padding: 10px 12px; border-radius: 6px; margin-top: 12px; display: none; line-height: 1.5; }
+  .status.show { display: block; }
+  .status.info { background: rgba(108,138,255,.1); color: var(--accent); }
+  .status.error { background: rgba(255,107,107,.1); color: var(--error); }
+  .status.success { background: rgba(95,207,128,.1); color: var(--success); }
+
+  .gallery {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden; transition: transform .15s;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; cursor: pointer; background: var(--bg); }
+  .card .meta { padding: 10px 12px; font-size: 12px; border-top: 1px solid var(--border); }
+  .card .prompt { color: var(--text); line-height: 1.4; max-height: 60px; overflow: hidden; }
+  .card .time { color: var(--muted); margin-top: 6px; font-size: 11px; display: flex; justify-content: space-between; }
+  .card .actions { display: flex; gap: 6px; margin-top: 8px; }
+  .card .actions a, .card .actions button {
+    flex: 1; padding: 6px; font-size: 11px; text-align: center;
+    background: var(--border); color: var(--text);
+    border: none; border-radius: 4px; cursor: pointer; text-decoration: none;
+    display: block; transition: background .15s;
+  }
+  .card .actions a:hover, .card .actions button:hover { background: var(--accent-dim); color: white; }
+
+  .modal {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.9);
+    z-index: 100; align-items: center; justify-content: center; padding: 24px; cursor: pointer;
+  }
+  .modal.show { display: flex; }
+  .modal img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+  .empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 14px; }
+
+  .key-row { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+  .key-row strong { color: var(--text); }
+
+  details { margin: 14px 0; }
+  summary { font-size: 12px; color: var(--muted); cursor: pointer; padding: 4px 0; }
+  summary:hover { color: var(--text); }
+
+  /* 任务面板 */
+  .tasks {
+    display: flex; flex-direction: column; gap: 8px;
+    margin-bottom: 14px;
+  }
+  .task-card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 6px;
+    padding: 10px 12px; font-size: 12px;
+  }
+  .task-card.done { opacity: .6; }
+  .task-card.error { border-color: var(--error); }
+  .task-row { display: flex; gap: 10px; align-items: center; margin-bottom: 6px; min-width: 0; }
+  .task-id { color: var(--muted); font-family: monospace; font-size: 10px; flex-shrink: 0; }
+  .task-prompt { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
+  .task-row { min-width: 0; }
+  .task-card { min-width: 0; overflow: hidden; word-break: break-word; }
+  .task-time { color: var(--accent); font-variant-numeric: tabular-nums; flex-shrink: 0; font-family: monospace; }
+  .task-status { color: var(--muted); font-size: 11px; margin-top: 4px; }
+  .task-error-btn {
+    display: inline-block; margin-top: 5px; padding: 2px 8px;
+    font-size: 10px; background: rgba(220,60,60,.18);
+    border: 1px solid #6b2020; border-radius: 3px;
+    color: #ff9999; cursor: pointer; width: auto; line-height: 1.6;
+  }
+  .task-error-btn:hover { background: rgba(220,60,60,.32); }
+  .task-error-detail {
+    display: none; margin-top: 6px; padding: 8px 10px;
+    background: rgba(180,30,30,.1); border: 1px solid #5a1a1a;
+    border-radius: 4px; font-size: 11px; color: #ffbbbb;
+    white-space: pre-wrap; word-break: break-word;
+    max-height: 220px; overflow-y: auto; line-height: 1.55;
+  }
+  .task-error-detail.open { display: block; }
+  .task-card.done .task-time { color: var(--success); }
+  .task-card.error .task-time { color: var(--error); }
+  .task-bar-bg { background: var(--border); border-radius: 3px; height: 3px; overflow: hidden; margin-top: 6px; }
+  .task-bar { background: var(--accent); height: 100%; transition: width .3s ease; }
+  .task-card.done .task-bar { background: var(--success); }
+  .task-card.error .task-bar { background: var(--error); }
+
+  /* 拒图历史按钮 */
+  #reject-hist-btn {
+    position: relative; width: auto; padding: 3px 9px;
+    font-size: 11px; background: rgba(160,30,30,.2);
+    border: 1px solid #6b2020; border-radius: 4px;
+    color: #ff9999; cursor: pointer;
+  }
+  #reject-hist-btn:hover { background: rgba(160,30,30,.4); }
+  #reject-hist-btn .badge {
+    display: none; position: absolute; top: -5px; right: -6px;
+    background: #c03030; color: #fff; font-size: 9px; font-weight: 700;
+    border-radius: 8px; padding: 1px 4px; min-width: 14px; text-align: center;
+  }
+  #reject-hist-btn .badge.visible { display: block; }
+
+  /* 拒图历史弹窗 */
+  .reject-modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,.55); z-index: 1000;
+    align-items: flex-start; justify-content: center;
+    padding-top: 60px;
+  }
+  .reject-modal-overlay.open { display: flex; }
+  .reject-modal {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; width: min(620px, 92vw);
+    max-height: 72vh; display: flex; flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0,0,0,.5);
+  }
+  .reject-modal-head {
+    display: flex; align-items: center; padding: 12px 16px;
+    border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .reject-modal-head h3 { flex: 1; margin: 0; font-size: 13px; }
+  .reject-modal-head button { width: auto; padding: 3px 10px; font-size: 11px; }
+  .reject-modal-body { overflow-y: auto; padding: 10px 14px; flex: 1; }
+  .rh-item {
+    border: 1px solid #5a1a1a; border-radius: 6px;
+    background: rgba(120,20,20,.15); margin-bottom: 10px; padding: 10px 12px;
+  }
+  .rh-item-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11px; color: var(--muted); margin-bottom: 6px;
+  }
+  .rh-item-head .rh-label { color: #ff7070; font-weight: 700; }
+  .rh-item-prompt {
+    font-size: 11px; color: var(--text); margin-bottom: 6px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .rh-item-detail {
+    font-size: 10.5px; color: #ffbbbb; white-space: pre-wrap;
+    word-break: break-word; line-height: 1.5;
+    max-height: 160px; overflow-y: auto;
+  }
+
+  /* ── 标签系统 ── */
+  .tag-chip {
+    display: inline-block; font-size: 10px; padding: 1px 6px;
+    border-radius: 10px; background: var(--accent-dim);
+    color: var(--accent); margin: 1px 2px; cursor: default;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .tag-chip.star { background: rgba(255,200,0,.18); color: #ffd700; border-color: #a08000; }
+
+  /* 星标按钮 */
+  button.starred { color: #ffd700 !important; }
+
+  /* 标签模态框 */
+  .tag-modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,.6); z-index: 1001;
+    align-items: center; justify-content: center;
+  }
+  .tag-modal-overlay.open { display: flex; }
+  .tag-modal {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; width: min(860px, 96vw); height: min(620px, 90vh);
+    display: flex; flex-direction: column;
+    box-shadow: 0 16px 50px rgba(0,0,0,.6);
+  }
+  .tag-modal-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 16px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .tag-modal-head img {
+    width: 44px; height: 44px; object-fit: cover;
+    border-radius: 5px; flex-shrink: 0;
+  }
+  .tag-modal-head .tm-prompt {
+    flex: 1; font-size: 11px; color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .tag-modal-head button { width: auto; padding: 4px 12px; font-size: 11px; }
+  .tag-modal-body {
+    display: flex; flex: 1; min-height: 0;
+  }
+  /* 左栏：标签列表 */
+  .tag-modal-left {
+    width: 200px; flex-shrink: 0; border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; padding: 12px;
+    overflow-y: auto;
+  }
+  .tag-modal-left h4 { font-size: 11px; color: var(--muted); margin: 0 0 8px; text-transform: uppercase; letter-spacing: .5px; }
+  .tag-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 6px; border-radius: 5px; cursor: pointer;
+    font-size: 12px; transition: background .1s;
+  }
+  .tag-item:hover { background: var(--hover); }
+  .tag-item.active { background: var(--accent-dim); }
+  .tag-item input[type=checkbox] { flex-shrink: 0; cursor: pointer; accent-color: var(--accent); }
+  .tag-item .ti-name { flex: 1; }
+  .tag-item .ti-count { font-size: 10px; color: var(--muted); }
+  .tag-item .ti-del {
+    width: 16px; height: 16px; font-size: 11px; line-height: 1;
+    background: none; border: none; color: var(--muted);
+    cursor: pointer; padding: 0; opacity: 0;
+  }
+  .tag-item:hover .ti-del { opacity: 1; }
+  .ti-del:hover { color: var(--error) !important; }
+  .tag-add-row {
+    display: flex; gap: 6px; margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .tag-add-row input {
+    flex: 1; padding: 4px 8px; font-size: 11px;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 4px; color: var(--text); outline: none;
+  }
+  .tag-add-row button { width: auto; padding: 4px 8px; font-size: 11px; }
+  /* 右栏：预览 */
+  .tag-modal-right {
+    flex: 1; padding: 12px; overflow-y: auto;
+    display: flex; flex-direction: column;
+  }
+  .tag-modal-right h4 { font-size: 11px; color: var(--muted); margin: 0 0 10px; text-transform: uppercase; letter-spacing: .5px; flex-shrink: 0; }
+  .tag-preview-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 6px;
+  }
+  .tag-preview-grid img {
+    width: 100%; aspect-ratio: 1; object-fit: cover;
+    border-radius: 5px; cursor: pointer; transition: opacity .15s;
+  }
+  .tag-preview-grid img:hover { opacity: .8; }
+  .tag-preview-empty { color: var(--muted); font-size: 12px; text-align: center; padding: 30px 0; }
+
+  /* 提示词工坊 */
+  .workshop { margin: 8px 0 14px; }
+  .workshop summary { font-size: 13px; color: var(--accent); padding: 8px 10px; background: rgba(108,138,255,.08); border: 1px solid rgba(108,138,255,.3); border-radius: 6px; }
+  .workshop summary:hover { background: rgba(108,138,255,.15); }
+  .workshop[open] summary { margin-bottom: 12px; }
+  .workshop-body { padding: 4px 2px; }
+  .ws-ref-empty { color: var(--muted); font-size: 11px; text-align: center; }
+  .ws-btn {
+    padding: 8px 12px; font-size: 12px; font-weight: 500; cursor: pointer;
+    border-radius: 6px; border: none; transition: all .15s; width: 100%;
+  }
+  .ws-primary { background: var(--accent); color: white; }
+  .ws-primary:hover:not(:disabled) { background: var(--accent-dim); }
+  .ws-primary:disabled { background: var(--border); color: var(--muted); cursor: not-allowed; }
+  .ws-secondary { background: var(--border); color: var(--text); }
+  .ws-secondary:hover { background: var(--accent-dim); color: white; }
+  .ws-status { font-size: 11px; color: var(--muted); margin-top: 6px; min-height: 14px; }
+  .ws-status.success { color: var(--success); }
+  .ws-status.error { color: var(--error); }
+  .ws-status.loading { color: var(--accent); }
+
+  /* Lightbox 大图预览 */
+  .lightbox-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,.85);
+    display: none; align-items: center; justify-content: center;
+    z-index: 2200; padding: 40px; cursor: zoom-out;
+    animation: fadeIn .2s ease;
+  }
+  .lightbox-overlay.show { display: flex; }
+  .lightbox-overlay img {
+    max-width: 90%; max-height: 85%; object-fit: contain;
+    border-radius: 0;
+    clip-path: polygon(0 16px, 16px 0, calc(100% - 16px) 0, 100% 16px, 100% calc(100% - 16px), calc(100% - 16px) 100%, 16px 100%, 0 calc(100% - 16px));
+    box-shadow: 0 0 50px rgba(164,116,255,0.45), 0 10px 60px rgba(0,0,0,.6);
+  }
+  .lightbox-actions {
+    position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 8px;
+  }
+  .lightbox-actions button, .lightbox-actions a {
+    padding: 8px 16px; font-size: 12px; background: rgba(255,255,255,.15);
+    color: white; border: 1px solid rgba(255,255,255,.3);
+    border-radius: 6px; cursor: pointer; text-decoration: none;
+  }
+  .lightbox-actions button:hover, .lightbox-actions a:hover {
+    background: rgba(255,255,255,.25);
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 20px;
+    width: 36px; height: 36px; background: rgba(255,255,255,.15);
+    color: white; border: 1px solid rgba(255,255,255,.3); border-radius: 50%;
+    font-size: 18px; cursor: pointer; padding: 0;
+  }
+  .lightbox-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 72px; background: rgba(255,255,255,.12);
+    color: white; border: 1px solid rgba(255,255,255,.25); border-radius: 10px;
+    font-size: 34px; line-height: 1; cursor: pointer; padding: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: background .15s;
+  }
+  .lightbox-nav:hover { background: rgba(164,116,255,.4); }
+  .lightbox-prev { left: 24px; }
+  .lightbox-next { right: 24px; }
+  .lightbox-counter {
+    position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+    color: rgba(255,255,255,.85); font-size: 13px; letter-spacing: 1px;
+    background: rgba(0,0,0,.4); padding: 4px 12px; border-radius: 20px;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* 出图提示 toast */
+  #toast-host {
+    position: fixed; top: 16px; right: 16px;
+    display: flex; flex-direction: column; gap: 8px;
+    z-index: 9999; pointer-events: none;
+  }
+  .toast {
+    background: linear-gradient(135deg, var(--accent), #7d54d4); color: #fff;
+    font-size: 13px; font-weight: 600;
+    padding: 9px 14px; border-radius: 0;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    border: 1px solid var(--border-bright);
+    box-shadow: 0 0 16px var(--glow), 0 4px 16px rgba(0,0,0,.35);
+    opacity: 0; transform: translateY(-8px);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  /* terminal 改 HUD 半透明底 */
+  .terminal { background: rgba(8,5,16,0.7) !important; }
+
+  /* Terminal 日志面板 */
+  .terminal {
+    background: #0d0d12; border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px; font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+    font-size: 11px; line-height: 1.6;
+    max-height: 320px; overflow-y: auto;
+    margin-top: 14px;
+  }
+  .terminal-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .terminal-header .title { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+  .terminal-header .clear { color: var(--muted); cursor: pointer; font-size: 10px; background: none; border: none; padding: 0; width: auto; }
+  .terminal-header .clear:hover { color: var(--accent); background: none; }
+  .terminal-empty { color: var(--muted); font-style: italic; }
+  .log-line { display: flex; gap: 8px; margin-bottom: 2px; word-break: break-all; }
+  .log-time { color: #4a8aff; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+  .log-tag { color: var(--muted); flex-shrink: 0; min-width: 60px; }
+  .log-tag.poll { color: #6c8aff; }
+  .log-tag.status { color: #8a8a94; }
+  .log-tag.done { color: #5fcf80; }
+  .log-tag.error { color: #ff6b6b; }
+  .log-tag.upload { color: #ffb84a; }
+  .log-msg { color: var(--text); flex: 1; min-width: 0; }
+
+  /* ═══════════ sci-fi HUD 增强层（紫罗兰）═══════════ */
+  /* 切角面板：左栏 / 中栏 / 画廊 / terminal */
+  aside.panel, .col-mid, .col-right .gallery-wrap, .col-right .terminal {
+    position: relative;
+    background:
+      linear-gradient(var(--panel), var(--panel)),
+      repeating-linear-gradient(45deg, rgba(164,116,255,0.03) 0, rgba(164,116,255,0.03) 1px, transparent 1px, transparent 6px) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    clip-path: polygon(0 14px, 14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px));
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 0 24px rgba(164,116,255,0.06), 0 0 18px rgba(164,116,255,0.08);
+  }
+  /* 面板四角的亮角装饰 */
+  aside.panel::before, .col-mid::before, .col-right .gallery-wrap::before, .col-right .terminal::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+    background:
+      linear-gradient(135deg, var(--border-bright) 0 2px, transparent 2px) top left / 18px 18px no-repeat,
+      linear-gradient(-135deg, var(--border-bright) 0 2px, transparent 2px) top right / 18px 18px no-repeat,
+      linear-gradient(45deg, var(--border-bright) 0 2px, transparent 2px) bottom left / 18px 18px no-repeat,
+      linear-gradient(-45deg, var(--border-bright) 0 2px, transparent 2px) bottom right / 18px 18px no-repeat;
+    opacity: 0.7;
+  }
+
+  /* 切角按钮 + 发光 */
+  button, .ws-btn, .card .actions a, .lib-preview-actions a {
+    border-radius: 0 !important;
+    clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
+    letter-spacing: 0.5px;
+    transition: all .15s !important;
+  }
+  button:not(:disabled):hover, .ws-btn:not(:disabled):hover {
+    box-shadow: 0 0 14px var(--glow), inset 0 0 10px rgba(255,255,255,0.12) !important;
+    filter: brightness(1.12);
+  }
+  /* 主行动按钮（生成 / 工坊主按钮）更强发光 */
+  #generate-btn, .ws-primary {
+    background: linear-gradient(135deg, var(--accent), #7d54d4) !important;
+    box-shadow: 0 0 12px rgba(164,116,255,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
+    border: 1px solid var(--border-bright) !important;
+    text-shadow: 0 0 8px rgba(255,255,255,0.4);
+  }
+  #generate-btn { font-weight: 700; letter-spacing: 3px; }
+
+  /* 输入 / 文本域 / 下拉：切角 + 聚焦发光 */
+  textarea, input[type="text"], input[type="number"], input[type="password"], select {
+    border-radius: 0 !important;
+    background: rgba(10,7,20,0.6) !important;
+    border: 1px solid var(--border) !important;
+    clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+  }
+  textarea:focus, input:focus, select:focus {
+    border-color: var(--border-bright) !important;
+    box-shadow: 0 0 12px rgba(164,116,255,0.3) !important;
+  }
+
+  /* 标题加 HUD 前缀感 */
+  aside.panel h1, .col-mid h2, .col-right h2 {
+    text-shadow: 0 0 10px rgba(164,116,255,0.4);
+  }
+  aside.panel h2, .col-mid h2 {
+    border-left: 3px solid var(--accent); padding-left: 8px;
+  }
+
+  /* 分组 tab 切角 */
+  .grp-bar .grp-tab, .grp-bar .grp-cfg {
+    border-radius: 0 !important;
+    clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%, 0 6px);
+  }
+  .grp-bar .grp-tab.active { box-shadow: 0 0 10px var(--glow); }
+
+  /* 卡片 / 素材格 / 预览窗切角 */
+  .card, .lib-preview, #refs-library > div, .lib-item {
+    border-radius: 0 !important;
+  }
+  .card {
+    clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  }
+  .card:hover { box-shadow: 0 0 16px rgba(164,116,255,0.25); }
+
+  /* 滚动条紫调 */
+  ::-webkit-scrollbar { width: 9px; height: 9px; }
+  ::-webkit-scrollbar-track { background: rgba(10,7,20,0.4); }
+  ::-webkit-scrollbar-thumb { background: var(--accent-dim); border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+  /* terminal 头部 HUD 感 */
+  .terminal-header { border-bottom: 1px solid var(--border) !important; }
+  .terminal-header .title { color: var(--accent) !important; text-shadow: 0 0 8px var(--glow); }
+
+  /* 状态条紫调 */
+  .status.info { background: rgba(164,116,255,.12) !important; color: var(--accent) !important; }
+  .status.success { background: rgba(138,127,255,.12) !important; color: var(--success) !important; }
+  /* 代理状态 / 强调字发光 */
+  #proxy-status, strong { color: var(--accent); }
+
+  /* 展开把手 HUD 切角 */
+  #ws-expand-handle {
+    border-radius: 0 !important;
+    clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%, 0 6px);
+    box-shadow: 0 0 12px rgba(164,116,255,0.15);
+  }
+</style>
+</head>
+<body>
+<!-- ═══ 开屏动画 ═══ -->
+<div id="splash" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#0e0b14;overflow:hidden;opacity:1;transition:opacity 0.6s ease">
+
+<style>
+#splash * { margin:0; padding:0; box-sizing:border-box; }
+#splash { background:#0e0b14; }
+
+/* 容器：不限定比例，由内容撑开 */
+#splash .sc-wrap {
+  position:relative; display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  max-width:96vw; max-height:94vh;
+  animation: sc-fish-in 0.7s cubic-bezier(0.34,1.4,0.64,1) both;
+}
+@keyframes sc-fish-in { 0% { transform:scale(0.94); opacity:0; } 100% { transform:scale(1); opacity:1; } }
+
+/* 通用图片框 + 图片：完整显示不裁剪 */
+#splash .sc-imgbox {
+  display:flex; align-items:center; justify-content:center;
+  border-radius:16px; overflow:hidden; background:#0a0712;
+  box-shadow:0 0 50px rgba(140,90,220,0.35);
+}
+#splash .sc-img {
+  display:block; width:auto; height:auto; object-fit:contain;
+  transition:opacity 0.35s ease;
+}
+
+/* ── 单张大图模式（横图/方图）：左右布局 左2图 右8文字按钮 ── */
+#splash .sc-single { display:flex; flex-direction:row; align-items:center; gap:28px; width:94vw; max-width:1500px; }
+#splash .sc-single .sc-imgbox { flex:8; min-width:0; max-height:86vh; }
+#splash .mode-single .sc-img { max-width:100%; max-height:86vh; }
+#splash .sc-foot { flex:2; min-width:200px; display:flex; flex-direction:column; align-items:stretch; gap:12px; }
+#splash .sc-foot .sc-title { text-align:left; }
+#splash .sc-foot .sc-btns { flex-direction:column; align-items:stretch; }
+#splash .sc-foot .sc-btn { width:100%; padding:11px 14px; font-size:13px; }
+@media (max-width:760px) {
+  /* 窄屏退回上下布局 */
+  #splash .sc-single { flex-direction:column; gap:14px; width:96vw; }
+  #splash .sc-single .sc-imgbox { flex:none; max-height:64vh; }
+  #splash .mode-single .sc-img { max-height:64vh; }
+  #splash .sc-foot { flex:none; min-width:0; width:100%; }
+  #splash .sc-foot .sc-title { text-align:center; }
+}
+
+/* ── 三张并排模式已移除，统一单图 ── */
+
+/* 标题 / 提示词 */
+#splash .sc-title {
+  font-family:-apple-system,system-ui,sans-serif; font-size:22px; font-weight:700;
+  background:linear-gradient(135deg, #c8a0ff, #8060d0, #e0c0ff);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  letter-spacing:3px; text-align:center;
+}
+#splash .sc-sub {
+  font-family:-apple-system,system-ui,sans-serif; font-size:11px;
+  color:rgba(210,190,240,0.85); letter-spacing:5px; text-align:center; margin-top:4px;
+}
+#splash .sc-prompt {
+  font-family:-apple-system,system-ui,sans-serif; font-size:11px; line-height:1.5;
+  color:rgba(210,190,240,0.72); text-align:center; letter-spacing:0.3px;
+  max-width:300px; min-height:16px;
+}
+#splash .mode-single .sc-prompt {
+  max-width:100%; text-align:left; font-size:12px; line-height:1.6;
+  color:rgba(210,190,240,0.78);
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:8; overflow:hidden;
+}
+
+/* 按钮 */
+#splash .sc-btns { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+#splash .sc-btn {
+  font-family:-apple-system,system-ui,sans-serif; font-size:12px; font-weight:600;
+  padding:8px 14px; border-radius:10px; cursor:pointer; letter-spacing:0.5px;
+  border:1px solid rgba(160,120,255,0.35); background:rgba(40,28,66,0.85);
+  color:#d8c8f8; transition: all .15s ease; white-space:nowrap;
+}
+#splash .sc-btn:hover { transform:translateY(-1px); border-color:rgba(200,160,255,0.7); }
+#splash .sc-btn-primary {
+  background:linear-gradient(135deg,#8a5cf0,#b88bff); color:#fff; border-color:transparent;
+  box-shadow:0 4px 16px rgba(140,90,220,0.45);
+}
+#splash .sc-btn-primary:hover { box-shadow:0 6px 22px rgba(160,110,240,0.6); }
+#splash .sc-btn-ghost { background:rgba(255,255,255,0.05); color:rgba(200,185,230,0.7); }
+#splash .sc-btn-row { display:flex; gap:8px; }
+#splash .sc-btn-row .sc-btn { flex:1; }
+#splash .sc-btn:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+#splash .sc-btn:disabled:hover { transform:none; border-color:rgba(160,120,255,0.35); }
+
+/* fallback（画廊空时的 logo 开屏）*/
+#splash .sc-fallback { display:flex; flex-direction:column; align-items:center; gap:10px; }
+#splash .sc-fallback .sc-fish { display:block; max-width:min(70vw,300px); max-height:70vh; width:auto; height:auto; object-fit:contain; border-radius:16px; box-shadow:0 0 50px rgba(140,90,220,0.35); }
+</style>
+
+<div class="sc-wrap" id="sc-wrap">
+  <!-- 内容由 initSplash() 动态填充：横图=单张大图，竖图=三张并排 -->
+  <div class="sc-fallback" id="sc-fallback">
+    <img class="sc-fish" id="sc-fish-img" src="xiaoyu-splash.jpg" alt="">
+    <div class="sc-title">速创</div>
+    <div class="sc-sub">GPT-IMAGE-2</div>
+  </div>
+</div>
+</div>
+<script>
+  void 0;
+// —— 开屏：从画廊随机抽图。横图→单张大图；竖图→三张并排，各配一套按钮 ——
+// DB 就绪后由主初始化 IIFE 调用 initSplash()
+let _splashAutoTimer = null;
+
+function closeSplash() {
+  const sp = document.getElementById('splash');
+  if (!sp) return;
+  if (_splashAutoTimer) { clearTimeout(_splashAutoTimer); _splashAutoTimer = null; }
+  sp.style.opacity = '0';
+  setTimeout(() => sp.remove(), 600);
+}
+
+function usableRecs(all) {
+  return (all || []).filter(r => r && (r.url || r.file));
+}
+function pickOne(pool, excludeIds) {
+  const cand = pool.filter(r => !excludeIds || !excludeIds.includes(r.id));
+  const arr = cand.length ? cand : pool;
+  if (!arr.length) return null;
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function doReuse(rec) {
+  if (rec) reuseAll({ prompt: rec.prompt, size: rec.size, refs: rec.refs || [] });
+  closeSplash();
+}
+function promptPreview(rec, n) {
+  const p = (rec.prompt || '').trim();
+  return p.length > n ? p.slice(0, n) + '…' : p;
+}
+
+// —— 单张大图（横图/方图）——
+function renderSingle(rec, pool) {
+  const wrap = document.getElementById('sc-wrap');
+  wrap.className = 'sc-wrap mode-single';
+  wrap.innerHTML = `
+    <div class="sc-single">
+      <div class="sc-imgbox"><img class="sc-img" id="ss-img" alt=""></div>
+      <div class="sc-foot">
+        <div class="sc-title">速创</div>
+        <div class="sc-prompt" id="ss-prompt"></div>
+        <div class="sc-btns">
+          <button class="sc-btn sc-btn-primary" id="ss-reuse">再用这张 ✦</button>
+          <div class="sc-btn-row">
+            <button class="sc-btn" id="ss-back" title="看上一张" disabled>‹ 上一张</button>
+            <button class="sc-btn" id="ss-reroll">换一张 ⟳</button>
+          </div>
+          <button class="sc-btn sc-btn-ghost" id="ss-skip">暂时不用</button>
+        </div>
+      </div>
+    </div>`;
+  let cur = rec;
+  const history = [];   // 看过的记录栈，用于"上一张"
+  const imgEl = document.getElementById('ss-img');
+  const pEl = document.getElementById('ss-prompt');
+  const backBtn = document.getElementById('ss-back');
+  const paint = r => {
+    cur = r;
+    imgEl.style.opacity = '0';
+    const src = imgSrc(r);
+    const probe = new Image();
+    const show = () => { imgEl.src = src; imgEl.style.opacity = '1'; };
+    probe.onload = show; probe.onerror = show; probe.src = src;
+    pEl.textContent = promptPreview(r, 300);
+    backBtn.disabled = history.length === 0;
+  };
+  paint(rec);
+  document.getElementById('ss-reuse').onclick = () => doReuse(cur);
+  document.getElementById('ss-reroll').onclick = () => {
+    const n = pickOne(pool, [cur.id]);
+    if (n) { history.push(cur); paint(n); }
+  };
+  backBtn.onclick = () => {
+    if (!history.length) return;
+    paint(history.pop());
+  };
+  document.getElementById('ss-skip').onclick = closeSplash;
+}
+
+async function initSplash() {
+  const sp = document.getElementById('splash');
+  if (!sp) return;
+  let all = [];
+  try { all = await dbAll(); } catch (_) {}
+  const pool = usableRecs(all);
+
+  if (!pool.length) {
+    // 画廊空（首次使用）→ 保留 fallback logo 开屏，2.8s 自动消失
+    _splashAutoTimer = setTimeout(closeSplash, 2800);
+    return;
+  }
+
+  // 不论横竖，统一单张大图模式
+  renderSingle(pickOne(pool), pool);
+}
+
+// 保底：6s 内开屏没成功初始化（极端情况主初始化失败）就自动关闭
+setTimeout(() => {
+  const sp = document.getElementById('splash');
+  if (!sp) return;
+  const wrap = document.getElementById('sc-wrap');
+  if (wrap && wrap.classList.contains('sc-wrap') && !wrap.classList.contains('mode-single') && !_splashAutoTimer) closeSplash();
+}, 6000);
+</script>
+<!-- ═══ /开屏动画 ═══ -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" title="上一张 (←)">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" title="下一张 (→)">›</button>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+  <div class="lightbox-actions">
+    <a id="lightbox-download" href="" download target="_blank">下载</a>
+    <button id="lightbox-copy-url">复制 URL</button>
+    <button id="lightbox-as-ref">加为参考图</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <aside class="panel">
+  <div class="panel-scroll">
+    <h1><img src="xiaoyu-logo.png" alt="" style="width:1.4em;height:1.4em;vertical-align:-0.35em;border-radius:5px;image-rendering:pixelated;margin-right:4px"> 速创 · GPT-Image-2</h1>
+
+    <div class="key-row">
+      代理状态: <strong id="proxy-status">检测中...</strong>
+      &nbsp;·&nbsp;
+      <span id="provider-label">渠道: 速创</span>
+    </div>
+
+    <!-- 渠道切换 -->
+    <div class="row" style="padding-bottom:4px">
+      <div class="provider-row">
+        <span style="font-size:11px;color:var(--muted);flex-shrink:0">生图渠道</span>
+        <div class="provider-toggle">
+          <button id="prov-suke" class="active" onclick="switchProvider('wuyinkeji')">速创 (无垠)</button>
+          <button id="prov-apimart" onclick="switchProvider('apimart')">apimart</button>
+          <button id="prov-apimart-official" onclick="switchProvider('apimart-official')">官方直连</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <details id="apikey-wrap">
+        <summary>🔑 API Key 设置 <span id="apikey-state" style="color:var(--muted);font-size:11px">(用预置)</span></summary>
+        <div style="margin-top:8px">
+          <label for="apikey-input" style="font-size:11px">速创出图 Key（填了就用你自己的，留空用预置的）</label>
+          <input type="password" id="apikey-input" placeholder="粘贴你的速创 key，自动保存" autocomplete="off" style="font-size:12px">
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <button type="button" id="apikey-save" style="flex:1;padding:6px;font-size:12px;background:var(--accent-dim)">保存</button>
+            <button type="button" id="apikey-clear" style="width:auto;padding:6px 12px;font-size:12px;background:var(--border)">清除</button>
+            <button type="button" id="apikey-toggle" title="显示/隐藏" style="width:auto;padding:6px 12px;font-size:12px;background:var(--border)">👁</button>
+          </div>
+          <div class="hint" style="margin-top:6px">这里只填「出图」用的速创 key（最花钱）。看图、生成提示词那两步用的是预置 key，不用你管，也花不了几个钱。key 只存你自己浏览器里，不上传。</div>
+        </div>
+      </details>
+    </div>
+
+    <div class="row">
+      <details id="dir-wrap">
+        <summary>📁 图片保存位置 <span id="dir-state" style="color:var(--muted);font-size:11px"></span></summary>
+        <div style="margin-top:8px">
+          <button type="button" id="dir-pick" style="width:100%;padding:8px;font-size:13px;background:var(--accent);font-weight:600">📁 选择文件夹…</button>
+          <div class="hint" style="margin:6px 0 10px">点上面按钮会弹出系统的「选择文件夹」窗口，选完自动保存。<br>（如果点了没反应或提示弹不出，就用下面的方框手动填路径）</div>
+          <label for="dir-input" style="font-size:11px">手动填：把生成的图存到哪个文件夹（完整路径）</label>
+          <input type="text" id="dir-input" placeholder="例：D:\我的图  或  C:\Users\你\Pictures\速创" autocomplete="off" style="font-size:12px">
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <button type="button" id="dir-save" style="flex:1;padding:6px;font-size:12px;background:var(--accent-dim)">保存这个路径</button>
+            <button type="button" id="dir-reveal" title="把当前路径填进输入框" style="width:auto;padding:6px 12px;font-size:12px;background:var(--border)">看当前</button>
+          </div>
+          <div class="hint" style="margin-top:6px">当前实际保存到：<b id="dir-current" style="color:var(--accent);word-break:break-all">读取中…</b><br>不填就用默认（文档\速创画廊）。</div>
+        </div>
+      </details>
+    </div>
+
+    <div class="row">
+      <label for="prompt">提示词 *</label>
+      <textarea id="prompt" placeholder="想生成什么? 描述越具体越好&#10;&#10;⌘+Enter 快捷生成"></textarea>
+    </div>
+
+    <div class="row">
+      <details id="fav-wrap">
+        <summary>⭐ 提示词寄存区 <span id="fav-count" style="color:var(--muted)">(0)</span>
+          <button type="button" id="fav-add-current" title="收藏当前提示词框里的内容" style="width:auto;padding:2px 8px;font-size:11px;margin-left:8px">收藏当前</button>
+        </summary>
+        <div class="grp-bar" id="fav-tagbar" style="margin-top:8px"></div>
+        <div id="fav-list" style="margin-top:8px;display:flex;flex-direction:column;gap:5px;max-height:240px;overflow-y:auto"></div>
+      </details>
+    </div>
+
+    
+
+    <div class="row row-2col">
+      <div>
+        <label for="size">尺寸</label>
+        <select id="size">
+          <option value="auto">自动</option>
+          <option value="1:1">1:1 方</option>
+          <option value="16:9">16:9 横</option>
+          <option value="9:16">9:16 竖</option>
+          <option value="4:3">4:3</option>
+          <option value="3:4">3:4</option>
+          <option value="3:2">3:2</option>
+          <option value="2:3">2:3</option>
+          <option value="21:9">21:9 超宽</option>
+          <option value="9:21">9:21 超长</option>
+          <option value="2:1">2:1</option>
+          <option value="1:2">1:2</option>
+          <option value="3:1">3:1</option>
+          <option value="1:3">1:3</option>
+        </select>
+      </div>
+      <div id="resolution-row">
+        <label for="resolution">分辨率 (apimart)</label>
+        <select id="resolution">
+          <option value="1k">1K（标准）</option>
+          <option value="2k" selected>2K（高清）</option>
+          <option value="4k">4K（超清）</option>
+        </select>
+      </div>
+      <div id="quality-row" style="display:none">
+        <label for="quality-sel">画质 quality</label>
+        <select id="quality-sel">
+          <option value="auto">auto（默认）</option>
+          <option value="low">low（快速）</option>
+          <option value="medium">medium</option>
+          <option value="high">high（最高，慢）</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <details id="exp-params-wrap">
+        <summary>🧪 实验参数 <span style="color:var(--muted);font-size:11px">(官方文档没写，赌它透传)</span></summary>
+        <div style="margin-top:8px">
+          <div class="hint" style="margin-bottom:8px">无垠文档只列了 prompt/size/urls，但底层是 OpenAI gpt-image-2。下面这些是 OpenAI 标准字段，无垠可能透传、也可能忽略或报错——勾上试，不行就关掉。</div>
+
+          <label style="display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;margin-bottom:8px">
+            <input type="checkbox" id="exp-moderation" style="width:auto">
+            宽松审核 <code style="font-size:11px">moderation: low</code>（赌它少拦）
+          </label>
+
+          <label style="font-size:11px;display:block;margin-bottom:2px">画质 quality</label>
+          <select id="exp-quality" style="font-size:12px;margin-bottom:8px">
+            <option value="">不传（默认）</option>
+            <option value="low">low</option>
+            <option value="medium">medium</option>
+            <option value="high">high</option>
+          </select>
+
+          <label style="font-size:11px;display:block;margin-bottom:2px">一次出几张 n（无垠默认似乎是 10，慎填）</label>
+          <input type="number" id="exp-n" min="1" max="10" placeholder="不填=不传" style="font-size:12px">
+        </div>
+      </details>
+    </div>
+
+    <!-- 参考图 -->
+    <div class="row">
+      <label>参考图 <span style="color:var(--muted)">(选填,最多8张)</span></label>
+
+      <div class="ref-list" id="ref-list"></div>
+
+      <!-- 文件拖拽上传区 -->
+      <label class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" multiple>
+        📎 拖拽 / 点击上传本地图片
+      </label>
+
+      <div class="add-ref-row">
+        <button id="add-url-ref">+ 粘贴 URL</button>
+      </div>
+
+      <div class="hint">
+        本地图上传到 Heliar 图床（免费,不限流量,基于 Telegram 节点）。
+      </div>
+
+      <details id="refs-library-wrap" style="margin-top:10px" open>
+        <summary>素材库 <span id="refs-count" style="color:var(--muted)">(0)</span></summary>
+        <div class="grp-bar" id="grp-bar"></div>
+        <div id="refs-library" style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px"></div>
+      </details>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <h2>历史</h2>
+    <div class="key-row">
+      共 <strong id="history-count">0</strong> 张
+      <button id="export-btn" style="margin-left:auto; width:auto; padding:4px 10px; font-size:11px; background:var(--accent-dim)" title="导出画廊为 JSON 文件">导出</button>
+      <label id="import-btn" style="width:auto; padding:4px 10px; font-size:11px; background:var(--accent-dim); border-radius:6px; cursor:pointer; color:var(--text); text-align:center" title="从 JSON 文件导入画廊">导入<input type="file" accept=".json" id="import-file" style="display:none"></label>
+      <button id="clear-btn" style="width:auto; padding:4px 10px; font-size:11px; background:var(--border)">清空</button>
+    </div>
+  </div>
+</aside>
+
+  <div class="col-mid" id="col-mid">
+    <div class="workshop-standalone">
+  <h2 style="margin:0 0 14px;font-size:14px;display:flex;align-items:center;gap:8px">🔮 提示词工坊
+    <button id="ws-collapse-btn" title="折叠工坊，放大右侧" style="margin-left:auto;width:auto;padding:3px 10px;font-size:11px;background:var(--border);border-radius:6px">收起 ⟩</button>
+  </h2>
+  <div style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.5">
+    每张图可单独「看图」生成描述（被审查就手填）→ 填各自意图 → DeepSeek 综合所有图流式生成英文 prompt
+  </div>
+
+  <div class="row">
+    <label>1. 参考图（可多张，每张单独看图+填意图）</label>
+    <div id="ws-refs-list"></div>
+    <div style="display:flex;gap:6px;margin-top:6px">
+      <button class="ws-btn ws-secondary" id="ws-add-latest" type="button" style="flex:1">+ 加入左侧最新参考图</button>
+      <button class="ws-btn ws-secondary" id="ws-add-all" type="button" style="flex:1">+ 全部加入</button>
+    </div>
+    <div class="hint" style="margin-top:6px">每张图填一句"这张图负责什么"（如：图1参考构图 / 图2参考脸 / 图3参考画风）。先在左侧"参考图"区上传或从素材库选图，再点上面按钮加进来。</div>
+  </div>
+
+  <div class="row">
+    <label>2. 总意图（统领所有参考图）</label>
+    <textarea id="ws-overall-intent" rows="3" placeholder="比如:&#10;- 把图1的构图、图2的角色脸、图3的画风揉成一张&#10;- 引用XX图的构图：一个恶魔拽着她衣领横甩在半空"></textarea>
+    <div class="hint" style="margin-top:6px">💡 想复刻某张图的构图，直接写「引用/参考 XX 的构图」——系统会把那种构图的力学（谁拽谁、支点在哪、身体怎么甩）拆进英文 prompt。描述构图时说清「谁在左上/右下、被什么连接、身体往哪个方向」效果最好。</div>
+  </div>
+
+  <div class="row">
+    <button class="ws-btn ws-primary" id="ws-generate-btn" type="button">3. DeepSeek 综合生成 prompt（流式）→</button>
+    <div id="ws-generate-status" class="ws-status"></div>
+
+    <details id="ws-think-wrap" style="margin-top:8px">
+      <summary style="cursor:pointer;font-size:12px;color:var(--muted)">🧠 思考过程（实时）</summary>
+      <div id="ws-think" style="white-space:pre-wrap;font-size:11px;color:var(--muted);max-height:200px;overflow:auto;margin-top:6px;padding:8px;background:rgba(0,0,0,.2);border-radius:6px"></div>
+    </details>
+
+    <label style="margin-top:8px">生成的英文 prompt（流式显示，可编辑）</label>
+    <textarea id="ws-prompt" rows="10" placeholder="DeepSeek 生成的英文 prompt 会一点点出现在这里…"></textarea>
+  </div>
+
+  <div class="row">
+    <button class="ws-btn ws-primary" id="ws-apply-btn" type="button" disabled>5. ← 填入左侧主提示词框</button>
+  </div>
+</div>
+  </div>
+
+  <button id="ws-expand-handle" title="展开提示词工坊">⟨ 工坊</button>
+
+  <div class="col-right">
+    <div class="gallery-wrap">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="font-size:12px;color:var(--muted)">画廊</span>
+        <button id="rebind-local-btn" style="margin-left:auto;width:auto;padding:4px 10px;font-size:11px;background:var(--accent-dim)" title="链接失效时：①把图换绑回本地文件显示 ②用本地文件重传永久图床(Heliar)，补上永久链接，以后再用不会再掉">🔗 换绑/重传图床</button>
+        <button id="recover-log-btn" style="width:auto;padding:4px 10px;font-size:11px;background:var(--accent-dim)" title="从 proxy.log / index.json 找回画廊里缺失的图（前端记录丢了也能捞回）">🔍 日志找回</button>
+        <button id="reject-hist-btn" title="查看拒图历史">🚫 拒图<span class="badge" id="reject-badge"></span></button>
+      </div>
+      <div id="tasks" class="tasks"></div>
+      <div id="gallery" class="gallery"></div>
+      <div id="empty" class="empty">还没有生成过图。在左边输入提示词,点"生成"开始。</div>
+    </div>
+
+    <!-- 拒图历史弹窗 -->
+    <div class="reject-modal-overlay" id="reject-modal-overlay">
+      <div class="reject-modal">
+        <div class="reject-modal-head">
+          <h3>🚫 拒图历史</h3>
+          <button id="reject-clear-btn" style="margin-right:8px;background:rgba(160,30,30,.2);border-color:#6b2020;color:#ff9999">清空</button>
+          <button id="reject-close-btn">关闭</button>
+        </div>
+        <div class="reject-modal-body" id="reject-modal-body">
+          <div style="color:var(--muted);font-size:12px;text-align:center;padding:20px">暂无拒图记录</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 标签管理弹窗 -->
+    <div class="tag-modal-overlay" id="tag-modal-overlay">
+      <div class="tag-modal">
+        <div class="tag-modal-head">
+          <img id="tm-thumb" src="" alt="">
+          <span class="tm-prompt" id="tm-prompt"></span>
+          <button id="tm-close-btn">关闭</button>
+        </div>
+        <div class="tag-modal-body">
+          <div class="tag-modal-left">
+            <h4>标签</h4>
+            <div id="tm-tag-list"></div>
+            <div class="tag-add-row">
+              <input id="tm-new-tag" placeholder="新标签名…" maxlength="20">
+              <button id="tm-add-tag-btn">+</button>
+            </div>
+          </div>
+          <div class="tag-modal-right">
+            <h4 id="tm-preview-title">选择左侧标签预览</h4>
+            <div class="tag-preview-grid" id="tm-preview-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resize-handle" id="panel-resize-handle"></div>
+
+    <div class="terminal" id="terminal">
+      <div class="terminal-header">
+        <span class="title">▸ 实时日志</span>
+        <button class="clear" id="clear-log">清空</button>
+      </div>
+      <div id="terminal-body">
+        <div class="terminal-empty">等待操作...</div>
+      </div>
+    </div>
+
+    <div class="gen-bar">
+      <div class="gen-bar-row">
+        <button id="generate-btn">生 成 (⌘+Enter)</button>
+        <div class="grind-controls">
+          <select id="grind-n" title="死磕并发数（出一张即停）">
+            <option value="1">×1</option>
+            <option value="2">×2</option>
+            <option value="3" selected>×3</option>
+            <option value="4">×4</option>
+            <option value="5">×5</option>
+            <option value="6">×6</option>
+          </select>
+          <button id="grind-btn" title="死磕：同时跑N个任务，出一张即停，专治安全模型随机拦截">死 磕</button>
+        </div>
+      </div>
+      <div id="status" class="status"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 左下 fixed 中等预览框（点素材库缩略图弹出，固定不滚）-->
+<div id="lib-preview" class="lib-preview" style="display:none">
+  <div class="lib-preview-head">
+    <span id="lib-preview-grp" class="lib-preview-grp"></span>
+    <button id="lib-preview-close" title="关闭预览">×</button>
+  </div>
+  <img id="lib-preview-img" src="" alt="">
+  <div class="lib-preview-actions">
+    <button id="lib-preview-asref">加为参考图</button>
+    <a id="lib-preview-dl" href="" download target="_blank">下载</a>
+  </div>
+</div>
+
+<!-- 批量归类面板（点按钮开）-->
+<div id="sorter" class="sorter-overlay" style="display:none">
+  <div class="sorter-box">
+    <div class="sorter-head">
+      <span>📂 快速归类 · 拖图到左侧标签</span>
+      <button id="sorter-close" title="关闭">×</button>
+    </div>
+    <div class="sorter-body">
+      <div class="sorter-tags" id="sorter-tags"></div>
+      <div class="sorter-grid" id="sorter-grid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal">
+  <img id="modal-img" src="" alt="">
+</div>
+
+<script>
+//═══════════════════════════════════════════════════════
+// 配置
+//═══════════════════════════════════════════════════════
+// 自动识别是本地还是云端部署
+// 本地（127.0.0.1 / localhost / file://）→ 连本机代理
+// 云端（Cloudflare Pages 等）→ 连阿里云服务器
+const _isLocal = ['127.0.0.1', 'localhost', ''].includes(window.location.hostname);
+const PROXY_ORIGIN = _isLocal ? 'http://127.0.0.1:7788' : 'http://8.208.99.252:7788';
+const PROXY_URL = PROXY_ORIGIN + '/generate';
+
+// —— 用户自己的 API Key（存浏览器 localStorage，出图时随请求带给 proxy）——
+const LS_USER_KEY = 'suchuang_user_apikey';
+function getUserKey() {
+  try { return (localStorage.getItem(LS_USER_KEY) || '').trim(); } catch (_) { return ''; }
+}
+function refreshKeyState() {
+  const st = document.getElementById('apikey-state');
+  if (st) st.textContent = getUserKey() ? '(用你自己的)' : '(用预置)';
+}
+function initKeyUI() {
+  const input = document.getElementById('apikey-input');
+  const saveBtn = document.getElementById('apikey-save');
+  const clearBtn = document.getElementById('apikey-clear');
+  const toggleBtn = document.getElementById('apikey-toggle');
+  if (!input) return;
+  input.value = getUserKey();
+  refreshKeyState();
+  saveBtn.onclick = () => {
+    const v = input.value.trim();
+    try { v ? localStorage.setItem(LS_USER_KEY, v) : localStorage.removeItem(LS_USER_KEY); } catch (_) {}
+    refreshKeyState();
+    setStatus(v ? '✅ 已保存你的 key' : '✅ 已清空，改用预置 key', 'success');
+  };
+  clearBtn.onclick = () => {
+    input.value = '';
+    try { localStorage.removeItem(LS_USER_KEY); } catch (_) {}
+    refreshKeyState();
+    setStatus('✅ 已清空，改用预置 key', 'success');
+  };
+  toggleBtn.onclick = () => { input.type = input.type === 'password' ? 'text' : 'password'; };
+}
+
+// —— 输出目录设置（图片存到哪个文件夹，由 proxy 持久化）——
+async function refreshDirCurrent() {
+  const curEl = document.getElementById('dir-current');
+  try {
+    const r = await fetch(`${PROXY_ORIGIN}/get-gallery-dir`);
+    const d = await r.json();
+    if (curEl) curEl.textContent = d.dir || '(未知)';
+    return d.dir || '';
+  } catch (_) {
+    if (curEl) curEl.textContent = '(代理未连接，无法读取)';
+    return '';
+  }
+}
+function initDirUI() {
+  const input = document.getElementById('dir-input');
+  const saveBtn = document.getElementById('dir-save');
+  const revealBtn = document.getElementById('dir-reveal');
+  const pickBtn = document.getElementById('dir-pick');
+  if (!input) return;
+  refreshDirCurrent();
+
+  // 📁 选择文件夹：让 proxy 弹系统原生窗口
+  if (pickBtn) pickBtn.onclick = async () => {
+    pickBtn.disabled = true;
+    const oldText = pickBtn.textContent;
+    pickBtn.textContent = '请在弹出的窗口里选择…';
+    try {
+      const r = await fetch(`${PROXY_ORIGIN}/pick-folder`, { method: 'POST' });
+      const d = await r.json();
+      if (d.available === false) {
+        // 弹不出来 → 提示用户改用手填
+        setStatus('这台电脑弹不出选择窗口，请用下面的方框手动填路径', 'error');
+      } else if (d.cancelled) {
+        setStatus('已取消选择', 'info');
+      } else if (d.ok) {
+        await refreshDirCurrent();
+        setStatus('✅ 已改保存位置：' + d.dir, 'success');
+      } else if (d.error) {
+        setStatus('❌ ' + d.error, 'error');
+      }
+    } catch (e) {
+      setStatus('❌ 选择失败：' + e.message + '（可改用手动填路径）', 'error');
+    } finally {
+      pickBtn.disabled = false;
+      pickBtn.textContent = oldText;
+    }
+  };
+
+  saveBtn.onclick = async () => {
+    const v = input.value.trim();
+    if (!v) { setStatus('请先填一个文件夹路径', 'error'); return; }
+    saveBtn.disabled = true;
+    try {
+      const r = await fetch(`${PROXY_ORIGIN}/set-gallery-dir`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dir: v }),
+      });
+      const d = await r.json();
+      if (!r.ok || d.error) throw new Error(d.error || ('HTTP ' + r.status));
+      await refreshDirCurrent();
+      setStatus('✅ 已改保存位置：' + d.dir, 'success');
+    } catch (e) {
+      setStatus('❌ 改目录失败：' + e.message, 'error');
+    } finally {
+      saveBtn.disabled = false;
+    }
+  };
+  revealBtn.onclick = async () => {
+    const cur = await refreshDirCurrent();
+    if (cur) input.value = cur;
+  };
+}
+
+// 🧪 实验参数持久化（存浏览器，记住勾选）
+function initExpParams() {
+  const mod = document.getElementById('exp-moderation');
+  const qual = document.getElementById('exp-quality');
+  const nEl = document.getElementById('exp-n');
+  if (!mod) return;
+  const LS = 'suchuang_exp_params';
+  try {
+    const saved = JSON.parse(localStorage.getItem(LS) || '{}');
+    if (saved.moderation) mod.checked = true;
+    if (saved.quality) qual.value = saved.quality;
+    if (saved.n) nEl.value = saved.n;
+  } catch (_) {}
+  const save = () => {
+    try {
+      localStorage.setItem(LS, JSON.stringify({
+        moderation: mod.checked, quality: qual.value, n: nEl.value,
+      }));
+    } catch (_) {}
+  };
+  mod.onchange = save; qual.onchange = save; nEl.onchange = save;
+}
+const HELIAR_BASE = 'https://img.heliar.top';
+const HELIAR_UPLOAD = `${HELIAR_BASE}/upload?uploadChannel=telegram&uploadNameType=default&autoRetry=true&uploadFolder=`;
+const DB_NAME = 'gpt-image-2-history';
+const STORE = 'images';
+const MAX_REFS = 8;
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // heliar 限制 10MB
+
+//═══════════════════════════════════════════════════════
+// IndexedDB
+//═══════════════════════════════════════════════════════
+let db;
+const REFS_STORE = 'refs';
+
+function initDB() {
+  return new Promise((res, rej) => {
+    const req = indexedDB.open(DB_NAME, 2);  // 版本升到 2
+    req.onupgradeneeded = e => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains(STORE)) {
+        const s = d.createObjectStore(STORE, { keyPath: 'id', autoIncrement: true });
+        s.createIndex('time', 'time', { unique: false });
+      }
+      if (!d.objectStoreNames.contains(REFS_STORE)) {
+        const s = d.createObjectStore(REFS_STORE, { keyPath: 'url' });
+        s.createIndex('time', 'time', { unique: false });
+      }
+    };
+    req.onsuccess = e => { db = e.target.result; res(); };
+    req.onerror = e => rej(e.target.error);
+  });
+}
+
+// 参考图素材库 (key=url, 自动去重)
+async function refsAdd(url, source = 'upload') {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(REFS_STORE, 'readwrite');
+    const store = tx.objectStore(REFS_STORE);
+    const r = store.put({ url, source, time: Date.now() });
+    r.onsuccess = () => { saveRefToDisk(url, source); res(); };
+    r.onerror = () => rej(r.error);
+  });
+}
+// 把参考图落盘到 ~/Documents/速创画廊/refs/ (fire-and-forget, 后端按 url 幂等去重)
+function saveRefToDisk(url, source = 'upload') {
+  if (!/^https?:\/\//i.test(url)) return;  // data: 等非远程 URL 不落盘
+  fetch('http://127.0.0.1:7788/save-ref', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url, source })
+  }).catch(e => console.warn('参考图落盘失败:', e));
+}
+async function refsAll() {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(REFS_STORE, 'readonly');
+    const r = tx.objectStore(REFS_STORE).getAll();
+    r.onsuccess = () => res(r.result.sort((a, b) => b.time - a.time));
+    r.onerror = () => rej(r.error);
+  });
+}
+async function refsDelete(url) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(REFS_STORE, 'readwrite');
+    const r = tx.objectStore(REFS_STORE).delete(url);
+    r.onsuccess = () => res();
+    r.onerror = () => rej(r.error);
+  });
+}
+function dbAdd(record) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(STORE, 'readwrite');
+    const r = tx.objectStore(STORE).add(record);
+    r.onsuccess = () => res(r.result);
+    r.onerror = () => rej(r.error);
+  });
+}
+function dbAll() {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(STORE, 'readonly');
+    const r = tx.objectStore(STORE).getAll();
+    r.onsuccess = () => res(r.result.sort((a, b) => b.time - a.time));
+    r.onerror = () => rej(r.error);
+  });
+}
+function dbClear() {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(STORE, 'readwrite');
+    const r = tx.objectStore(STORE).clear();
+    r.onsuccess = () => res();
+    r.onerror = () => rej(r.error);
+  });
+}
+function dbUpdate(id, patch) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(STORE, 'readwrite');
+    const store = tx.objectStore(STORE);
+    const getReq = store.get(id);
+    getReq.onsuccess = () => {
+      const record = getReq.result;
+      if (!record) return rej(new Error('记录不存在'));
+      Object.assign(record, patch);
+      const putReq = store.put(record);
+      putReq.onsuccess = () => res();
+      putReq.onerror = () => rej(putReq.error);
+    };
+    getReq.onerror = () => rej(getReq.error);
+  });
+}
+function dbDelete(id) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(STORE, 'readwrite');
+    const r = tx.objectStore(STORE).delete(id);
+    r.onsuccess = () => res();
+    r.onerror = () => rej(r.error);
+  });
+}
+
+//═══════════════════════════════════════════════════════
+// localStorage 自动备份 + 导出导入
+//═══════════════════════════════════════════════════════
+const LS_GALLERY_KEY = 'gpt-image-gallery-backup';
+const LS_REFS_KEY = 'gpt-image-refs-backup';
+
+async function backupToLS() {
+  try {
+    const all = await dbAll();
+    localStorage.setItem(LS_GALLERY_KEY, JSON.stringify(all));
+    const refs = await refsAll();
+    localStorage.setItem(LS_REFS_KEY, JSON.stringify(refs));
+  } catch (e) { console.warn('备份到 localStorage 失败:', e); }
+}
+
+async function restoreFromLS() {
+  try {
+    const existing = await dbAll();
+    if (existing.length > 0) return false;
+    const raw = localStorage.getItem(LS_GALLERY_KEY);
+    if (!raw) return false;
+    const items = JSON.parse(raw);
+    if (!items.length) return false;
+    console.log(`IndexedDB 空但 localStorage 有 ${items.length} 条备份，恢复中...`);
+    for (const item of items) {
+      const { id, ...rest } = item;
+      await dbAdd(rest);
+    }
+    const refsRaw = localStorage.getItem(LS_REFS_KEY);
+    if (refsRaw) {
+      for (const ref of JSON.parse(refsRaw)) await refsAdd(ref.url, ref.source || 'restored');
+    }
+    return true;
+  } catch (e) { console.warn('恢复失败:', e); return false; }
+}
+
+// 第三层恢复: 从磁盘 ~/Documents/速创画廊/refs/ 把参考图 merge 回 IndexedDB
+// (比 localStorage 更权威——清浏览器数据也不影响磁盘文件)
+async function restoreRefsFromDisk() {
+  try {
+    const resp = await fetch('http://127.0.0.1:7788/list-refs', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}'
+    });
+    const { refs } = await resp.json();
+    if (!refs || !refs.length) return 0;
+    const have = new Set((await refsAll()).map(r => r.url));
+    let added = 0;
+    for (const r of refs) {
+      if (have.has(r.url)) continue;
+      await new Promise((res, rej) => {  // 直接写 store, 不再触发落盘
+        const tx = db.transaction(REFS_STORE, 'readwrite');
+        const rq = tx.objectStore(REFS_STORE).put({
+          url: r.url, source: r.source || 'restored', time: r.time || Date.now()
+        });
+        rq.onsuccess = () => res(); rq.onerror = () => rej(rq.error);
+      });
+      added++;
+    }
+    return added;
+  } catch (e) { console.warn('从磁盘恢复参考库失败:', e); return 0; }
+}
+
+// 第三层恢复: 从磁盘 ~/Documents/速创画廊/refs/ 把参考图 merge 回 IndexedDB
+// (比 localStorage 更权威——清浏览器数据也不影响磁盘文件)
+async function restoreRefsFromDisk() {
+  try {
+    const resp = await fetch('http://127.0.0.1:7788/list-refs', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}'
+    });
+    const { refs } = await resp.json();
+    if (!refs || !refs.length) return 0;
+    const have = new Set((await refsAll()).map(r => r.url));
+    let added = 0;
+    for (const r of refs) {
+      if (have.has(r.url)) continue;
+      await new Promise((res, rej) => {  // 直接写 store, 不再触发落盘
+        const tx = db.transaction(REFS_STORE, 'readwrite');
+        const rq = tx.objectStore(REFS_STORE).put({
+          url: r.url, source: r.source || 'restored', time: r.time || Date.now()
+        });
+        rq.onsuccess = () => res(); rq.onerror = () => rej(rq.error);
+      });
+      added++;
+    }
+    return added;
+  } catch (e) { console.warn('从磁盘恢复参考库失败:', e); return 0; }
+}
+
+function exportGallery() {
+  return dbAll().then(all => {
+    const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `速创画廊_${new Date().toISOString().slice(0,10)}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+}
+
+async function importGallery(file) {
+  const items = JSON.parse(await file.text());
+  if (!Array.isArray(items)) throw new Error('格式不对');
+  let added = 0;
+  for (const item of items) {
+    const { id, ...rest } = item;
+    if (rest.url && rest.prompt) { await dbAdd({ ...rest, time: rest.time || Date.now() }); added++; }
+  }
+  await backupToLS();
+  await refreshGallery();
+  return added;
+}
+
+async function saveImageLocally(url, prompt) {
+  try {
+    const resp = await fetch('http://127.0.0.1:7788/save-image', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, prompt, time: Date.now() })
+    });
+    return await resp.json();
+  } catch (e) {
+    console.warn('本地保存失败:', e);
+    return null;
+  }
+}
+
+// 图片显示源：有本地文件名就走本地(永不失效)，否则回退远程 url(可能已失效)
+// rec 可以是 {file, url} 或 {ref_file/file, url, source}
+function imgSrc(rec) {
+  if (rec && rec.file) {
+    return `${PROXY_ORIGIN}/local-image?file=${encodeURIComponent(rec.file)}`;
+  }
+  if (rec && rec.ref_file) {
+    return `${PROXY_ORIGIN}/local-image?ref=1&file=${encodeURIComponent(rec.ref_file)}`;
+  }
+  return (rec && rec.url) || '';
+}
+// onerror 用：本地读取失败时回退到远程 url（写进 onerror 属性里）
+function imgFallback(rec) {
+  const u = (rec && rec.url) || '';
+  if (!u) return '';
+  return `if(!this.dataset.fellback){this.dataset.fellback='1';this.src='${u.replace(/'/g, "\\'")}';}`;
+}
+
+// 一键换绑本地图：老图远程 url 失效，但磁盘 index.json 里记着本地文件名。
+// 按 url（备用：prompt+time）逐条对，把 file 字段补进 IndexedDB 记录，
+// 补上后画廊/素材库的 imgSrc() 就会走本地 local-image，老图复活。
+async function rebindLocalImages() {
+  const btn = document.getElementById('rebind-local-btn');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ 对照中…'; }
+  try {
+    const resp = await fetch(`${PROXY_ORIGIN}/gallery-index`);
+    if (!resp.ok) throw new Error('读取 index.json 失败');
+    const { index } = await resp.json();
+    if (!Array.isArray(index) || index.length === 0) {
+      setStatus('磁盘 index.json 为空或读不到', 'error');
+      return;
+    }
+    // 建映射：url → file，备用 prompt|time → file；同时记 file → heliar_url
+    const byUrl = new Map();
+    const byPT = new Map();
+    const heliarByFile = new Map();
+    for (const r of index) {
+      if (!r.file) continue;
+      if (r.url) byUrl.set(r.url, r.file);
+      if (r.prompt) byPT.set((r.prompt || '') + '|' + (r.time || ''), r.file);
+      if (r.heliar_url) heliarByFile.set(r.file, r.heliar_url);
+    }
+    const all = await dbAll();
+    let fixed = 0, already = 0, miss = 0, heliarFixed = 0, heliarReup = 0;
+    for (const rec of all) {
+      // 1) 补本地文件名
+      let file = rec.file || null;
+      if (!file) {
+        if (rec.url && byUrl.has(rec.url)) file = byUrl.get(rec.url);
+        if (!file) file = byPT.get((rec.prompt || '') + '|' + (rec.time || ''));
+        if (!file && rec.prompt) {
+          for (const r of index) {
+            if (r.file && r.prompt && r.prompt === rec.prompt) { file = r.file; break; }
+          }
+        }
+        if (file) { await dbUpdate(rec.id, { file }); fixed++; }
+        else { miss++; }
+      } else {
+        already++;
+      }
+      // 2) 补永久图床链接 heliar_url
+      if (!rec.heliar_url && file) {
+        if (heliarByFile.has(file)) {
+          // index.json 里已有永久链接，直接同步
+          await dbUpdate(rec.id, { heliar_url: heliarByFile.get(file) });
+          heliarFixed++;
+          termLog('done', `☁️ 同步永久链接 | ${file} → ${heliarByFile.get(file)}`);
+        } else {
+          // 没有 → 用本地文件重传图床补一个永久链接
+          termLog('status', `☁️ 重传图床中 | ${file}`);
+          try {
+            const rr = await fetch(`${PROXY_ORIGIN}/reupload-heliar`, {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ file }),
+            });
+            const dd = await rr.json();
+            if (rr.ok && dd.heliar_url) {
+              await dbUpdate(rec.id, { heliar_url: dd.heliar_url });
+              heliarReup++;
+              termLog('done', `☁️ 重传成功 | ${file} → ${dd.heliar_url}`);
+            } else {
+              termLog('warn', `⚠ 重传失败 | ${file} | ${dd.error || '未知错误'}`);
+            }
+          } catch (e) {
+            termLog('warn', `⚠ 重传出错 | ${file} | ${e.message}`);
+          }
+        }
+      }
+    }
+    await Promise.all([refreshGallery(), refreshRefsLibrary()]);
+    backupToLS();
+    setStatus(`✅ 换绑完成：补本地图 ${fixed}，已有 ${already}，未匹配 ${miss}；永久链接同步 ${heliarFixed}，重传图床 ${heliarReup}`, 'success');
+    clog('done', `🔗 换绑：本地补${fixed}/已有${already}/缺${miss}；图床同步${heliarFixed}/重传${heliarReup}`);
+    // 换绑后写一次全库链接对照表快照
+    await writeLinkMap('换绑/一键修正');
+  } catch (e) {
+    setStatus('❌ 换绑失败：' + e.message, 'error');
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = '🔗 换绑/重传图床'; }
+  }
+}
+
+// 🔍 日志找回：从 proxy.log + index.json 找回画廊里缺失的图。
+// 适用场景：前端记录因报错没写进 IndexedDB（dbAdd 失败），但 proxy.log 里有 URL、
+// 或 index.json 里有本地文件。把这些"画廊里没有的"列出来，可一键加回。
+async function openRecoverPanel() {
+  const btn = document.getElementById('recover-log-btn');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ 扫描中…'; }
+  try {
+    // 1. 拉 index.json + proxy.log 的 URL
+    const [idxResp, logResp] = await Promise.all([
+      fetch(`${PROXY_ORIGIN}/gallery-index`).then(r => r.json()).catch(() => ({ index: [] })),
+      fetch(`${PROXY_ORIGIN}/log-urls`).then(r => r.json()).catch(() => ({ urls: [] })),
+    ]);
+    const idx = Array.isArray(idxResp.index) ? idxResp.index : [];
+    const logUrls = Array.isArray(logResp.urls) ? logResp.urls : [];
+
+    // 2. 现有画廊已有哪些 url（去重判断用）
+    const have = new Set((await dbAll()).map(r => r.url).filter(Boolean));
+
+    // 3. 合并来源：index.json 优先(有 file+prompt)，proxy.log 补充(只有 url)
+    const merged = new Map();   // url -> {url, file, prompt, time, source}
+    for (const r of idx) {
+      if (!r.url) continue;
+      merged.set(r.url, { url: r.url, file: r.file || null, prompt: r.prompt || '', time: r.time || 0, source: 'index.json' });
+    }
+    for (const r of logUrls) {
+      if (!r.url || merged.has(r.url)) continue;
+      merged.set(r.url, { url: r.url, file: null, prompt: '', time: r.time || '', source: 'proxy.log' });
+    }
+    const items = [...merged.values()].map(it => ({ ...it, inGallery: have.has(it.url) }));
+    // 缺失的排前面
+    items.sort((a, b) => (a.inGallery - b.inGallery) || (String(b.time).localeCompare(String(a.time))));
+
+    showRecoverModal(items);
+  } catch (e) {
+    setStatus('❌ 找回扫描失败：' + e.message, 'error');
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = '🔍 日志找回'; }
+  }
+}
+
+function showRecoverModal(items) {
+  const missing = items.filter(i => !i.inGallery);
+  const ov = document.createElement('div');
+  ov.className = 'modal show';
+  ov.style.cssText += ';z-index:10000';
+  ov.innerHTML = `
+    <div style="background:var(--panel-solid,#1a1626);border:1px solid var(--border);border-radius:12px;padding:18px;max-width:560px;width:92%;max-height:80vh;display:flex;flex-direction:column;color:var(--text)">
+      <div style="font-size:14px;font-weight:600;margin-bottom:4px">🔍 日志找回</div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:10px">
+        共发现 ${items.length} 个 URL（来自 index.json + proxy.log），其中 <b style="color:var(--accent)">${missing.length}</b> 个不在当前画廊。
+        勾选要找回的，点「加回画廊」。会尝试趁链接没失效下载到本地。
+      </div>
+      <input id="rc-search" type="text" placeholder="搜索 提示词 / URL …" style="font-size:12px;margin-bottom:8px">
+      <div style="display:flex;gap:8px;margin-bottom:8px;font-size:11px">
+        <label style="display:flex;align-items:center;gap:4px;cursor:pointer"><input type="checkbox" id="rc-only-missing" checked style="width:auto"> 只看缺失</label>
+        <button id="rc-selall" style="width:auto;padding:2px 8px;font-size:11px;background:var(--accent-dim)">全选可见</button>
+        <span id="rc-count" style="margin-left:auto;color:var(--muted)"></span>
+      </div>
+      <div id="rc-list" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:4px;min-height:120px"></div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <button id="rc-recover" style="flex:1;background:var(--accent)">加回画廊</button>
+        <button id="rc-close" style="width:auto;padding:8px 16px;background:var(--border)">关闭</button>
+      </div>
+    </div>`;
+  document.body.appendChild(ov);
+
+  const listEl = ov.querySelector('#rc-list');
+  const searchEl = ov.querySelector('#rc-search');
+  const onlyMissEl = ov.querySelector('#rc-only-missing');
+  const countEl = ov.querySelector('#rc-count');
+  const sel = new Set();
+
+  function visible() {
+    const q = searchEl.value.trim().toLowerCase();
+    return items.filter(it => {
+      if (onlyMissEl.checked && it.inGallery) return false;
+      if (q && !((it.prompt || '').toLowerCase().includes(q) || it.url.toLowerCase().includes(q))) return false;
+      return true;
+    });
+  }
+  function render() {
+    const vis = visible();
+    countEl.textContent = `显示 ${vis.length} · 已选 ${sel.size}`;
+    if (vis.length === 0) { listEl.innerHTML = '<div style="color:var(--muted);font-size:11px;padding:10px">没有匹配的条目</div>'; return; }
+    listEl.innerHTML = vis.map(it => `
+      <label style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:rgba(10,7,20,.5);border:1px solid var(--border);border-radius:6px;cursor:pointer">
+        <input type="checkbox" data-u="${escapeAttr(it.url)}" ${sel.has(it.url) ? 'checked' : ''} ${it.inGallery ? 'disabled' : ''} style="width:auto">
+        <div style="flex:1;min-width:0">
+          <div style="font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escapeHtml(it.prompt || '(无提示词记录)')}</div>
+          <div style="font-size:9px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escapeHtml(it.url)}</div>
+        </div>
+        <span style="font-size:9px;flex-shrink:0;color:${it.inGallery ? 'var(--muted)' : (it.source === 'index.json' ? 'var(--accent)' : '#e0a44a')}">
+          ${it.inGallery ? '已在画廊' : (it.source === 'index.json' ? '本地有' : '仅日志')}
+        </span>
+      </label>`).join('');
+    listEl.querySelectorAll('input[type=checkbox]').forEach(cb => {
+      cb.onchange = () => { cb.checked ? sel.add(cb.dataset.u) : sel.delete(cb.dataset.u); countEl.textContent = `显示 ${visible().length} · 已选 ${sel.size}`; };
+    });
+  }
+  searchEl.oninput = render;
+  onlyMissEl.onchange = render;
+  ov.querySelector('#rc-selall').onclick = () => { visible().forEach(it => { if (!it.inGallery) sel.add(it.url); }); render(); };
+  ov.querySelector('#rc-close').onclick = () => ov.remove();
+  ov.onclick = e => { if (e.target === ov) ov.remove(); };
+
+  ov.querySelector('#rc-recover').onclick = async () => {
+    const targets = items.filter(it => sel.has(it.url) && !it.inGallery);
+    if (targets.length === 0) { setStatus('没有勾选要找回的图', 'info'); return; }
+    const rb = ov.querySelector('#rc-recover');
+    rb.disabled = true;
+    let ok = 0, fail = 0;
+    for (let i = 0; i < targets.length; i++) {
+      const it = targets[i];
+      rb.textContent = `找回中… ${i + 1}/${targets.length}`;
+      try {
+        const recTime = (typeof it.time === 'number' && it.time) ? it.time : Date.now();
+        const rec = { prompt: it.prompt || '(日志找回)', size: 'auto', refs: [], url: it.url, time: recTime, file: it.file || null };
+        const newId = await dbAdd(rec);
+        // 趁链接没失效，尝试下载到本地（没 file 的才下）
+        if (!it.file) {
+          try {
+            const sv = await saveImageLocally(it.url, rec.prompt);
+            if (sv && sv.file) await dbUpdate(newId, { file: sv.file });
+          } catch (_) {}
+        }
+        ok++;
+      } catch (e) { fail++; }
+    }
+    backupToLS();
+    await Promise.all([refreshGallery(), refreshRefsLibrary()]);
+    setStatus(`✅ 找回完成：成功 ${ok}，失败 ${fail}`, 'success');
+    termLog('done', `🔍 日志找回：成功 ${ok}，失败 ${fail}`);
+    ov.remove();
+  };
+
+  render();
+}
+
+// 全部再用：提示词 + 尺寸 + 参考图 全部填回
+async function reuseAll(d) {
+  promptEl.value = d.prompt || '';
+  sizeEl.value = d.size || 'auto';
+  const rawRefs = (d.refs || []).slice();
+  renderRefList();  // 先填回提示词等，参考图随后解析
+  promptEl.scrollIntoView({ behavior: 'smooth' });
+  promptEl.focus();
+  if (rawRefs.length) {
+    setStatus('正在把参考图解析为永久链接…', 'info');
+    clog('status', `♻️ 再用：${rawRefs.length}张参考图，开始解析永久链接`);
+    try {
+      // 把存档里可能失效的临时链/本地链统一解析成 heliar 永久链
+      const resolved = await Promise.all(rawRefs.map(resolveRefForUpstream));
+      refUrls = resolved.filter(Boolean);
+      // 记录解析前后对照
+      rawRefs.forEach((raw, i) => {
+        const out = resolved[i] || '';
+        const ok = out.includes('img.heliar.top');
+        clog(ok ? 'done' : 'warn',
+          `  ♻️ 参考图${i + 1}: ${raw.slice(0, 40)}… → ${ok ? '永久链✓' : '未转成永久链⚠ ' + out.slice(0, 40)}`,
+          ok ? 'info' : 'warning');
+      });
+    } catch (e) {
+      refUrls = rawRefs;  // 解析出错就退回原值，不静默丢
+      clog('warn', `⚠ 再用参考图解析出错 | ${e.message}`, 'warning');
+    }
+    renderRefList();
+    setStatus('✅ 全部参数已填回（参考图已转永久链接）', 'success');
+  } else {
+    refUrls = [];
+    renderRefList();
+    setStatus('✅ 全部参数已填回（提示词+尺寸）', 'success');
+  }
+}
+
+// —— 提示词收藏区 ——
+// 提示词收藏：结构 {text, tag}，兼容旧的纯字符串数组
+const FAV_ALL = '全部', FAV_NONE = '未分类';
+let favActiveTag = FAV_ALL;
+function loadFavPrompts() {
+  let raw;
+  try { raw = JSON.parse(localStorage.getItem('sc_fav_prompts') || '[]'); } catch (_) { return []; }
+  // 旧数据是字符串数组 → 升级成 {text, tag}
+  return raw.map(x => typeof x === 'string' ? { text: x, tag: FAV_NONE } : { text: x.text, tag: x.tag || FAV_NONE });
+}
+function saveFavPrompts(list) { localStorage.setItem('sc_fav_prompts', JSON.stringify(list)); }
+function loadFavTags() {
+  try { return JSON.parse(localStorage.getItem('sc_fav_tags') || '[]'); } catch (_) { return []; }
+}
+function saveFavTags(list) { localStorage.setItem('sc_fav_tags', JSON.stringify(list)); }
+
+function addFavPrompt(text) {
+  text = (text || '').trim();
+  if (!text) return;
+  const list = loadFavPrompts();
+  if (list.some(x => x.text === text)) { setStatus('该提示词已在寄存区', 'info'); return; }
+  // 当前若停在某个用户标签上，收藏就直接归到该标签，否则未分类
+  const tag = (favActiveTag !== FAV_ALL && favActiveTag !== FAV_NONE) ? favActiveTag : FAV_NONE;
+  list.unshift({ text, tag });
+  saveFavPrompts(list);
+  renderFavPrompts();
+  setStatus(`⭐ 已收藏${tag !== FAV_NONE ? '到「' + tag + '」' : ''}`, 'success');
+}
+function removeFavPrompt(text) {
+  saveFavPrompts(loadFavPrompts().filter(x => x.text !== text));
+  renderFavPrompts();
+}
+function setFavTag(text, tag) {
+  const list = loadFavPrompts();
+  const it = list.find(x => x.text === text);
+  if (it) { it.tag = tag; saveFavPrompts(list); }
+  renderFavPrompts();
+}
+function renderFavPrompts() {
+  const box = document.getElementById('fav-list');
+  if (!box) return;
+  const all = loadFavPrompts();
+  document.getElementById('fav-count').textContent = `(${all.length})`;
+
+  // —— 标签 tab 条 ——
+  const tags = loadFavTags();
+  const tabs = [FAV_ALL, FAV_NONE, ...tags];
+  if (!tabs.includes(favActiveTag)) favActiveTag = FAV_ALL;
+  const counts = {};
+  all.forEach(x => { counts[x.tag] = (counts[x.tag] || 0) + 1; });
+  const bar = document.getElementById('fav-tagbar');
+  if (bar) {
+    bar.innerHTML = tabs.map(g => {
+      const n = g === FAV_ALL ? all.length : (counts[g] || 0);
+      return `<button class="grp-tab ${g === favActiveTag ? 'active' : ''}" data-favtab="${escapeAttr(g)}">${escapeHtml(g)} ${n}</button>`;
+    }).join('') + `<button class="grp-cfg" id="fav-tagcfg" title="管理标签">⚙</button>`;
+    bar.querySelectorAll('.grp-tab').forEach(t => {
+      t.onclick = () => { favActiveTag = t.dataset.favtab; renderFavPrompts(); };
+      // 拖提示词到 tab → 归类
+      t.ondragover = e => { e.preventDefault(); t.classList.add('drop-hover'); };
+      t.ondragleave = () => t.classList.remove('drop-hover');
+      t.ondrop = e => {
+        e.preventDefault(); t.classList.remove('drop-hover');
+        const txt = e.dataTransfer.getData('text/plain');
+        if (txt) { setFavTag(txt, t.dataset.favtab); setStatus(`✅ 已归到「${t.dataset.favtab}」`, 'success'); }
+      };
+    });
+    document.getElementById('fav-tagcfg').onclick = openFavTagConfig;
+  }
+
+  // —— 按当前标签筛选 ——
+  const list = favActiveTag === FAV_ALL ? all : all.filter(x => x.tag === favActiveTag);
+  if (list.length === 0) {
+    box.innerHTML = `<div style="color:var(--muted);font-size:11px;padding:6px">${all.length === 0 ? '还没有收藏的提示词。出图卡片上点 ★ 即可收藏。' : '该标签下还没有提示词。拖动其它提示词到此标签即可归类。'}</div>`;
+    return;
+  }
+  const tagOptions = [FAV_NONE, ...tags];
+  box.innerHTML = list.map((it, i) => `
+    <div class="fav-item" draggable="true" data-text="${escapeAttr(it.text)}">
+      <div class="fav-text" title="点击填入主提示词框">${escapeHtml(it.text.length > 70 ? it.text.slice(0, 70) + '…' : it.text)}</div>
+      <select class="fav-tagsel" title="归类">
+        ${tagOptions.map(g => `<option value="${escapeAttr(g)}" ${g === it.tag ? 'selected' : ''}>${escapeHtml(g)}</option>`).join('')}
+      </select>
+      <button class="fav-use" title="填入提示词框">用</button>
+      <button class="fav-del" title="移除收藏">×</button>
+    </div>
+  `).join('');
+  box.querySelectorAll('.fav-item').forEach(el => {
+    const txt = el.dataset.text;
+    el.querySelector('.fav-text').onclick = () => { promptEl.value = txt; promptEl.focus(); setStatus('✅ 提示词已填入', 'success'); };
+    el.querySelector('.fav-use').onclick = () => { promptEl.value = txt; promptEl.focus(); setStatus('✅ 提示词已填入', 'success'); };
+    el.querySelector('.fav-del').onclick = () => removeFavPrompt(txt);
+    el.querySelector('.fav-tagsel').onchange = e => setFavTag(txt, e.target.value);
+    el.ondragstart = e => { e.dataTransfer.setData('text/plain', txt); el.classList.add('dragging'); };
+    el.ondragend = () => el.classList.remove('dragging');
+  });
+}
+
+// 标签管理面板
+function openFavTagConfig() {
+  const ov = document.createElement('div');
+  ov.className = 'modal show';
+  ov.style.cssText += ';z-index:10000';
+  const render = () => {
+    const gs = loadFavTags();
+    ov.querySelector('#ft-list').innerHTML = gs.length
+      ? gs.map(g => `<div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+          <span style="flex:1;font-size:13px">${escapeHtml(g)}</span>
+          <button data-ren="${escapeAttr(g)}" style="width:auto;padding:3px 8px;font-size:11px;background:var(--accent-dim)">改名</button>
+          <button data-del="${escapeAttr(g)}" style="width:auto;padding:3px 8px;font-size:11px;background:var(--border)">删除</button>
+        </div>`).join('')
+      : '<div style="font-size:12px;color:var(--muted);padding:6px 0">还没有标签，下面新建一个</div>';
+    ov.querySelectorAll('[data-ren]').forEach(b => b.onclick = () => {
+      const old = b.dataset.ren;
+      const nv = prompt('新标签名：', old);
+      if (!nv || !nv.trim() || nv === old) return;
+      const name = nv.trim();
+      if ([FAV_ALL, FAV_NONE].includes(name) || loadFavTags().includes(name)) { alert('名字不可用或已存在'); return; }
+      saveFavTags(loadFavTags().map(x => x === old ? name : x));
+      const pl = loadFavPrompts(); pl.forEach(x => { if (x.tag === old) x.tag = name; }); saveFavPrompts(pl);
+      if (favActiveTag === old) favActiveTag = name;
+      render(); renderFavPrompts();
+    });
+    ov.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
+      const g = b.dataset.del;
+      if (!confirm(`删除标签「${g}」？标签下的提示词会退回「未分类」，提示词本身不删。`)) return;
+      saveFavTags(loadFavTags().filter(x => x !== g));
+      const pl = loadFavPrompts(); pl.forEach(x => { if (x.tag === g) x.tag = FAV_NONE; }); saveFavPrompts(pl);
+      if (favActiveTag === g) favActiveTag = FAV_ALL;
+      render(); renderFavPrompts();
+    });
+  };
+  ov.innerHTML = `
+    <div style="background:var(--panel-solid,#26262e);border:1px solid var(--border);border-radius:12px;padding:18px;max-width:320px;width:88%;color:var(--text)">
+      <div style="font-size:14px;font-weight:600;margin-bottom:12px">管理提示词标签</div>
+      <div id="ft-list" style="margin-bottom:12px;max-height:200px;overflow-y:auto"></div>
+      <div style="display:flex;gap:6px;margin-bottom:14px">
+        <input id="ft-new" type="text" placeholder="新标签名" style="flex:1;font-size:12px">
+        <button id="ft-add" style="width:auto;padding:6px 12px;font-size:12px;background:var(--accent)">新建</button>
+      </div>
+      <button id="ft-close" style="width:100%;background:var(--border)">完成</button>
+    </div>`;
+  document.body.appendChild(ov);
+  render();
+  const addT = () => {
+    const inp = ov.querySelector('#ft-new');
+    const name = inp.value.trim();
+    if (!name) return;
+    if ([FAV_ALL, FAV_NONE].includes(name) || loadFavTags().includes(name)) { alert('名字不可用或已存在'); return; }
+    saveFavTags([...loadFavTags(), name]);
+    inp.value = '';
+    render(); renderFavPrompts();
+  };
+  ov.querySelector('#ft-add').onclick = addT;
+  ov.querySelector('#ft-new').onkeydown = e => { if (e.key === 'Enter') addT(); };
+  ov.querySelector('#ft-close').onclick = () => ov.remove();
+  ov.onclick = e => { if (e.target === ov) ov.remove(); };
+}
+
+//═══════════════════════════════════════════════════════
+// UI 元素
+//═══════════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+const promptEl = $('prompt'), sizeEl = $('size');
+const refListEl = $('ref-list');
+const uploadZoneEl = $('upload-zone'), fileInputEl = $('file-input');
+const btnEl = $('generate-btn'), statusEl = $('status');
+const galleryEl = $('gallery'), emptyEl = $('empty'), countEl = $('history-count');
+const modalEl = $('modal'), modalImg = $('modal-img');
+
+function setStatus(msg, type = 'info') {
+  statusEl.innerHTML = msg;
+  statusEl.className = `status show ${type}`;
+}
+function clearStatus() { statusEl.className = 'status'; }
+
+// === Terminal 日志 ===
+const termEl = document.getElementById('terminal-body');
+let logLineCount = 0;
+function termLog(tag, msg, time = null) {
+  if (logLineCount === 0) termEl.innerHTML = '';  // 清掉 placeholder
+  const now = time !== null ? time.toFixed(1) + 's' : new Date().toLocaleTimeString('en-GB');
+  const line = document.createElement('div');
+  line.className = 'log-line';
+  line.innerHTML = `
+    <span class="log-time">${now}</span>
+    <span class="log-tag ${tag}">${tag.toUpperCase()}</span>
+    <span class="log-msg"></span>
+  `;
+  line.querySelector('.log-msg').textContent = msg;  // 安全
+  termEl.appendChild(line);
+  logLineCount++;
+  // 自动滚到底
+  termEl.parentElement.scrollTop = termEl.parentElement.scrollHeight;
+}
+
+// clog: 关键操作同时写界面 terminal + 落盘 proxy.log（追溯用）
+function clog(tag, msg, level = 'info') {
+  termLog(tag, msg);
+  // 落盘（失败不影响界面）
+  try {
+    fetch(`${PROXY_ORIGIN}/client-log`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tag, msg, level }),
+    }).catch(() => {});
+  } catch (_) {}
+}
+
+// 把全库记录成【文件名|本地链|图床链】对照表写入 link_map.log
+async function writeLinkMap(reason = '手动') {
+  try {
+    const all = await dbAll();
+    const records = all.map(r => ({
+      file: r.file || r.ref_file || '',
+      heliar: r.heliar_url || '',
+      url: r.url || '',
+    }));
+    const resp = await fetch(`${PROXY_ORIGIN}/link-map`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ records, reason, mode: 'snapshot' }),
+    });
+    const d = await resp.json();
+    if (resp.ok) {
+      clog('done', `🗺️ 链接对照表已更新 | 共${d.total}条 本地${d.local}/图床${d.heliar}/双缺${d.neither} | ${reason}`);
+      if (d.neither > 0) clog('warn', `⚠ 有 ${d.neither} 张图既无本地文件也无图床链，再用会失败，建议重新生成`, 'warning');
+    }
+    return d;
+  } catch (e) {
+    clog('warn', `⚠ 写链接对照表失败: ${e.message}`, 'warning');
+  }
+}
+function termClear() {
+  termEl.innerHTML = '<div class="terminal-empty">等待操作...</div>';
+  logLineCount = 0;
+}
+document.getElementById('clear-log').onclick = termClear;
+
+async function checkProxy() {
+  try {
+    const r = await fetch(PROXY_URL, { method: 'OPTIONS' });
+    if (r.ok || r.status === 204) {
+      $('proxy-status').textContent = '✅ 已连接';
+      $('proxy-status').style.color = 'var(--success)';
+    } else throw new Error();
+  } catch {
+    $('proxy-status').textContent = '❌ 未启动';
+    $('proxy-status').style.color = 'var(--error)';
+  }
+}
+
+//═══════════════════════════════════════════════════════
+// 渠道切换 (速创 / apimart)
+//═══════════════════════════════════════════════════════
+let _currentProvider = 'wuyinkeji';
+
+function _applyProviderUI(prov) {
+  _currentProvider = prov;
+  const isApimart = prov === 'apimart';
+  const isOfficial = prov === 'apimart-official';
+  document.getElementById('prov-suke').classList.toggle('active', prov === 'wuyinkeji');
+  document.getElementById('prov-apimart').classList.toggle('active', isApimart);
+  document.getElementById('prov-apimart-official').classList.toggle('active', isOfficial);
+  const resRow = document.getElementById('resolution-row');
+  if (resRow) resRow.classList.toggle('visible', isApimart || isOfficial);
+  const qRow = document.getElementById('quality-row');
+  if (qRow) qRow.style.display = isOfficial ? 'block' : 'none';
+  const labels = { wuyinkeji: '速创 (无垠)', apimart: 'apimart', 'apimart-official': 'apimart 官方直连' };
+  const lbl = document.getElementById('provider-label');
+  if (lbl) lbl.textContent = `渠道: ${labels[prov] || prov}`;
+}
+
+async function switchProvider(prov) {
+  if (prov === _currentProvider) return;
+  try {
+    const r = await fetch(`${PROXY_ORIGIN}/set-provider`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ provider: prov }),
+    });
+    const d = await r.json();
+    if (r.ok && d.ok) {
+      _applyProviderUI(prov);
+      termLog('status', `🔀 切换渠道 → ${prov === 'apimart' ? 'apimart' : '速创 (无垠)'}`);
+    } else {
+      setStatus(`切换失败: ${d.error || '未知'}`, 'error');
+    }
+  } catch (e) {
+    setStatus(`切换失败: ${e.message}`, 'error');
+  }
+}
+
+async function initProvider() {
+  try {
+    const r = await fetch(`${PROXY_ORIGIN}/get-provider`);
+    const d = await r.json();
+    if (r.ok) _applyProviderUI(d.provider || 'wuyinkeji');
+  } catch (_) {}
+}
+
+//═══════════════════════════════════════════════════════
+// 云端画廊同步（gallery.json ↔ IndexedDB 双写）
+//═══════════════════════════════════════════════════════
+async function cloudGallerySave(record) {
+  try {
+    await fetch(`${PROXY_ORIGIN}/gallery/save`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(record),
+    });
+  } catch (_) {}
+}
+
+async function cloudGalleryDelete(id) {
+  try {
+    await fetch(`${PROXY_ORIGIN}/gallery/delete`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+  } catch (_) {}
+}
+
+async function cloudGalleryUpdate(id, patch) {
+  try {
+    await fetch(`${PROXY_ORIGIN}/gallery/update`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, ...patch }),
+    });
+  } catch (_) {}
+}
+
+// 启动时从服务器拉取画廊，补充本地没有的记录
+async function syncGalleryFromServer() {
+  try {
+    const r = await fetch(`${PROXY_ORIGIN}/gallery/list`);
+    if (!r.ok) return;
+    const { records } = await r.json();
+    if (!records || !records.length) return;
+    const localAll = await dbAll();
+    const localIds = new Set(localAll.map(x => x.id));
+    let added = 0;
+    for (const rec of records) {
+      if (rec.id && !localIds.has(rec.id)) {
+        await new Promise((res, rej) => {
+          const tx = db.transaction(STORE, 'readwrite');
+          const rq = tx.objectStore(STORE).put(rec);
+          rq.onsuccess = () => res(); rq.onerror = () => rej(rq.error);
+        });
+        added++;
+      }
+    }
+    if (added > 0) {
+      termLog('status', `☁️ 从服务器同步 ${added} 条画廊记录`);
+      await refreshGallery();
+    }
+  } catch (e) {
+    console.warn('云端同步失败（可能是本地模式）:', e);
+  }
+}
+
+// 出图后自动下载到本地（浏览器下载文件夹）
+function autoDownloadImage(url, prompt) {
+  try {
+    const fname = `速创_${new Date().toISOString().slice(0,10)}_${(prompt||'').slice(0,25).replace(/[/\\?%*:|"<>]/g,'_')}.png`;
+    const a = document.createElement('a');
+    a.href = url; a.download = fname;
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => a.remove(), 1000);
+  } catch (_) {}
+}
+
+//═══════════════════════════════════════════════════════
+// 画廊 / 终端 高度拖拽调节
+//═══════════════════════════════════════════════════════
+function initPanelResize() {
+  const handle = document.getElementById('panel-resize-handle');
+  const gallery = handle?.previousElementSibling;   // .gallery-wrap
+  const terminal = handle?.nextElementSibling;       // .terminal
+  if (!handle || !gallery || !terminal) return;
+
+  // 初始高度：terminal 默认 240px
+  terminal.style.height = (parseInt(localStorage.getItem('sc_terminal_h')) || 240) + 'px';
+
+  let startY = 0, startTermH = 0;
+
+  handle.addEventListener('mousedown', e => {
+    e.preventDefault();
+    startY = e.clientY;
+    startTermH = terminal.offsetHeight;
+    handle.classList.add('dragging');
+
+    function onMove(e) {
+      const dy = startY - e.clientY;           // 向上拖 → terminal 变高
+      const newH = Math.max(80, Math.min(startTermH + dy, window.innerHeight - 200));
+      terminal.style.height = newH + 'px';
+    }
+    function onUp() {
+      handle.classList.remove('dragging');
+      localStorage.setItem('sc_terminal_h', terminal.offsetHeight);
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+    }
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+  });
+}
+
+//═══════════════════════════════════════════════════════
+// Heliar 上传
+//═══════════════════════════════════════════════════════
+// 把超大图压到目标体积内（canvas 重编码，逐步降质量/尺寸）。只用于上传图，不碰生成图。
+async function compressImage(file, targetBytes = 5 * 1024 * 1024) {
+  // 读成 image
+  const dataUrl = await new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => res(fr.result);
+    fr.onerror = () => rej(new Error('读取失败'));
+    fr.readAsDataURL(file);
+  });
+  const img = await new Promise((res, rej) => {
+    const im = new Image();
+    im.onload = () => res(im);
+    im.onerror = () => rej(new Error('解码失败'));
+    im.src = dataUrl;
+  });
+
+  let { width, height } = img;
+  let quality = 0.92;
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const render = (w, h) => {
+    canvas.width = Math.round(w); canvas.height = Math.round(h);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  };
+  const toBlob = q => new Promise(res => canvas.toBlob(res, 'image/jpeg', q));
+
+  render(width, height);
+  let blob = await toBlob(quality);
+  // 先降质量，再降尺寸，循环逼近目标
+  let guard = 0;
+  while (blob && blob.size > targetBytes && guard < 12) {
+    guard++;
+    if (quality > 0.5) {
+      quality -= 0.12;
+    } else {
+      width *= 0.85; height *= 0.85;
+      quality = 0.82;
+      render(width, height);
+    }
+    blob = await toBlob(quality);
+  }
+  if (!blob) throw new Error('压缩失败');
+  // 用原名换成 .jpg
+  const base = (file.name || 'image').replace(/\.[^.]+$/, '');
+  return new File([blob], base + '.jpg', { type: 'image/jpeg' });
+}
+
+async function uploadToHeliar(file) {
+  // 超过图床上限(10MB)先尝试压到 5MB 内；只压上传的本地图
+  if (file.size > MAX_FILE_SIZE) {
+    const origMB = (file.size / 1024 / 1024).toFixed(1);
+    termLog('upload', `图片 ${origMB}MB 超过 10MB，压缩中…`);
+    setStatus(`⏳ 图片 ${origMB}MB 偏大，压缩中…`);
+    try {
+      file = await compressImage(file, 5 * 1024 * 1024);
+      const newMB = (file.size / 1024 / 1024).toFixed(1);
+      termLog('upload', `✓ 已压到 ${newMB}MB`);
+    } catch (e) {
+      throw new Error(`图片 ${origMB}MB 太大且压缩失败: ${e.message}`);
+    }
+    if (file.size > MAX_FILE_SIZE) {
+      throw new Error(`压缩后仍超 10MB (${(file.size/1024/1024).toFixed(1)}MB)`);
+    }
+  }
+  const formData = new FormData();
+  formData.append('file', file);
+
+  // 走本地代理转发到 heliar (绕开浏览器 Origin 校验)
+  const r = await fetch('http://127.0.0.1:7788/upload-image', {
+    method: 'POST',
+    body: formData,
+  });
+  if (!r.ok) {
+    const errData = await r.json().catch(() => ({}));
+    throw new Error(`上传失败: ${errData.error || 'HTTP ' + r.status}`);
+  }
+
+  const data = await r.json();
+  if (!data.url) throw new Error(`返回格式异常: ${JSON.stringify(data)}`);
+  return data.url;
+}
+
+//═══════════════════════════════════════════════════════
+// 参考图管理
+//═══════════════════════════════════════════════════════
+let refUrls = [];  // 数组,每项是 string
+
+function renderRefList() {
+  refListEl.innerHTML = refUrls.map((url, i) => `
+    <div class="ref-item">
+      <img class="preview ${url ? '' : 'empty'}" src="${url || ''}" ${url ? 'data-lightbox="1" style="cursor:zoom-in"' : ''} onerror="this.classList.add('empty');this.removeAttribute('src');this.removeAttribute('data-lightbox')" alt="">
+      <input type="text" data-idx="${i}" value="${escapeAttr(url)}" placeholder="https://...">
+      <button data-remove="${i}" title="删除">×</button>
+    </div>
+  `).join('');
+
+  refListEl.querySelectorAll('input').forEach(inp => {
+    inp.oninput = () => {
+      refUrls[Number(inp.dataset.idx)] = inp.value.trim();
+      const img = inp.parentElement.querySelector('.preview');
+      if (inp.value.trim()) {
+        img.src = inp.value.trim();
+        img.classList.remove('empty');
+        img.dataset.lightbox = '1';
+        img.style.cursor = 'zoom-in';
+      } else {
+        img.removeAttribute('src');
+        img.classList.add('empty');
+        img.removeAttribute('data-lightbox');
+        img.style.cursor = '';
+      }
+    };
+  });
+  refListEl.querySelectorAll('[data-remove]').forEach(btn => {
+    btn.onclick = () => {
+      refUrls.splice(Number(btn.dataset.remove), 1);
+      renderRefList();
+    };
+  });
+}
+
+async function handleFiles(fileList) {
+  const files = Array.from(fileList);
+  if (refUrls.length + files.length > MAX_REFS) {
+    setStatus(`最多 ${MAX_REFS} 张参考图`, 'error');
+    return;
+  }
+  // 立刻在列表里加占位
+  const startIdx = refUrls.length;
+  for (let i = 0; i < files.length; i++) refUrls.push('');
+  renderRefList();
+  // 占位项显示上传中
+  for (let i = 0; i < files.length; i++) {
+    const preview = refListEl.children[startIdx + i].querySelector('.preview');
+    preview.classList.add('loading');
+  }
+
+  setStatus(`⏳ 上传 ${files.length} 张图到 Heliar...`);
+  termLog('upload', `开始上传 ${files.length} 张图`);
+
+  let successCount = 0;
+  const uploadStart = Date.now();
+  for (let i = 0; i < files.length; i++) {
+    try {
+      termLog('upload', `[${i+1}/${files.length}] ${files[i].name} (${(files[i].size/1024).toFixed(0)}KB)`);
+      const url = await uploadToHeliar(files[i]);
+      termLog('upload', `✓ ${url}`, (Date.now() - uploadStart) / 1000);
+      refUrls[startIdx + i] = url;
+      await refsAdd(url, 'upload');  // 自动加进素材库
+      renderRefList();
+      refreshRefsLibrary();
+      successCount++;
+    } catch (e) {
+      console.error('上传失败:', files[i].name, e);
+      refUrls.splice(startIdx + i, 1);  // 失败就移除占位
+      renderRefList();
+      setStatus(`❌ ${files[i].name}: ${e.message}`, 'error');
+      return;
+    }
+  }
+  setStatus(`✅ ${successCount} 张图已上传`, 'success');
+  setTimeout(clearStatus, 2000);
+}
+
+// 文件输入 + 拖拽
+fileInputEl.onchange = e => {
+  if (e.target.files.length) handleFiles(e.target.files);
+  e.target.value = '';
+};
+uploadZoneEl.addEventListener('dragover', e => {
+  e.preventDefault();
+  uploadZoneEl.classList.add('dragover');
+});
+uploadZoneEl.addEventListener('dragleave', () => uploadZoneEl.classList.remove('dragover'));
+uploadZoneEl.addEventListener('drop', e => {
+  e.preventDefault();
+  uploadZoneEl.classList.remove('dragover');
+  if (e.dataTransfer.files.length) handleFiles(e.dataTransfer.files);
+});
+
+$('add-url-ref').onclick = () => {
+  if (refUrls.length >= MAX_REFS) {
+    setStatus(`最多 ${MAX_REFS} 张`, 'error');
+    return;
+  }
+  refUrls.push('');
+  renderRefList();
+  // 让最后一个 input 自动获得焦点
+  const inputs = refListEl.querySelectorAll('input');
+  if (inputs.length) inputs[inputs.length - 1].focus();
+};
+
+//═══════════════════════════════════════════════════════
+// 画廊
+//═══════════════════════════════════════════════════════
+// 全局点击代理: 任何带 data-lightbox 的图都能放大
+document.addEventListener('click', e => {
+  if (e.target.tagName === 'IMG' && e.target.dataset.lightbox === '1') {
+    openLightbox(e.target.src);
+  }
+});
+
+async function refreshGallery() {
+  const all = await dbAll();
+  countEl.textContent = all.length;
+  if (all.length === 0) {
+    galleryEl.innerHTML = '';
+    emptyEl.style.display = 'block';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  galleryEl.innerHTML = all.map(r => `
+    <div class="card">
+      <img src="${imgSrc(r)}" data-url="${escapeAttr(imgSrc(r))}" onerror="${imgFallback(r)}" alt="">
+      <div class="meta">
+        <div class="prompt">${escapeHtml(r.prompt)}</div>
+        <div class="time">
+          <span>${new Date(r.time).toLocaleString('zh-CN', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}</span>
+          <span>${r.size || 'auto'}${r.refs && r.refs.length ? ' · 🖼️'+r.refs.length : ''}</span>
+        </div>
+        <div class="actions">
+          <button data-tag-modal="${r.id}" title="管理标签">标签</button>
+          <button data-reuse-all='${escapeAttr(JSON.stringify({prompt:r.prompt,size:r.size,refs:r.refs||[]}))}' title="提示词+参考图+尺寸+种子全部填回">全部再用</button>
+          <button data-reuse-prompt="${escapeAttr(r.prompt)}" title="只填回提示词">再用提示词</button>
+          <button data-set-ref="${escapeAttr(imgSrc(r))}" title="把这张图加到参考图">设参考图</button>
+          <button data-star="${r.id}" class="${Array.isArray(r.tags) && r.tags.includes('星标') ? 'starred' : ''}" title="${Array.isArray(r.tags) && r.tags.includes('星标') ? '取消星标' : '加入星标'}">★</button>
+          <button data-del-img="${r.id}" title="从历史删除">删</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  galleryEl.querySelectorAll('img').forEach(img => {
+    img.onclick = () => {
+      const urls = [...galleryEl.querySelectorAll('.card img')].map(i => i.src);
+      openLightbox(img.src, urls);
+    };
+  });
+  galleryEl.querySelectorAll('[data-tag-modal]').forEach(btn => {
+    btn.onclick = async () => {
+      const id = Number(btn.dataset.tagModal);
+      const rec = all.find(r => r.id === id);
+      if (rec) openTagModal(rec);
+    };
+  });
+  galleryEl.querySelectorAll('[data-star]').forEach(btn => {
+    btn.onclick = () => toggleStarTag(Number(btn.dataset.star), btn);
+  });
+  // 全部再用
+  galleryEl.querySelectorAll('[data-reuse-all]').forEach(btn => {
+    btn.onclick = () => { reuseAll(JSON.parse(btn.dataset.reuseAll)); };
+  });
+  // 再用提示词
+  galleryEl.querySelectorAll('[data-reuse-prompt]').forEach(btn => {
+    btn.onclick = () => { promptEl.value = btn.dataset.reusePrompt; promptEl.focus(); setStatus('✅ 提示词已填回', 'success'); };
+  });
+  // 设参考图
+  galleryEl.querySelectorAll('[data-set-ref]').forEach(btn => {
+    btn.onclick = () => {
+      const url = btn.dataset.setRef;
+      if (!url) return;
+      if (refUrls.includes(url)) { setStatus('已在参考图列表中', 'info'); return; }
+      if (refUrls.length >= MAX_REFS) { setStatus(`参考图最多 ${MAX_REFS} 张`, 'error'); return; }
+      refUrls.push(url);
+      renderRefList();
+      btn.textContent = '已加入';
+      setTimeout(() => btn.textContent = '设参考图', 1500);
+      setStatus('✅ 已加入参考图', 'success');
+    };
+  });
+  galleryEl.querySelectorAll('[data-del-img]').forEach(btn => {
+    btn.onclick = async () => {
+      const id = Number(btn.dataset.delImg);
+      const rec = all.find(r => r.id === id);
+      const r = await confirmDelete(!!(rec && rec.file));
+      if (!r.confirmed) return;
+      await dbDelete(id);
+      cloudGalleryDelete(id);  // ☁️
+      if (r.alsoFile && rec && rec.file) {
+        const res = await deleteLocalFile({ file: rec.file });
+        const ok = res && res.results && res.results.some(x => x.deleted);
+        setStatus(ok ? '✅ 记录和本地文件已删除' : '✅ 记录已删除（本地文件未删或不存在）', ok ? 'success' : 'error');
+      } else {
+        setStatus('✅ 记录已删除，本地文件保留', 'success');
+      }
+      await Promise.all([refreshGallery(), refreshRefsLibrary()]);
+      backupToLS();
+    };
+  });
+}
+
+// 单张插入画廊顶部（出图即显示，不重渲染整个画廊）
+function prependGalleryCard(r) {
+  emptyEl.style.display = 'none';
+  countEl.textContent = String((Number(countEl.textContent) || 0) + 1);
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+      <img src="${imgSrc(r)}" data-url="${escapeAttr(imgSrc(r))}" onerror="${imgFallback(r)}" alt="">
+      <div class="meta">
+        <div class="prompt">${escapeHtml(r.prompt)}</div>
+        <div class="time">
+          <span>${new Date(r.time).toLocaleString('zh-CN', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}</span>
+          <span>${r.size || 'auto'}${r.refs && r.refs.length ? ' · 🖼️'+r.refs.length : ''}</span>
+        </div>
+        <div class="actions">
+          <button data-tag-modal="${r.id}" title="管理标签">标签</button>
+          <button data-reuse-all='${escapeAttr(JSON.stringify({prompt:r.prompt,size:r.size,refs:r.refs||[]}))}' title="全部填回">全部再用</button>
+          <button data-reuse-prompt="${escapeAttr(r.prompt)}" title="只填回提示词">再用提示词</button>
+          <button data-set-ref="${escapeAttr(imgSrc(r))}" title="把这张图加到参考图">设参考图</button>
+          <button data-star="${r.id}" title="加入星标">★</button>
+          <button data-del-img="${r.id}" title="从历史删除">删</button>
+        </div>
+      </div>`;
+  card.querySelector('img').onclick = () => {
+    const urls = [...galleryEl.querySelectorAll('.card img')].map(i => i.src);
+    openLightbox(card.querySelector('img').src, urls);
+  };
+  card.querySelector('[data-tag-modal]').onclick = () => openTagModal(r);
+  card.querySelector('[data-star]').onclick = e => toggleStarTag(r.id, e.currentTarget);
+  card.querySelector('[data-reuse-all]').onclick = () => reuseAll(JSON.parse(card.querySelector('[data-reuse-all]').dataset.reuseAll));
+  card.querySelector('[data-reuse-prompt]').onclick = () => { promptEl.value = r.prompt; promptEl.focus(); setStatus('✅ 提示词已填回', 'success'); };
+  card.querySelector('[data-set-ref]').onclick = () => {
+    const url = card.querySelector('[data-set-ref]').dataset.setRef;
+    if (!url) return;
+    if (refUrls.includes(url)) { setStatus('已在参考图列表中', 'info'); return; }
+    if (refUrls.length >= MAX_REFS) { setStatus(`参考图最多 ${MAX_REFS} 张`, 'error'); return; }
+    refUrls.push(url);
+    renderRefList();
+    card.querySelector('[data-set-ref]').textContent = '已加入';
+    setTimeout(() => card.querySelector('[data-set-ref]').textContent = '设参考图', 1500);
+    setStatus('✅ 已加入参考图', 'success');
+  };
+  card.querySelector('[data-del-img]').onclick = async () => {
+    let rec = r;
+    try { const fresh = (await dbAll()).find(x => x.id === r.id); if (fresh) rec = fresh; } catch (_) {}
+    const c = await confirmDelete(!!(rec && rec.file));
+    if (!c.confirmed) return;
+    await dbDelete(r.id);
+    cloudGalleryDelete(r.id);  // ☁️
+    if (c.alsoFile && rec && rec.file) {
+      const res = await deleteLocalFile({ file: rec.file });
+      const ok = res && res.results && res.results.some(x => x.deleted);
+      setStatus(ok ? '✅ 记录和本地文件已删除' : '✅ 记录已删除（本地文件未删或不存在）', ok ? 'success' : 'error');
+    } else {
+      setStatus('✅ 记录已删除，本地文件保留', 'success');
+    }
+    await Promise.all([refreshGallery(), refreshRefsLibrary()]);
+    backupToLS();
+  };
+  galleryEl.prepend(card);
+}
+
+// 右上角出图提示，每条独立 5s 计时后淡出
+function showToast(msg) {
+  let host = document.getElementById('toast-host');
+  if (!host) {
+    host = document.createElement('div');
+    host.id = 'toast-host';
+    document.body.appendChild(host);
+  }
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  host.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => {
+    t.classList.remove('show');
+    setTimeout(() => t.remove(), 400);
+  }, 5000);
+}
+
+//═══════════════════════════════════════════════════════
+// 出图提示音 + macOS 通知
+//═══════════════════════════════════════════════════════
+function playDoneSound() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    // 两音叮咚：A5 → C#6，清脆短促
+    [[880, 0], [1109, 0.18]].forEach(([freq, delay]) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      const t = ctx.currentTime + delay;
+      gain.gain.setValueAtTime(0, t);
+      gain.gain.linearRampToValueAtTime(0.28, t + 0.015);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+      osc.start(t);
+      osc.stop(t + 0.45);
+    });
+  } catch (_) {}
+}
+
+function showDoneNotification(prompt, sec) {
+  if (!('Notification' in window) || Notification.permission !== 'granted') return;
+  try {
+    const n = new Notification('速创 · 出图了 ✅', {
+      body: `${(prompt || '').slice(0, 72)}${(prompt || '').length > 72 ? '…' : ''}\n耗时 ${sec.toFixed(1)}s`,
+      icon: 'icon.png',
+      silent: true,   // 声音由 playDoneSound 负责
+    });
+    setTimeout(() => n.close(), 6000);
+  } catch (_) {}
+}
+
+async function initNotifications() {
+  if (!('Notification' in window)) return;
+  if (Notification.permission === 'default') {
+    await Notification.requestPermission();
+  }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function escapeAttr(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+//═══════════════════════════════════════════════════════
+// 生成
+//═══════════════════════════════════════════════════════
+// === 提示词工坊 ===
+// 工坊：多参考图，每项 {url, intent, description}
+let wsRefs = [];
+
+const wsRefsListEl = document.getElementById('ws-refs-list');
+const wsAddLatestBtn = document.getElementById('ws-add-latest');
+const wsAddAllBtn = document.getElementById('ws-add-all');
+const wsOverallIntentEl = document.getElementById('ws-overall-intent');
+const wsGenerateBtn = document.getElementById('ws-generate-btn');
+const wsGenerateStatus = document.getElementById('ws-generate-status');
+const wsThinkWrap = document.getElementById('ws-think-wrap');
+const wsThinkEl = document.getElementById('ws-think');
+const wsPromptEl = document.getElementById('ws-prompt');
+const wsApplyBtn = document.getElementById('ws-apply-btn');
+
+function wsSetStatus(el, msg, type = '') {
+  el.textContent = msg;
+  el.className = 'ws-status ' + type;
+}
+
+function wsRenderRefs() {
+  if (wsRefs.length === 0) {
+    wsRefsListEl.innerHTML = '<div class="ws-ref-empty" style="font-size:11px;color:var(--muted);padding:8px 0">还没加参考图。先在左侧"参考图"区准备图，再点下方按钮加进来。</div>';
+    return;
+  }
+  wsRefsListEl.innerHTML = '';
+  wsRefs.forEach((ref, i) => {
+    const row = document.createElement('div');
+    row.style.cssText = 'margin-bottom:10px;padding:8px;background:rgba(0,0,0,.15);border-radius:6px';
+    row.innerHTML = `
+      <div style="display:flex;gap:8px;align-items:flex-start">
+        <img src="${escapeAttr(ref.url)}" alt="" style="width:54px;height:54px;object-fit:cover;border-radius:4px;flex-shrink:0">
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px">
+            <span style="font-size:11px;color:var(--accent)">图${i + 1}</span>
+            <button type="button" data-look="${i}" class="ws-ref-look" style="width:auto;padding:2px 8px;font-size:11px;background:var(--accent-dim)">👁 看图</button>
+            <span data-status="${i}" class="ws-ref-status" style="font-size:10px;color:var(--muted)"></span>
+            <button type="button" data-del="${i}" class="ws-ref-del" title="移除" style="margin-left:auto;width:auto;padding:2px 8px;font-size:13px;background:var(--border)">✕</button>
+          </div>
+          <input type="text" data-intent="${i}" class="ws-ref-intent" value="${escapeAttr(ref.intent || '')}" placeholder="这张图的意图：如 参考构图 / 参考脸 / 参考画风" style="width:100%;font-size:12px;margin-bottom:4px">
+        </div>
+      </div>
+      <textarea data-desc="${i}" class="ws-ref-desc" rows="3" placeholder="视觉描述（点「看图」自动填，可手动编辑；若被审查识别不出就自己写或留给别处识别后粘进来）" style="width:100%;font-size:11px;margin-top:4px">${ref.description ? escapeHtml(ref.description) : ''}</textarea>
+    `;
+    wsRefsListEl.appendChild(row);
+  });
+  // 意图输入
+  wsRefsListEl.querySelectorAll('.ws-ref-intent').forEach(inp => {
+    inp.oninput = () => { wsRefs[+inp.dataset.intent].intent = inp.value; };
+  });
+  // 描述输入（可手填/编辑）
+  wsRefsListEl.querySelectorAll('.ws-ref-desc').forEach(ta => {
+    ta.oninput = () => { wsRefs[+ta.dataset.desc].description = ta.value; };
+  });
+  // 单张看图
+  wsRefsListEl.querySelectorAll('.ws-ref-look').forEach(btn => {
+    btn.onclick = () => wsLookOne(+btn.dataset.look);
+  });
+  // 删除
+  wsRefsListEl.querySelectorAll('.ws-ref-del').forEach(btn => {
+    btn.onclick = () => { wsRefs.splice(+btn.dataset.del, 1); wsRenderRefs(); };
+  });
+}
+
+// 单张看图：GLM 看一张，结果填进那张的描述框。失败/被审查→提示手填，不阻断
+async function wsLookOne(i) {
+  const ref = wsRefs[i];
+  if (!ref) return;
+  const statusEl = wsRefsListEl.querySelector(`[data-status="${i}"]`);
+  const descEl = wsRefsListEl.querySelector(`[data-desc="${i}"]`);
+  if (statusEl) { statusEl.textContent = '⏳ 看图中…'; statusEl.style.color = 'var(--muted)'; }
+  termLog('status', `[工坊] GLM 看图${i + 1}`);
+  try {
+    const r = await fetch(`${PROXY_ORIGIN}/describe-image`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: ref.url }),
+    });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || ('HTTP ' + r.status));
+    const desc = (data.description || '').trim();
+    if (!desc) throw new Error('返回空（可能被审查）');
+    ref.description = desc;
+    if (descEl) descEl.value = desc;
+    if (statusEl) { statusEl.textContent = '✅ 已识别'; statusEl.style.color = 'var(--success)'; }
+    termLog('done', `[工坊] 图${i + 1} 识别完成`);
+  } catch (e) {
+    // 失败不阻断：提示手填
+    if (statusEl) { statusEl.textContent = '⚠ 识别失败，请手填描述'; statusEl.style.color = 'var(--error)'; }
+    termLog('error', `[工坊] 图${i + 1} 看图失败: ${e.message}`);
+  }
+}
+
+function wsAddRef(url) {
+  if (!url || !url.startsWith('http')) return false;
+  if (wsRefs.some(r => r.url === url)) return false;  // 去重
+  wsRefs.push({ url, intent: '', description: '' });
+  return true;
+}
+
+wsAddLatestBtn.onclick = () => {
+  const valid = refUrls.filter(u => u && u.startsWith('http'));
+  if (valid.length === 0) { wsSetStatus(wsGenerateStatus, '左侧"参考图"区是空的', 'error'); return; }
+  if (wsAddRef(valid[valid.length - 1])) { wsRenderRefs(); wsSetStatus(wsGenerateStatus, '已加入最新参考图'); }
+  else wsSetStatus(wsGenerateStatus, '这张已经加过了');
+};
+
+wsAddAllBtn.onclick = () => {
+  const valid = refUrls.filter(u => u && u.startsWith('http'));
+  if (valid.length === 0) { wsSetStatus(wsGenerateStatus, '左侧"参考图"区是空的', 'error'); return; }
+  let added = 0;
+  valid.forEach(u => { if (wsAddRef(u)) added++; });
+  wsRenderRefs();
+  wsSetStatus(wsGenerateStatus, `加入了 ${added} 张（去重后）`);
+};
+
+// 主流程：DS 直接用各框现有描述（GLM看的或手填的）流式综合生成，不再强制看图
+wsGenerateBtn.onclick = async () => {
+  if (wsRefs.length === 0) { wsSetStatus(wsGenerateStatus, '先加至少一张参考图', 'error'); return; }
+  wsGenerateBtn.disabled = true;
+  wsThinkEl.textContent = '';
+  wsPromptEl.value = '';
+  wsApplyBtn.disabled = true;
+
+  // 不强制看图：描述框是空的就空着发（DS 靠意图+总意图也能生成）。
+  // 提醒一下哪些图没描述，但不阻断。
+  const emptyDesc = wsRefs.map((r, i) => (r.description || '').trim() ? null : i + 1).filter(Boolean);
+  if (emptyDesc.length) {
+    termLog('status', `[工坊] 图 ${emptyDesc.join(',')} 无描述（未看图/被审查），仅凭意图发给 DS`);
+  }
+
+  // 流式 DS 综合生成
+  wsSetStatus(wsGenerateStatus, '⏳ DeepSeek 正在思考并生成…', 'loading');
+  wsThinkWrap.open = true;  // 自动展开思考区
+  termLog('status', '[工坊] DS 流式生成中…');
+  try {
+    const payload = {
+      refs: wsRefs.map(r => ({ description: r.description, intent: r.intent })),
+      overall_intent: wsOverallIntentEl.value.trim(),
+    };
+    const resp = await fetch(`${PROXY_ORIGIN}/generate-prompt-stream`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!resp.ok || !resp.body) throw new Error('HTTP ' + resp.status);
+
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = '';
+    let gotError = null;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      // 按 SSE 事件（\n\n 分隔）切分
+      let idx;
+      while ((idx = buf.indexOf('\n\n')) >= 0) {
+        const evt = buf.slice(0, idx).trim();
+        buf = buf.slice(idx + 2);
+        if (!evt.startsWith('data:')) continue;
+        let obj;
+        try { obj = JSON.parse(evt.slice(5).trim()); } catch { continue; }
+        if (obj.type === 'think') {
+          wsThinkEl.textContent += obj.delta;
+          wsThinkEl.scrollTop = wsThinkEl.scrollHeight;
+        } else if (obj.type === 'text') {
+          wsPromptEl.value += obj.delta;
+          wsPromptEl.scrollTop = wsPromptEl.scrollHeight;
+        } else if (obj.type === 'done') {
+          // 完成
+        } else if (obj.type === 'error') {
+          gotError = obj.delta;
+        }
+      }
+    }
+    if (gotError) throw new Error(gotError);
+    wsSetStatus(wsGenerateStatus, '✅ 生成完成，可编辑后填入主框', 'success');
+    termLog('done', '[工坊] DS 流式完成');
+    wsApplyBtn.disabled = !wsPromptEl.value.trim();
+  } catch (e) {
+    wsSetStatus(wsGenerateStatus, '❌ 生成失败：' + e.message, 'error');
+    termLog('error', '[工坊] DS 流式失败: ' + e.message);
+  } finally {
+    wsGenerateBtn.disabled = false;
+  }
+};
+
+wsPromptEl.addEventListener('input', () => {
+  wsApplyBtn.disabled = !wsPromptEl.value.trim();
+});
+
+wsApplyBtn.onclick = () => {
+  const text = wsPromptEl.value.trim();
+  if (!text) return;
+  promptEl.value = text;
+  promptEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  promptEl.focus();
+  promptEl.style.transition = 'box-shadow .3s';
+  promptEl.style.boxShadow = '0 0 0 2px var(--accent)';
+  setTimeout(() => promptEl.style.boxShadow = '', 1500);
+};
+
+// 初始化
+wsRenderRefs();
+
+// === 任务管理 ===
+let taskSeq = 0;
+const activeTasks = new Map();
+const tasksEl = document.getElementById('tasks');
+
+// 并发闸：真实并发钉在 6（浏览器对同域名约 6 个连接，超发会堵在连接队列里超时失败、却已扣费）
+// 超出的排队，完成一个放一个
+const MAX_CONCURRENT = 6;
+let runningCount = 0;
+const genQueue = [];
+function pumpQueue() {
+  while (runningCount < MAX_CONCURRENT && genQueue.length > 0) {
+    const job = genQueue.shift();
+    runningCount++;
+    // runGenerate 自己在 finally 里调 onDone
+    runGenerate(job).finally(() => {
+      runningCount--;
+      pumpQueue();
+    });
+  }
+  updateQueueHint();
+}
+function updateQueueHint() {
+  // 在按钮上提示当前并发/排队状况
+  if (genQueue.length > 0) {
+    setStatus(`⏳ 并发 ${runningCount}/${MAX_CONCURRENT} 运行中，${genQueue.length} 个排队`, 'info');
+  }
+}
+
+//═══════════════════════════════════════════════════════
+// 死磕模式 — 维持 N 路并发跑同一套 prompt+refs，出一张即停
+// 原理：安全模型对同一 prompt 的判断有随机性，量大必出
+//═══════════════════════════════════════════════════════
+let grindActive = false;
+let grindSuccess = false;
+let grindRunningCount = 0;
+
+function grindUpdateBtn() {
+  const btn = document.getElementById('grind-btn');
+  if (!btn) return;
+  if (grindActive) {
+    btn.textContent = `停止(${grindRunningCount}路)`;
+    btn.classList.add('grind-active');
+  } else {
+    btn.textContent = '死 磕';
+    btn.classList.remove('grind-active');
+  }
+}
+
+function stopGrind(reason) {
+  grindActive = false;
+  grindUpdateBtn();
+  termLog('status', `🛑 死磕结束 | ${reason}${grindRunningCount > 0 ? ' | ' + grindRunningCount + '个任务继续跑完自然结束' : ''}`);
+}
+
+async function grindLaunchOne(prompt, refs, body) {
+  if (!grindActive || grindSuccess) return;
+  grindRunningCount++;
+  grindUpdateBtn();
+  const ok = await runGrindTask(prompt, refs, body);
+  grindRunningCount--;
+  if (ok) {
+    if (!grindSuccess) {          // 第一个成功
+      grindSuccess = true;
+      stopGrind('✅ 出图成功，停止所有后续');
+    }
+  } else {
+    // 失败 → 如果死磕还在，立即补一个维持并发
+    if (grindActive && !grindSuccess) {
+      termLog('status', `🔄 死磕：失败补充一路（当前 ${grindRunningCount} 路在跑）`);
+      grindLaunchOne(prompt, refs, body); // 不 await，异步补
+    }
+  }
+  grindUpdateBtn();
+}
+
+async function startGrind() {
+  if (grindActive) { stopGrind('手动停止'); return; }
+
+  const prompt = promptEl.value.trim();
+  if (!prompt) { setStatus('请输入提示词', 'error'); return; }
+
+  const n = parseInt(document.getElementById('grind-n').value, 10) || 3;
+
+  let refs = refUrls.filter(u => u && u.trim());
+  if (refs.length) {
+    setStatus('正在确认参考图链接…', 'info');
+    try { refs = await Promise.all(refs.map(resolveRefForUpstream)); }
+    catch (e) { console.warn('参考图链接解析出错，用原链接继续:', e); }
+  }
+
+  const body = { prompt, size: sizeEl.value };
+  if (refs.length) body.urls = refs;
+  const uk = getUserKey();
+  if (uk) body.user_key = uk;
+  // apimart resolution
+  const _resEl = document.getElementById('resolution');
+  if (_resEl && document.getElementById('resolution-row')?.classList.contains('visible')) {
+    body.resolution = _resEl.value || '1k';
+  }
+  // apimart-official quality
+  const _qEl = document.getElementById('quality-sel');
+  if (_qEl && document.getElementById('quality-row')?.style.display !== 'none') {
+    if (_qEl.value && _qEl.value !== 'auto') body.quality = _qEl.value;
+  }
+  try {
+    if (document.getElementById('exp-moderation')?.checked) body.moderation = 'low';
+    const q = document.getElementById('exp-quality')?.value;
+    if (q) body.quality = q;
+    const nv = parseInt(document.getElementById('exp-n')?.value, 10);
+    if (nv >= 1 && nv <= 10) body.n = nv;
+  } catch (_) {}
+
+  grindActive = true;
+  grindSuccess = false;
+  grindRunningCount = 0;
+  grindUpdateBtn();
+  termLog('status', `🔥 死磕启动 | 并发 ${n} 路 | "${prompt.slice(0, 40)}${prompt.length > 40 ? '…' : ''}"`);
+  if (refs.length) termLog('status', `🔥 参考图 ${refs.length} 张（固定不变）`);
+
+  for (let i = 0; i < n; i++) {
+    grindLaunchOne(prompt, refs, { ...body }); // 浅拷贝防共享
+  }
+}
+
+// 死磕专用 runGenerate：成功 return true，失败 return false，不进 genQueue
+async function runGrindTask(prompt, refs, body) {
+  const taskId = ++taskSeq;
+  const startTime = Date.now();
+  createTaskCard(taskId, prompt);
+  activeTasks.set(taskId, { startTime, prompt });
+
+  termLog('status', `[💀#${taskId}] 死磕: ${prompt.slice(0, 45)}${prompt.length > 45 ? '…' : ''}`);
+
+  let timerId = null;
+  function updateStatus() {
+    const elapsed = (Date.now() - startTime) / 1000;
+    updateTaskCard(taskId, { time: elapsed, progress: estimateProgress(elapsed) });
+  }
+  timerId = setInterval(updateStatus, 100);
+  updateStatus();
+
+  try {
+    const r = await fetch(PROXY_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!r.ok && r.headers.get('content-type')?.includes('json')) {
+      const errData = await r.json();
+      throw new Error(errData.error || `HTTP ${r.status}`);
+    }
+    if (!r.body) throw new Error('浏览器不支持流式响应');
+
+    const reader = r.body.getReader();
+    const decoder = new TextDecoder('utf-8');
+    let buffer = '', finalData = null, errorMsg = null;
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const events = buffer.split('\n\n');
+      buffer = events.pop();
+      for (const evt of events) {
+        if (!evt.trim()) continue;
+        let eventType = 'message', dataStr = '';
+        for (const line of evt.split('\n')) {
+          if (line.startsWith('event: ')) eventType = line.slice(7).trim();
+          else if (line.startsWith('data: ')) dataStr += line.slice(6);
+        }
+        if (!dataStr) continue;
+        let payload;
+        try { payload = JSON.parse(dataStr); } catch { continue; }
+        if (eventType === 'poll') {
+          const parts = [`#${payload.poll_count}`];
+          if (payload.status != null) parts.push(`st=${payload.status}`);
+          if (payload.progress != null) parts.push(`${payload.progress}`);
+          updateTaskCard(taskId, { status: `轮询 ${parts.join(' ')}` });
+          termLog('poll', `[💀#${taskId}] ${parts.join(' · ')}`, payload.elapsed);
+        } else if (eventType === 'done') {
+          finalData = payload;
+        } else if (eventType === 'error') {
+          errorMsg = payload.msg;
+        }
+      }
+    }
+
+    if (errorMsg) throw new Error(errorMsg);
+    if (!finalData) throw new Error('流结束但没收到结果');
+
+    const SKIP_KEYS = new Set(['request', 'prompt', 'urls', 'reference_urls', 'input', 'params']);
+    function findImageUrl(obj, depth = 0) {
+      if (depth > 6) return null;
+      if (typeof obj === 'string' && /^https?:\/\/.+\.(png|jpg|jpeg|webp|gif)(\?|$)/i.test(obj)) return obj;
+      if (Array.isArray(obj)) { for (const x of obj) { const f = findImageUrl(x, depth + 1); if (f) return f; } }
+      else if (obj && typeof obj === 'object') {
+        for (const k of Object.keys(obj).filter(k => !SKIP_KEYS.has(k))) {
+          const f = findImageUrl(obj[k], depth + 1); if (f) return f;
+        }
+      }
+      return null;
+    }
+    let url = null;
+    const result = finalData.data?.result;
+    if (Array.isArray(result) && typeof result[0] === 'string' && result[0].startsWith('http')) url = result[0];
+    else if (typeof result === 'string' && result.startsWith('http')) url = result;
+    else url = findImageUrl(finalData);
+    if (!url) throw new Error('返回里没找到图片 URL');
+
+    const totalSec = (Date.now() - startTime) / 1000;
+    termLog('done', `[💀#${taskId}] 🔥 死磕出图！${totalSec.toFixed(1)}s | ${url}`, totalSec);
+
+    const recTime = Date.now();
+    const _rec = { prompt, size: sizeEl.value, refs, url, time: recTime, duration: Math.round(totalSec) };
+    const newId = await dbAdd(_rec);
+    backupToLS();
+    prependGalleryCard({ id: newId, ..._rec });
+    cloudGallerySave({ id: newId, ..._rec });   // ☁️ 云端同步
+    autoDownloadImage(url, prompt);              // 💾 本地自动下载
+    updateTaskCard(taskId, { time: totalSec, status: `🔥 死磕成功 ${totalSec.toFixed(1)}s`, finalState: 'done' });
+    showToast(`🔥 死磕出图 #${taskId} · ${totalSec.toFixed(1)}s`);
+    playDoneSound();
+    showDoneNotification(prompt, totalSec);
+    setTimeout(() => removeTaskCard(taskId), 6000);
+
+    // 后台保存
+    (async () => {
+      try {
+        const saveResult = await saveImageLocally(url, prompt);
+        if (saveResult?.saved) {
+          const patch = {};
+          if (saveResult.file) patch.file = saveResult.file;
+          if (saveResult.heliar_url) patch.heliar_url = saveResult.heliar_url;
+          if (Object.keys(patch).length) {
+            try { await dbUpdate(newId, patch); } catch (_) {}
+            cloudGalleryUpdate(newId, patch);    // ☁️ 同步补丁
+          }
+        }
+        await refreshRefsLibrary();
+      } catch (_) {}
+    })();
+
+    return true; // ✅ 成功
+
+  } catch (e) {
+    const totalSec = (Date.now() - startTime) / 1000;
+    const shortMsg = e.message.length > 50 ? e.message.slice(0, 50) + '…' : e.message;
+    updateTaskCard(taskId, { time: totalSec, status: `✗ ${shortMsg}`, finalState: 'error', errorDetail: e.message });
+    termLog('error', `[💀#${taskId}] 死磕失败: ${e.message}`);
+    createRejectCard(taskId, prompt, e.message);
+    setTimeout(() => removeTaskCard(taskId), 8000);
+    return false; // ❌ 失败，让调度器补一个
+  } finally {
+    if (timerId) clearInterval(timerId);
+    activeTasks.delete(taskId);
+  }
+}
+
+function createTaskCard(taskId, prompt) {
+  const card = document.createElement('div');
+  card.className = 'task-card';
+  card.id = `task-${taskId}`;
+  card.innerHTML = `
+    <div class="task-row">
+      <span class="task-id">#${taskId}</span>
+      <span class="task-prompt"></span>
+      <span class="task-time">0.0s</span>
+    </div>
+    <div class="task-status">准备中...</div>
+    <div class="task-bar-bg"><div class="task-bar" style="width:0%"></div></div>
+    <div class="task-error-detail"></div>
+  `;
+  card.querySelector('.task-prompt').textContent = prompt;
+  tasksEl.appendChild(card);
+  return card;
+}
+
+function updateTaskCard(taskId, { time, status, progress, finalState, errorDetail }) {
+  const card = document.getElementById(`task-${taskId}`);
+  if (!card) return;
+  if (time !== undefined) card.querySelector('.task-time').textContent = time.toFixed(1) + 's';
+  if (status !== undefined) card.querySelector('.task-status').textContent = status;
+  if (progress !== undefined) card.querySelector('.task-bar').style.width = progress + '%';
+  if (finalState) {
+    card.classList.add(finalState);
+    if (finalState === 'done') card.querySelector('.task-bar').style.width = '100%';
+  }
+  // 拒图原因：展开面板
+  if (errorDetail && finalState === 'error') {
+    const det = card.querySelector('.task-error-detail');
+    if (det) {
+      det.textContent = errorDetail;
+      if (!card.querySelector('.task-error-btn')) {
+        const btn = document.createElement('button');
+        btn.className = 'task-error-btn';
+        btn.textContent = '查看拒图原因 ▼';
+        btn.onclick = () => {
+          det.classList.toggle('open');
+          btn.textContent = det.classList.contains('open') ? '收起 ▲' : '查看拒图原因 ▼';
+        };
+        card.querySelector('.task-status').insertAdjacentElement('afterend', btn);
+      }
+    }
+  }
+}
+
+function removeTaskCard(taskId) {
+  const card = document.getElementById(`task-${taskId}`);
+  if (card) {
+    card.style.transition = 'opacity .3s';
+    card.style.opacity = '0';
+    setTimeout(() => card.remove(), 300);
+  }
+}
+
+// 拒图历史 — 存内存，不持久化（刷新清空）
+const rejectHistory = [];
+
+function _rejectUpdateBadge() {
+  const badge = document.getElementById('reject-badge');
+  if (!badge) return;
+  if (rejectHistory.length > 0) {
+    badge.textContent = rejectHistory.length;
+    badge.classList.add('visible');
+  } else {
+    badge.classList.remove('visible');
+  }
+}
+
+function _rejectRenderModal() {
+  const body = document.getElementById('reject-modal-body');
+  if (!body) return;
+  if (rejectHistory.length === 0) {
+    body.innerHTML = '<div style="color:var(--muted);font-size:12px;text-align:center;padding:20px">暂无拒图记录</div>';
+    return;
+  }
+  body.innerHTML = rejectHistory.slice().reverse().map((item, i) => `
+    <div class="rh-item">
+      <div class="rh-item-head">
+        <span class="rh-label">🚫 #${item.taskId}</span>
+        <span>${item.time}</span>
+      </div>
+      <div class="rh-item-prompt" title="${escapeAttr(item.prompt)}">${escapeHtml(item.prompt)}</div>
+      <div class="rh-item-detail">${escapeHtml(item.errorDetail)}</div>
+    </div>
+  `).join('');
+}
+
+function createRejectCard(taskId, prompt, errorDetail) {
+  if (!errorDetail) return;
+  rejectHistory.push({
+    taskId,
+    prompt: prompt || '',
+    errorDetail,
+    time: new Date().toLocaleString('zh-CN', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}),
+  });
+  _rejectUpdateBadge();
+  // 短暂 toast 提示
+  showToast(`🚫 #${taskId} 被拒 — 点右上角查看原因`);
+}
+
+// 历史面板开关
+function initRejectHistory() {
+  const btn = document.getElementById('reject-hist-btn');
+  const overlay = document.getElementById('reject-modal-overlay');
+  const closeBtn = document.getElementById('reject-close-btn');
+  const clearBtn = document.getElementById('reject-clear-btn');
+  if (!btn || !overlay) return;
+  btn.onclick = () => { _rejectRenderModal(); overlay.classList.add('open'); };
+  closeBtn.onclick = () => overlay.classList.remove('open');
+  overlay.onclick = e => { if (e.target === overlay) overlay.classList.remove('open'); };
+  clearBtn.onclick = () => {
+    rejectHistory.length = 0;
+    _rejectUpdateBadge();
+    _rejectRenderModal();
+  };
+}
+
+//═══════════════════════════════════════════════════════
+// 标签系统
+//═══════════════════════════════════════════════════════
+const TAG_STAR = '星标';
+const _TAGS_LS_KEY = 'sc_tags_v1';
+let _tagModalCurrentId = null;   // 当前打开弹窗的图片 id
+let _tagPreviewActive = null;    // 右侧预览当前显示的标签名
+
+function _tagsGetAll() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(_TAGS_LS_KEY) || '[]');
+    if (!arr.includes(TAG_STAR)) arr.unshift(TAG_STAR);
+    return arr;
+  } catch { return [TAG_STAR]; }
+}
+function _tagsSave(arr) {
+  const rest = arr.filter(t => t && t !== TAG_STAR);
+  localStorage.setItem(_TAGS_LS_KEY, JSON.stringify([TAG_STAR, ...rest]));
+}
+function _imgHasTag(r, tag) {
+  return Array.isArray(r.tags) && r.tags.includes(tag);
+}
+
+async function _imgSetTags(id, tags) {
+  await dbUpdate(id, { tags });
+}
+async function _imgToggleTag(id, tag) {
+  const all = await dbAll();
+  const rec = all.find(r => r.id === id);
+  if (!rec) return [];
+  const tags = Array.isArray(rec.tags) ? [...rec.tags] : [];
+  const idx = tags.indexOf(tag);
+  if (idx >= 0) tags.splice(idx, 1); else tags.push(tag);
+  await dbUpdate(id, { tags });
+  cloudGalleryUpdate(id, { tags });  // ☁️
+  return tags;
+}
+
+// 快捷星标切换（画廊卡片上的 ★ 按钮）
+async function toggleStarTag(id, btnEl) {
+  const newTags = await _imgToggleTag(id, TAG_STAR);
+  const starred = newTags.includes(TAG_STAR);
+  document.querySelectorAll(`[data-star="${id}"]`).forEach(b => {
+    b.classList.toggle('starred', starred);
+    b.title = starred ? '取消星标' : '加入星标';
+  });
+}
+
+// 打开标签弹窗
+async function openTagModal(r) {
+  _tagModalCurrentId = r.id;
+  _tagPreviewActive = null;
+  const overlay = document.getElementById('tag-modal-overlay');
+  document.getElementById('tm-thumb').src = imgSrc(r);
+  document.getElementById('tm-prompt').textContent = r.prompt || '';
+  overlay.classList.add('open');
+  await _tmRenderLeft();
+  _tmRenderRight(null);
+}
+
+async function _tmRenderLeft() {
+  const all = await dbAll();
+  const rec = all.find(r => r.id === _tagModalCurrentId);
+  const currentTags = rec ? (rec.tags || []) : [];
+  const allTags = _tagsGetAll();
+
+  // 计算每个标签的图片数量
+  const counts = {};
+  allTags.forEach(t => { counts[t] = 0; });
+  all.forEach(r => { (r.tags || []).forEach(t => { if (counts[t] !== undefined) counts[t]++; }); });
+
+  const list = document.getElementById('tm-tag-list');
+  list.innerHTML = allTags.map(tag => `
+    <div class="tag-item${_tagPreviewActive === tag ? ' active' : ''}" data-tmtag="${escapeAttr(tag)}">
+      <input type="checkbox" ${currentTags.includes(tag) ? 'checked' : ''} data-tmcheck="${escapeAttr(tag)}">
+      <span class="ti-name">${escapeHtml(tag)}</span>
+      <span class="ti-count">${counts[tag] || 0}</span>
+      ${tag !== TAG_STAR ? `<button class="ti-del" data-tmdel="${escapeAttr(tag)}" title="删除此标签">×</button>` : ''}
+    </div>
+  `).join('');
+
+  // 点击行 → 预览
+  list.querySelectorAll('.tag-item').forEach(row => {
+    row.onclick = async e => {
+      if (e.target.closest('input') || e.target.closest('.ti-del')) return;
+      const tag = row.dataset.tmtag;
+      list.querySelectorAll('.tag-item').forEach(r => r.classList.remove('active'));
+      row.classList.add('active');
+      _tagPreviewActive = tag;
+      await _tmRenderRight(tag);
+    };
+  });
+  // checkbox → 切换标签
+  list.querySelectorAll('[data-tmcheck]').forEach(cb => {
+    cb.onchange = async () => {
+      const tag = cb.dataset.tmcheck;
+      await _imgToggleTag(_tagModalCurrentId, tag);
+      // 更新画廊卡片上的星标按钮状态
+      if (tag === TAG_STAR) {
+        document.querySelectorAll(`[data-star="${_tagModalCurrentId}"]`).forEach(b => {
+          b.classList.toggle('starred', cb.checked);
+        });
+      }
+      await _tmRenderLeft();
+    };
+  });
+  // 删除标签按钮
+  list.querySelectorAll('[data-tmdel]').forEach(btn => {
+    btn.onclick = async e => {
+      e.stopPropagation();
+      const tag = btn.dataset.tmdel;
+      if (!confirm(`删除标签「${tag}」？（不会删除图片）`)) return;
+      // 从所有图片里移除这个标签
+      const all2 = await dbAll();
+      for (const r of all2) {
+        if (Array.isArray(r.tags) && r.tags.includes(tag)) {
+          await dbUpdate(r.id, { tags: r.tags.filter(t => t !== tag) });
+        }
+      }
+      const arr = _tagsGetAll().filter(t => t !== tag);
+      _tagsSave(arr);
+      if (_tagPreviewActive === tag) { _tagPreviewActive = null; _tmRenderRight(null); }
+      await _tmRenderLeft();
+    };
+  });
+}
+
+async function _tmRenderRight(tagName) {
+  const titleEl = document.getElementById('tm-preview-title');
+  const grid = document.getElementById('tm-preview-grid');
+  if (!tagName) {
+    titleEl.textContent = '选择左侧标签预览';
+    grid.innerHTML = '<div class="tag-preview-empty">点击左侧标签查看该标签下的图片</div>';
+    return;
+  }
+  titleEl.textContent = `「${tagName}」的图片`;
+  const all = await dbAll();
+  const imgs = all.filter(r => Array.isArray(r.tags) && r.tags.includes(tagName));
+  if (imgs.length === 0) {
+    grid.innerHTML = '<div class="tag-preview-empty">暂无图片</div>';
+    return;
+  }
+  grid.innerHTML = imgs.map(r => `
+    <img src="${escapeAttr(imgSrc(r))}" title="${escapeAttr(r.prompt)}"
+         data-url="${escapeAttr(imgSrc(r))}" loading="lazy">
+  `).join('');
+  grid.querySelectorAll('img').forEach(img => {
+    img.onclick = () => openLightbox(img.src, imgs.map(r => imgSrc(r)));
+  });
+}
+
+function initTagSystem() {
+  const overlay = document.getElementById('tag-modal-overlay');
+  document.getElementById('tm-close-btn').onclick = () => overlay.classList.remove('open');
+  overlay.onclick = e => { if (e.target === overlay) overlay.classList.remove('open'); };
+
+  // 添加新标签
+  const newTagInput = document.getElementById('tm-new-tag');
+  const addBtn = document.getElementById('tm-add-tag-btn');
+  const doAdd = async () => {
+    const name = newTagInput.value.trim();
+    if (!name) return;
+    const arr = _tagsGetAll();
+    if (!arr.includes(name)) { arr.push(name); _tagsSave(arr); }
+    newTagInput.value = '';
+    await _tmRenderLeft();
+  };
+  addBtn.onclick = doAdd;
+  newTagInput.onkeydown = e => { if (e.key === 'Enter') doAdd(); };
+
+  // 确保 星标 默认存在
+  _tagsSave(_tagsGetAll());
+}
+
+// 进度估算
+function estimateProgress(elapsed) {
+  if (elapsed < 30) return (elapsed / 30) * 70;
+  if (elapsed < 60) return 70 + ((elapsed - 30) / 30) * 20;
+  return Math.min(98, 90 + (elapsed - 60) * 0.1);
+}
+
+// 把一个参考图 url 解析成「速创服务器能访问的永久外链」：
+// - 已是 heliar 永久链接 → 原样用
+// - 本地 127.0.0.1/local-image 链接 → 速创访问不到，必须换：查记录拿 heliar_url，没有就重传图床
+// - 其它(如 wuyinkeji 临时链接) → 查画廊同 url 记录，有 heliar_url 就换成永久的
+async function resolveRefForUpstream(url) {
+  if (!url) return url;
+  if (url.includes('img.heliar.top')) return url;        // 已是永久图床
+  // 本地代理链接：解析出文件名
+  const isLocal = url.includes('127.0.0.1') && url.includes('local-image');
+  let file = null, isRef = false;
+  if (isLocal) {
+    try {
+      const u = new URL(url);
+      file = u.searchParams.get('file');
+      isRef = u.searchParams.get('ref') === '1';
+    } catch (_) {}
+  }
+  // 先从画廊记录里按 url 或 file 找 heliar_url
+  try {
+    const all = await dbAll();
+    let rec = null;
+    if (file) rec = all.find(r => r.file === file);
+    if (!rec) rec = all.find(r => r.url === url);
+    if (rec && rec.heliar_url) return rec.heliar_url;       // 命中永久链接
+    // 没有永久链接但有本地文件 → 现传一次图床，拿永久链接并回填记录
+    const fname = (rec && rec.file) || file;
+    if (fname) {
+      clog('status', `☁️ 参考图重传图床中 | ${fname}`);
+      const resp = await fetch(`${PROXY_ORIGIN}/reupload-heliar`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ file: fname, ref: isRef }),
+      });
+      const d = await resp.json();
+      if (resp.ok && d.heliar_url) {
+        if (rec) { try { await dbUpdate(rec.id, { heliar_url: d.heliar_url }); } catch (_) {} }
+        clog('done', `☁️ 参考图已转永久链接 | ${fname} → ${d.heliar_url}`);
+        return d.heliar_url;
+      } else {
+        clog('warn', `⚠ 参考图重传失败 | ${fname} | ${d.error || '未知'}`, 'warning');
+      }
+    }
+  } catch (e) {
+    clog('warn', `⚠ 参考图链接解析出错 | ${e.message}`, 'warning');
+  }
+  // 实在换不了：本地链接没法给速创用，回退原 url（可能失败，但不静默吞）
+  return url;
+}
+
+// 加参考图统一入口：加进去之前先确保是图床永久链（img.heliar.top）。
+// 临时链(wuyinkeji)、本地链(127.0.0.1)速创都访问不到，换不成永久链就拒绝，不静默塞坏链。
+async function addAsReference(rawUrl, preferHeliar) {
+  if (refUrls.length >= MAX_REFS) { setStatus(`最多 ${MAX_REFS} 张参考图`, 'error'); return false; }
+  let perm = (preferHeliar && preferHeliar.includes('img.heliar.top')) ? preferHeliar
+           : (rawUrl && rawUrl.includes('img.heliar.top')) ? rawUrl : '';
+  if (!perm) {
+    setStatus('正在换图床永久链…', 'info');
+    try { perm = await resolveRefForUpstream(rawUrl); } catch (_) { perm = ''; }
+  }
+  if (!perm || !perm.includes('img.heliar.top')) {
+    setStatus('❌ 这张没图床永久链、也补不上（本地文件可能丢了）。先点右上角「换绑/重传图床」或重新生成', 'error');
+    clog('warn', `⚠ 加参考图被拒：换不到永久链 | ${(rawUrl || '').slice(0, 60)}`, 'warning');
+    return false;
+  }
+  if (!refUrls.includes(perm)) { refUrls.push(perm); renderRefList(); }
+  setStatus('✅ 已加为参考图（图床永久链）', 'success');
+  return true;
+}
+
+async function generate() {
+  const prompt = promptEl.value.trim();
+  if (!prompt) { setStatus('请输入提示词', 'error'); return; }
+
+  let refs = refUrls.filter(u => u && u.trim());
+
+  // 出图前把参考图统一解析成永久外链（本地链接/临时链接 → heliar）
+  if (refs.length) {
+    setStatus('正在确认参考图链接…', 'info');
+    try {
+      refs = await Promise.all(refs.map(resolveRefForUpstream));
+    } catch (e) {
+      console.warn('参考图链接解析出错，用原链接继续:', e);
+    }
+  }
+
+  const body = { prompt, size: sizeEl.value };
+  if (refs.length) body.urls = refs;
+  const uk = getUserKey();
+  if (uk) body.user_key = uk;   // 填了自己的 key 就带上，proxy 优先用它
+  // apimart resolution
+  const resEl = document.getElementById('resolution');
+  if (resEl && document.getElementById('resolution-row')?.classList.contains('visible')) {
+    body.resolution = resEl.value || '1k';
+  }
+  // apimart-official quality
+  const qEl = document.getElementById('quality-sel');
+  if (qEl && document.getElementById('quality-row')?.style.display !== 'none') {
+    if (qEl.value && qEl.value !== 'auto') body.quality = qEl.value;
+  }
+
+  // 🧪 实验参数：官方文档没列，赌无垠透传给 OpenAI gpt-image-2
+  try {
+    if (document.getElementById('exp-moderation')?.checked) body.moderation = 'low';
+    const q = document.getElementById('exp-quality')?.value;
+    if (q) body.quality = q;
+    const nv = parseInt(document.getElementById('exp-n')?.value, 10);
+    if (nv >= 1 && nv <= 10) body.n = nv;
+  } catch (_) {}
+
+  // 入队，由并发闸调度（最多 MAX_CONCURRENT 同时跑）
+  genQueue.push({ prompt, refs, body });
+  pumpQueue();
+}
+
+async function runGenerate({ prompt, refs, body }) {
+  const taskId = ++taskSeq;
+  const startTime = Date.now();
+  createTaskCard(taskId, prompt);
+  activeTasks.set(taskId, { startTime, prompt });
+
+  termLog('status', `[#${taskId}] 开始: ${prompt.slice(0, 50)}${prompt.length > 50 ? '...' : ''}`, 0);
+  if (refs.length) termLog('status', `[#${taskId}] 参考图: ${refs.length} 张`, 0);
+
+  // 本地秒数计数器, 每 100ms 更新一次任务卡的时间和进度
+  let timerId = null;
+  let lastPollInfo = '提交中...';
+  function updateStatus() {
+    const elapsed = (Date.now() - startTime) / 1000;
+    updateTaskCard(taskId, {
+      time: elapsed,
+      progress: estimateProgress(elapsed),
+    });
+  }
+  timerId = setInterval(updateStatus, 100);
+  updateStatus();
+
+  try {
+    const r = await fetch(PROXY_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!r.ok && r.headers.get('content-type')?.includes('json')) {
+      const errData = await r.json();
+      throw new Error(errData.error || `HTTP ${r.status}`);
+    }
+    if (!r.body) throw new Error('浏览器不支持流式响应');
+
+    // 解析 SSE 流
+    const reader = r.body.getReader();
+    const decoder = new TextDecoder('utf-8');
+    let buffer = '';
+    let finalData = null;
+    let errorMsg = null;
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+
+      // SSE 事件以空行分隔
+      const events = buffer.split('\n\n');
+      buffer = events.pop();  // 最后一段可能不完整,留着
+
+      for (const evt of events) {
+        if (!evt.trim()) continue;
+        let eventType = 'message';
+        let dataStr = '';
+        for (const line of evt.split('\n')) {
+          if (line.startsWith('event: ')) eventType = line.slice(7).trim();
+          else if (line.startsWith('data: ')) dataStr += line.slice(6);
+        }
+        if (!dataStr) continue;
+        let payload;
+        try { payload = JSON.parse(dataStr); } catch { continue; }
+
+        if (eventType === 'status') {
+          lastPollInfo = payload.msg || '处理中...';
+          updateTaskCard(taskId, { status: lastPollInfo });
+          termLog('status', `[#${taskId}] ${payload.msg || JSON.stringify(payload)}`, (Date.now() - startTime) / 1000);
+        } else if (eventType === 'poll') {
+          const parts = [`#${payload.poll_count}`];
+          if (payload.status) parts.push(`状态=${payload.status}`);
+          if (payload.progress !== null && payload.progress !== undefined) {
+            parts.push(`进度=${payload.progress}`);
+          }
+          if (payload.raw) {
+            const keys = Object.keys(payload.raw).filter(k => !['request', 'task_id', 'status', 'state', 'progress'].includes(k));
+            for (const k of keys.slice(0, 3)) {
+              const v = payload.raw[k];
+              if (v !== null && v !== undefined && typeof v !== 'object') {
+                parts.push(`${k}=${String(v).slice(0, 40)}`);
+              }
+            }
+          }
+          lastPollInfo = `轮询 ${parts.join(' · ')}`;
+          updateTaskCard(taskId, { status: lastPollInfo });
+          termLog('poll', `[#${taskId}] ${parts.join(' · ')}`, payload.elapsed);
+        } else if (eventType === 'done') {
+          finalData = payload;
+          termLog('done', `[#${taskId}] 收到结果`, (Date.now() - startTime) / 1000);
+        } else if (eventType === 'error') {
+          errorMsg = payload.msg;
+          termLog('error', `[#${taskId}] ${payload.msg}`, (Date.now() - startTime) / 1000);
+        }
+      }
+    }
+
+    if (errorMsg) throw new Error(errorMsg);
+    if (!finalData) throw new Error('流结束但没收到结果');
+
+    // 速创成功后字段位置可能不固定, 暴力遍历找出第一个 http 开头的字符串
+    // 重要: 跳过 "request" 字段(那是输入回显, 含参考图 URL)
+    const SKIP_KEYS = new Set(['request', 'prompt', 'urls', 'reference_urls', 'input', 'params']);
+    function findImageUrl(obj, depth = 0, parentKey = '') {
+      if (depth > 6) return null;
+      if (typeof obj === 'string' &&
+          (obj.startsWith('http://') || obj.startsWith('https://')) &&
+          /\.(png|jpg|jpeg|webp|gif)(\?|$)/i.test(obj)) {
+        return obj;
+      }
+      if (Array.isArray(obj)) {
+        for (const item of obj) {
+          const found = findImageUrl(item, depth + 1, parentKey);
+          if (found) return found;
+        }
+      } else if (obj && typeof obj === 'object') {
+        // 优先遍历非跳过键
+        const keys = Object.keys(obj);
+        const goodKeys = keys.filter(k => !SKIP_KEYS.has(k));
+        for (const key of goodKeys) {
+          const found = findImageUrl(obj[key], depth + 1, key);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    // 速创成功字段确认是 data.result (数组)
+    let url = null;
+    const result = finalData.data?.result;
+    if (Array.isArray(result) && result.length > 0 && typeof result[0] === 'string' && result[0].startsWith('http')) {
+      url = result[0];
+    } else if (typeof result === 'string' && result.startsWith('http')) {
+      url = result;
+    } else {
+      // 兜底深度遍历
+      url = findImageUrl(finalData);
+    }
+
+    if (!url) {
+      // 找不到时,把完整 JSON 打到 terminal 让用户看
+      const dumped = JSON.stringify(finalData, null, 2);
+      console.log('完整响应:', finalData);
+      termLog('error', `[#${taskId}] 没找到图片 URL,完整响应:`);
+      // 分段打印 JSON
+      dumped.split('\n').forEach(line => termLog('error', line));
+      throw new Error('返回里没找到图片 URL,完整 JSON 已打到日志面板');
+    }
+
+    const totalSec = (Date.now() - startTime) / 1000;
+    termLog('done', `[#${taskId}] 图片 URL: ${url} (总耗时 ${totalSec.toFixed(1)}s)`, totalSec);
+
+    const recTime = Date.now();
+    const _rec2 = { prompt, size: sizeEl.value, refs, url, time: recTime, duration: Math.round(totalSec) };
+    const newId = await dbAdd(_rec2);
+    backupToLS();
+    cloudGallerySave({ id: newId, ..._rec2 });   // ☁️ 云端同步
+    autoDownloadImage(url, prompt);               // 💾 本地自动下载
+
+    // ① 图片一拿到就立即单独插进画廊顶部
+    prependGalleryCard({ id: newId, ..._rec2 });
+    updateTaskCard(taskId, { time: totalSec, status: `✓ 完成 ${totalSec.toFixed(1)}s`, finalState: 'done' });
+    showToast(`✅ #${taskId} 出图 · ${totalSec.toFixed(1)}s`);
+    playDoneSound();
+    showDoneNotification(prompt, totalSec);
+    setTimeout(() => removeTaskCard(taskId), 5000);
+
+    // ③ 本地保存转后台跑
+    (async () => {
+      try {
+        const saveResult = await saveImageLocally(url, prompt);
+        if (saveResult && saveResult.saved) {
+          termLog('done', `[#${taskId}] 💾 已保存到: ${saveResult.saved}`);
+          const patch = {};
+          if (saveResult.file) patch.file = saveResult.file;
+          if (saveResult.heliar_url) {
+            patch.heliar_url = saveResult.heliar_url;
+            termLog('done', `[#${taskId}] ☁️ 永久图床: ${saveResult.heliar_url}`);
+          } else {
+            termLog('warn', `[#${taskId}] ⚠ 图床上传失败，本地已存，可点「换绑/重传图床」补永久链接`);
+          }
+          if (Object.keys(patch).length) {
+            try { await dbUpdate(newId, patch); } catch (_) {}
+            cloudGalleryUpdate(newId, patch);    // ☁️ 同步补丁
+          }
+          try {
+            await fetch(`${PROXY_ORIGIN}/link-map`, {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                mode: 'append', reason: '新图',
+                records: [{ file: saveResult.file || '', heliar: saveResult.heliar_url || '', url }],
+              }),
+            }).catch(() => {});
+          } catch (_) {}
+        } else {
+          termLog('warn', `[#${taskId}] ⚠ 本地保存失败，图片 URL 仍可用`);
+        }
+        await refreshRefsLibrary();
+      } catch (bgErr) {
+        termLog('warn', `[#${taskId}] ⚠ 后台保存出错: ${bgErr.message}，图片 URL 仍可用`);
+      }
+    })();
+  } catch (e) {
+    const totalSec = (Date.now() - startTime) / 1000;
+    const shortMsg = e.message.length > 50 ? e.message.slice(0, 50) + '…' : e.message;
+    updateTaskCard(taskId, { time: totalSec, status: '✗ ' + shortMsg, finalState: 'error', errorDetail: e.message });
+    console.error(e);
+    createRejectCard(taskId, prompt, e.message);
+    setTimeout(() => removeTaskCard(taskId), 8000);
+  } finally {
+    if (timerId) clearInterval(timerId);
+    activeTasks.delete(taskId);
+  }
+}
+
+// 旧的 renderProgressBar 已合并进 task card
+
+// 删除本地文件 (调后端受限接口)。gen 图传 file, 上传图传 ref_file
+async function deleteLocalFile({ file, ref_file }) {
+  try {
+    const resp = await fetch('http://127.0.0.1:7788/delete-image', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ file, ref_file })
+    });
+    return await resp.json();
+  } catch (e) { console.warn('删除本地文件失败:', e); return null; }
+}
+
+// 分级删除确认弹窗。返回 {confirmed, alsoFile}
+function confirmDelete(hasLocalFile) {
+  return new Promise(res => {
+    const ov = document.createElement('div');
+    ov.className = 'modal show';
+    ov.style.cssText += ';z-index:10000';
+    ov.innerHTML = `
+      <div style="background:var(--panel,#26262e);border:1px solid var(--border);border-radius:12px;padding:20px;max-width:300px;width:86%;color:var(--text)">
+        <div style="font-size:14px;font-weight:600;margin-bottom:10px">删除这条记录？</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:14px">记录会从列表移除。${hasLocalFile ? '本地文件默认保留。' : '该图没有本地文件。'}</div>
+        ${hasLocalFile ? `<label style="display:flex;align-items:center;gap:7px;font-size:12px;margin-bottom:16px;cursor:pointer">
+          <input type="checkbox" id="cd-file" style="width:auto;margin:0"> 同时删除本地文件（不可恢复）
+        </label>` : ''}
+        <div style="display:flex;gap:8px">
+          <button id="cd-cancel" style="flex:1;background:var(--border)">取消</button>
+          <button id="cd-ok" style="flex:1;background:#c0392b">删除</button>
+        </div>
+      </div>`;
+    document.body.appendChild(ov);
+    const cleanup = v => { ov.remove(); res(v); };
+    ov.querySelector('#cd-cancel').onclick = () => cleanup({ confirmed: false });
+    ov.querySelector('#cd-ok').onclick = () => cleanup({
+      confirmed: true,
+      alsoFile: hasLocalFile && ov.querySelector('#cd-file')?.checked
+    });
+    ov.onclick = e => { if (e.target === ov) cleanup({ confirmed: false }); };
+  });
+}
+
+//═══════════════════════════════════════════════════════
+// 启动
+//═══════════════════════════════════════════════════════
+// —— 素材库分组（标签做分隔符，每张图只属于一个组）——
+const GROUP_ALL = '全部', GROUP_NONE = '未分组';
+let scActiveGroup = GROUP_ALL;
+function loadGroups() {
+  try { return JSON.parse(localStorage.getItem('sc_groups') || '[]'); } catch (_) { return []; }
+}
+function saveGroups(list) { localStorage.setItem('sc_groups', JSON.stringify(list)); }
+function loadItemGroups() {
+  try { return JSON.parse(localStorage.getItem('sc_item_groups') || '{}'); } catch (_) { return {}; }
+}
+function saveItemGroups(map) { localStorage.setItem('sc_item_groups', JSON.stringify(map)); }
+function groupOf(url) { return loadItemGroups()[url] || GROUP_NONE; }
+function setGroupOf(url, g) {
+  const m = loadItemGroups();
+  if (g === GROUP_NONE) delete m[url]; else m[url] = g;
+  saveItemGroups(m);
+}
+
+// 素材库 = images(出图) ∪ refs(纯上传图)，单一视图、分组 tab、拖拽归类、左下预览
+async function refreshRefsLibrary() {
+  const [gen, refs] = await Promise.all([dbAll(), refsAll()]);
+  const genItems = gen.filter(r => r.url).map(r => ({
+    url: r.url, source: 'generated', time: r.time || 0, imgId: r.id, file: r.file || null,
+    heliar_url: r.heliar_url || null
+  }));
+  const genUrls = new Set(genItems.map(i => i.url));
+  const upItems = refs
+    .filter(r => r.source !== 'generated' && !genUrls.has(r.url))
+    .map(r => ({ url: r.url, source: 'upload', time: r.time || 0, refUrl: r.url, ref_file: r.file || null }));
+  const allItems = [...genItems, ...upItems].sort((a, b) => b.time - a.time);
+
+  // —— 分组 tab 条 ——
+  const groups = loadGroups();
+  const tabs = [GROUP_ALL, GROUP_NONE, ...groups];
+  if (!tabs.includes(scActiveGroup)) scActiveGroup = GROUP_ALL;
+  const counts = {};
+  allItems.forEach(it => { const g = groupOf(it.url); counts[g] = (counts[g] || 0) + 1; });
+  const grpBar = document.getElementById('grp-bar');
+  grpBar.innerHTML = tabs.map(g => {
+    const n = g === GROUP_ALL ? allItems.length : (counts[g] || 0);
+    return `<button class="grp-tab ${g === scActiveGroup ? 'active' : ''}" data-grp="${escapeAttr(g)}">${escapeHtml(g)} ${n}</button>`;
+  }).join('') + `<button class="grp-cfg" id="grp-sort-btn" title="批量归类">📂</button><button class="grp-cfg" id="grp-cfg-btn" title="管理分组">⚙</button>`;
+  grpBar.querySelectorAll('.grp-tab').forEach(t => {
+    t.onclick = () => { scActiveGroup = t.dataset.grp; refreshRefsLibrary(); };
+    // 拖图到 tab 上 → 归类
+    t.ondragover = e => { e.preventDefault(); t.classList.add('drop-hover'); };
+    t.ondragleave = () => t.classList.remove('drop-hover');
+    t.ondrop = e => {
+      e.preventDefault(); t.classList.remove('drop-hover');
+      const url = e.dataTransfer.getData('text/plain');
+      if (url) { setGroupOf(url, t.dataset.grp); setStatus(`✅ 已归到「${t.dataset.grp}」`, 'success'); refreshRefsLibrary(); }
+    };
+  });
+  document.getElementById('grp-cfg-btn').onclick = openGroupConfig;
+  document.getElementById('grp-sort-btn').onclick = openSorter;
+
+  // —— 按当前组筛选 ——
+  const all = scActiveGroup === GROUP_ALL ? allItems : allItems.filter(it => groupOf(it.url) === scActiveGroup);
+  document.getElementById('refs-count').textContent = `(${allItems.length})`;
+  const wrap = document.getElementById('refs-library');
+  if (all.length === 0) {
+    wrap.innerHTML = '<div style="grid-column:1/-1;color:var(--muted);font-size:11px;text-align:center;padding:10px">该分组下还没有素材</div>';
+    return;
+  }
+  wrap.innerHTML = all.map((item, i) => `
+    <div class="lib-item" draggable="true" style="position:relative;aspect-ratio:1;border-radius:4px;overflow:hidden;border:1px solid var(--border)" data-i="${i}">
+      <img src="${imgSrc(item)}" onerror="${imgFallback(item)}" style="width:100%;height:100%;object-fit:cover;cursor:pointer" alt="">
+      <button data-deli="${i}" title="删除" style="position:absolute;top:2px;right:2px;width:18px;height:18px;padding:0;background:rgba(0,0,0,.6);color:white;font-size:10px;border-radius:3px;line-height:1">×</button>
+      ${item.source === 'generated' ? '<div style="position:absolute;bottom:2px;left:2px;background:rgba(108,138,255,.9);color:white;font-size:9px;padding:1px 4px;border-radius:2px">G</div>' : '<div style="position:absolute;bottom:2px;left:2px;background:rgba(120,120,120,.85);color:white;font-size:9px;padding:1px 4px;border-radius:2px">参</div>'}
+    </div>
+  `).join('');
+  wrap.querySelectorAll('.lib-item').forEach(el => {
+    const item = all[Number(el.dataset.i)];
+    // 点缩略图 → 左下预览窗
+    el.querySelector('img').onclick = () => showLibPreview(item);
+    // 拖拽
+    el.ondragstart = e => { e.dataTransfer.setData('text/plain', item.url); el.classList.add('dragging'); };
+    el.ondragend = () => el.classList.remove('dragging');
+  });
+  wrap.querySelectorAll('[data-deli]').forEach(btn => {
+    btn.onclick = async e => {
+      e.stopPropagation();
+      const item = all[Number(btn.dataset.deli)];
+      const r = await confirmDelete(!!item.file);
+      if (!r.confirmed) return;
+      if (item.source === 'generated' && item.imgId != null) {
+        await dbDelete(item.imgId);
+      } else if (item.refUrl) {
+        await refsDelete(item.refUrl);
+      }
+      setGroupOf(item.url, GROUP_NONE);  // 清掉分组归属
+      if (r.alsoFile && item.file) {
+        const res = await deleteLocalFile(
+          item.source === 'generated' ? { file: item.file } : { ref_file: item.file }
+        );
+        const ok = res && res.results && res.results.some(x => x.deleted);
+        setStatus(ok ? '✅ 记录和本地文件已删除' : '✅ 记录已删除（本地文件未删或不存在）', ok ? 'success' : 'error');
+      } else {
+        setStatus('✅ 记录已删除，本地文件保留', 'success');
+      }
+      // 预览窗若正显示这张则关掉
+      if (libPreviewUrl === item.url) hideLibPreview();
+      await Promise.all([refreshRefsLibrary(), refreshGallery()]);
+    };
+  });
+}
+
+// === 左下中等预览窗 ===
+let libPreviewUrl = null;
+function showLibPreview(item) {
+  libPreviewUrl = item.url;
+  const box = document.getElementById('lib-preview');
+  const pvSrc = imgSrc(item);
+  document.getElementById('lib-preview-img').src = pvSrc;
+  document.getElementById('lib-preview-img').onerror = function(){ if(!this.dataset.fellback && item.url){ this.dataset.fellback='1'; this.src=item.url; } };
+  document.getElementById('lib-preview-dl').href = pvSrc;
+  document.getElementById('lib-preview-grp').textContent =
+    `${item.source === 'generated' ? '生成图' : '参考图'} · 分组：${groupOf(item.url)}`;
+  box.style.display = 'block';
+  // 点预览图本身 → 全屏大图 lightbox（优先本地/永久链，失效回退原url）
+  const pvImg = document.getElementById('lib-preview-img');
+  pvImg.style.cursor = 'zoom-in';
+  pvImg.title = '点击看大图';
+  pvImg.onclick = () => openLightbox(imgSrc(item), null, item.heliar_url || item.url);
+  document.getElementById('lib-preview-asref').onclick = async () => {
+    await addAsReference(item.url, item.heliar_url);
+  };
+}
+function hideLibPreview() {
+  libPreviewUrl = null;
+  document.getElementById('lib-preview').style.display = 'none';
+}
+document.getElementById('lib-preview-close').onclick = hideLibPreview;
+
+// === 批量归类面板 ===
+async function openSorter() {
+  const sorter = document.getElementById('sorter');
+  sorter.style.display = 'flex';
+  await renderSorter();
+}
+function closeSorter() {
+  document.getElementById('sorter').style.display = 'none';
+}
+async function renderSorter() {
+  const [gen, refs] = await Promise.all([dbAll(), refsAll()]);
+  const genItems = gen.filter(r => r.url).map(r => ({ url: r.url, source: 'generated' }));
+  const genUrls = new Set(genItems.map(i => i.url));
+  const upItems = refs.filter(r => r.source !== 'generated' && !genUrls.has(r.url)).map(r => ({ url: r.url, source: 'upload' }));
+  const items = [...genItems, ...upItems];
+
+  // 左侧标签（未分组不可删；自建组可删）
+  const userGroups = loadGroups();
+  const tabs = [GROUP_NONE, ...userGroups];
+  const counts = {};
+  items.forEach(it => { const g = groupOf(it.url); counts[g] = (counts[g] || 0) + 1; });
+  const tagBox = document.getElementById('sorter-tags');
+  tagBox.innerHTML = tabs.map(g => {
+    const removable = g !== GROUP_NONE;
+    return `<div class="sorter-tag" data-grp="${escapeAttr(g)}">📁 ${escapeHtml(g)}
+      <span class="cnt">${counts[g] || 0}</span>
+      ${removable ? `<button class="del-tag" data-deltag="${escapeAttr(g)}" title="删除标签">×</button>` : ''}
+    </div>`;
+  }).join('') + `
+    <div class="sorter-addtag">
+      <input id="sorter-newtag" type="text" placeholder="新建标签名">
+      <button id="sorter-addtag-btn">新建</button>
+    </div>`;
+
+  tagBox.querySelectorAll('.sorter-tag').forEach(t => {
+    t.ondragover = e => { e.preventDefault(); t.classList.add('drop-hover'); };
+    t.ondragleave = () => t.classList.remove('drop-hover');
+    t.ondrop = e => {
+      e.preventDefault(); t.classList.remove('drop-hover');
+      const url = e.dataTransfer.getData('text/plain');
+      if (url) {
+        setGroupOf(url, t.dataset.grp);
+        setStatus(`✅ 已归到「${t.dataset.grp}」`, 'success');
+        renderSorter();
+        refreshRefsLibrary();
+      }
+    };
+  });
+  // 删标签
+  tagBox.querySelectorAll('[data-deltag]').forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    const g = b.dataset.deltag;
+    if (!confirm(`删除标签「${g}」？组里的图退回「未分组」，图本身不删。`)) return;
+    saveGroups(loadGroups().filter(x => x !== g));
+    const m = loadItemGroups();
+    Object.keys(m).forEach(u => { if (m[u] === g) delete m[u]; });
+    saveItemGroups(m);
+    if (scActiveGroup === g) scActiveGroup = GROUP_ALL;
+    renderSorter(); refreshRefsLibrary();
+  });
+  // 新建标签
+  const addTag = () => {
+    const inp = document.getElementById('sorter-newtag');
+    const name = inp.value.trim();
+    if (!name) return;
+    if ([GROUP_ALL, GROUP_NONE].includes(name) || loadGroups().includes(name)) { alert('名字不可用或已存在'); return; }
+    saveGroups([...loadGroups(), name]);
+    inp.value = '';
+    renderSorter(); refreshRefsLibrary();
+  };
+  document.getElementById('sorter-addtag-btn').onclick = addTag;
+  document.getElementById('sorter-newtag').onkeydown = e => { if (e.key === 'Enter') addTag(); };
+
+  // 右侧图墙
+  const grid = document.getElementById('sorter-grid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;color:var(--muted);font-size:12px;text-align:center;padding:20px">还没有素材</div>';
+    return;
+  }
+  grid.innerHTML = items.map((it, i) => `
+    <div class="sorter-cell" draggable="true" data-i="${i}">
+      <img src="${it.url}" alt="">
+      <div class="badge">${escapeHtml(groupOf(it.url))}</div>
+    </div>
+  `).join('');
+  grid.querySelectorAll('.sorter-cell').forEach(cell => {
+    const it = items[Number(cell.dataset.i)];
+    cell.ondragstart = e => { e.dataTransfer.setData('text/plain', it.url); cell.classList.add('dragging'); };
+    cell.ondragend = () => cell.classList.remove('dragging');
+    // 点图 → 左下 fixed 中等预览（复用主预览，点预览图还能再出全屏大图）
+    cell.querySelector('img').onclick = () => showLibPreview(it);
+  });
+}
+document.getElementById('sorter-close').onclick = closeSorter;
+document.getElementById('sorter').onclick = e => { if (e.target.id === 'sorter') closeSorter(); };
+
+// === 分组配置面板（独立，齿轮打开）===
+function openGroupConfig() {
+  const groups = loadGroups();
+  const ov = document.createElement('div');
+  ov.className = 'modal show';
+  ov.style.cssText += ';z-index:10000';
+  const render = () => {
+    const gs = loadGroups();
+    ov.querySelector('#gc-list').innerHTML = gs.length
+      ? gs.map(g => `<div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+          <span style="flex:1;font-size:13px">${escapeHtml(g)}</span>
+          <button data-ren="${escapeAttr(g)}" style="width:auto;padding:3px 8px;font-size:11px;background:var(--accent-dim)">改名</button>
+          <button data-del="${escapeAttr(g)}" style="width:auto;padding:3px 8px;font-size:11px;background:var(--border)">删除</button>
+        </div>`).join('')
+      : '<div style="font-size:12px;color:var(--muted);padding:6px 0">还没有分组，下面新建一个</div>';
+    ov.querySelectorAll('[data-ren]').forEach(b => b.onclick = () => {
+      const old = b.dataset.ren;
+      const nv = prompt('新名字：', old);
+      if (!nv || !nv.trim() || nv === old) return;
+      const name = nv.trim();
+      if ([GROUP_ALL, GROUP_NONE].includes(name) || loadGroups().includes(name)) { alert('名字不可用或已存在'); return; }
+      saveGroups(loadGroups().map(x => x === old ? name : x));
+      // 迁移该组下的图归属
+      const m = loadItemGroups();
+      Object.keys(m).forEach(u => { if (m[u] === old) m[u] = name; });
+      saveItemGroups(m);
+      if (scActiveGroup === old) scActiveGroup = name;
+      render(); refreshRefsLibrary();
+    });
+    ov.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
+      const g = b.dataset.del;
+      if (!confirm(`删除分组「${g}」？组里的图会退回「未分组」，图本身不删。`)) return;
+      saveGroups(loadGroups().filter(x => x !== g));
+      const m = loadItemGroups();
+      Object.keys(m).forEach(u => { if (m[u] === g) delete m[u]; });
+      saveItemGroups(m);
+      if (scActiveGroup === g) scActiveGroup = GROUP_ALL;
+      render(); refreshRefsLibrary();
+    });
+  };
+  ov.innerHTML = `
+    <div style="background:var(--panel,#26262e);border:1px solid var(--border);border-radius:12px;padding:18px;max-width:320px;width:88%;color:var(--text)">
+      <div style="font-size:14px;font-weight:600;margin-bottom:12px">管理分组</div>
+      <div id="gc-list" style="margin-bottom:12px;max-height:200px;overflow-y:auto"></div>
+      <div style="display:flex;gap:6px;margin-bottom:14px">
+        <input id="gc-new" type="text" placeholder="新分组名" style="flex:1;font-size:12px">
+        <button id="gc-add" style="width:auto;padding:6px 12px;font-size:12px;background:var(--accent)">新建</button>
+      </div>
+      <button id="gc-close" style="width:100%;background:var(--border)">完成</button>
+    </div>`;
+  document.body.appendChild(ov);
+  render();
+  const addG = () => {
+    const inp = ov.querySelector('#gc-new');
+    const name = inp.value.trim();
+    if (!name) return;
+    if ([GROUP_ALL, GROUP_NONE].includes(name) || loadGroups().includes(name)) { alert('名字不可用或已存在'); return; }
+    saveGroups([...loadGroups(), name]);
+    inp.value = '';
+    render(); refreshRefsLibrary();
+  };
+  ov.querySelector('#gc-add').onclick = addG;
+  ov.querySelector('#gc-new').onkeydown = e => { if (e.key === 'Enter') addG(); };
+  ov.querySelector('#gc-close').onclick = () => ov.remove();
+  ov.onclick = e => { if (e.target === ov) ov.remove(); };
+}
+
+// === Lightbox 大图预览 ===
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxDownload = document.getElementById('lightbox-download');
+
+// 全屏鉴赏的翻页状态：一组 url + 当前索引
+let lbList = [];      // 当前可翻的图 url 列表
+let lbFallback = [];  // 与 lbList 同序的回退链（本地链失效时用）
+let lbIndex = 0;      // 当前看到第几张
+
+function lbShow(i) {
+  if (!lbList.length) return;
+  // 环绕：到头回到另一端
+  lbIndex = (i + lbList.length) % lbList.length;
+  const url = lbList[lbIndex];
+  lightboxImg.src = url;
+  // 本地链失效时，尝试回退到同条目的原始/永久链（lbFallback 与 lbList 同序）
+  lightboxImg.onerror = function () {
+    const fb = (lbFallback && lbFallback[lbIndex]) || '';
+    if (fb && this.src !== fb && !this.dataset.fb) { this.dataset.fb = '1'; this.src = fb; }
+  };
+  lightboxImg.onload = function () { delete this.dataset.fb; };
+  lightboxDownload.href = url;
+  const counter = document.getElementById('lightbox-counter');
+  if (counter) counter.textContent = `${lbIndex + 1} / ${lbList.length}`;
+  // 只有一张时隐藏翻页箭头和计数
+  const single = lbList.length <= 1;
+  document.getElementById('lightbox-prev').style.display = single ? 'none' : '';
+  document.getElementById('lightbox-next').style.display = single ? 'none' : '';
+  if (counter) counter.style.display = single ? 'none' : '';
+}
+
+// 打开全屏。list 给了就进入"逐张鉴赏"模式，没给就单图（兼容旧调用）
+// fallbackList: 可选，与 list 同序的回退链；单图时可传单个回退url
+function openLightbox(url, list, fallbackList) {
+  lbList = Array.isArray(list) && list.length ? list : [url];
+  if (Array.isArray(fallbackList) && fallbackList.length) lbFallback = fallbackList;
+  else if (typeof fallbackList === 'string' && fallbackList) lbFallback = [fallbackList];
+  else lbFallback = [];
+  lbIndex = Math.max(0, lbList.indexOf(url));
+  lbShow(lbIndex);
+  lightbox.classList.add('show');
+}
+function lbPrev() { lbShow(lbIndex - 1); }
+function lbNext() { lbShow(lbIndex + 1); }
+function closeLightbox() { lightbox.classList.remove('show'); }
+document.getElementById('lightbox-close').onclick = closeLightbox;
+document.getElementById('lightbox-prev').onclick = e => { e.stopPropagation(); lbPrev(); };
+document.getElementById('lightbox-next').onclick = e => { e.stopPropagation(); lbNext(); };
+lightbox.onclick = e => { if (e.target === lightbox) closeLightbox(); };
+document.addEventListener('keydown', e => {
+  if (!lightbox.classList.contains('show')) return;
+  if (e.key === 'Escape') closeLightbox();
+  else if (e.key === 'ArrowLeft') lbPrev();
+  else if (e.key === 'ArrowRight') lbNext();
+});
+document.getElementById('lightbox-copy-url').onclick = () => {
+  navigator.clipboard.writeText(lightboxImg.src);
+  setStatus('✅ URL 已复制', 'success');
+};
+document.getElementById('lightbox-as-ref').onclick = async () => {
+  const ok = await addAsReference(lightboxImg.src, (lbFallback && lbFallback[lbIndex]) || '');
+  // 合并后出图已在素材库(images)，这里只把它放进本次生成的参考输入框，不再双写 refs 库
+  refreshRefsLibrary();
+  if (ok) closeLightbox();
+};
+
+(async () => {
+  await initDB();
+  const restored = await restoreFromLS();
+  if (restored) setStatus('✅ 已从本地备份恢复画廊', 'success');
+  const refsBack = await restoreRefsFromDisk();
+  if (refsBack) setStatus(`✅ 已从磁盘恢复 ${refsBack} 张参考图`, 'success');
+
+  // —— 一次性迁移：库合并。refs 库里 source==='generated' 且 url 已存在于 images 库的，
+  //    属于旧双写冗余，从 refs 清掉（图本身在 images 库不丢）。只跑一次。
+  try {
+    if (!localStorage.getItem('sc_merged_v1')) {
+      const [gen, refs] = await Promise.all([dbAll(), refsAll()]);
+      const genUrls = new Set(gen.filter(r => r.url).map(r => r.url));
+      let cleaned = 0;
+      for (const r of refs) {
+        if (r.source === 'generated' && genUrls.has(r.url)) {
+          await refsDelete(r.url); cleaned++;
+        }
+      }
+      localStorage.setItem('sc_merged_v1', '1');
+      if (cleaned) setStatus(`✅ 已合并素材库，清理 ${cleaned} 条冗余`, 'success');
+    }
+  } catch (e) { console.warn('库合并迁移失败:', e); }
+
+  await refreshGallery();
+  await refreshRefsLibrary();
+  renderRefList();
+  initKeyUI();
+  initDirUI();
+  initExpParams();
+  // 画廊数据就绪后，用随机一张图填充开屏
+  initSplash();
+  checkProxy();
+  setInterval(checkProxy, 5000);
+  initProvider();
+  initPanelResize();
+  initNotifications();
+  initRejectHistory();
+  initTagSystem();
+  syncGalleryFromServer();
+
+  btnEl.onclick = generate;
+  document.getElementById('grind-btn').onclick = startGrind;
+
+  // 提示词寄存区：收藏当前 + 启动渲染
+  const favAddBtn = $('fav-add-current');
+  if (favAddBtn) favAddBtn.onclick = e => { e.preventDefault(); addFavPrompt(promptEl.value); const w = $('fav-wrap'); if (w) w.open = true; };
+  renderFavPrompts();
+
+  const rebindBtn = $('rebind-local-btn');
+  if (rebindBtn) rebindBtn.onclick = rebindLocalImages;
+  const recoverBtn = $('recover-log-btn');
+  if (recoverBtn) recoverBtn.onclick = openRecoverPanel;
+
+  // 提示词工坊折叠/展开，状态记忆
+  const applyWsCollapsed = c => {
+    document.body.classList.toggle('ws-collapsed', c);
+    const b = $('ws-collapse-btn'); if (b) b.textContent = c ? '展开 ⟨' : '收起 ⟩';
+    try { localStorage.setItem('sc_ws_collapsed', c ? '1' : '0'); } catch (_) {}
+  };
+  $('ws-collapse-btn').onclick = () => applyWsCollapsed(true);
+  $('ws-expand-handle').onclick = () => applyWsCollapsed(false);
+  applyWsCollapsed(localStorage.getItem('sc_ws_collapsed') === '1');
+  $('clear-btn').onclick = async () => {
+    if (confirm('确定清空所有历史?\n(localStorage 备份仍保留，可用导入恢复)')) {
+      await dbClear();
+      await refreshGallery();
+    }
+  };
+  $('export-btn').onclick = async () => {
+    await exportGallery();
+    setStatus('✅ 画廊已导出', 'success');
+  };
+  $('import-file').onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const n = await importGallery(file);
+      setStatus(`✅ 已导入 ${n} 张图`, 'success');
+    } catch (err) {
+      setStatus('❌ 导入失败: ' + err.message, 'error');
+    }
+    e.target.value = '';
+  };
+  modalEl.onclick = () => modalEl.classList.remove('show');
+  document.addEventListener('keydown', e => {
+    if (e.metaKey && e.key === 'Enter') {
+      e.preventDefault();
+      generate();
+    }
+    if (e.key === 'Escape') modalEl.classList.remove('show');
+  });
+
+  // 整页粘贴图片(从剪贴板)
+  document.addEventListener('paste', async e => {
+    const items = e.clipboardData?.items;
+    if (!items) return;
+    const files = [];
+    for (const item of items) {
+      if (item.type.startsWith('image/')) {
+        const f = item.getAsFile();
+        if (f) files.push(f);
+      }
+    }
+    if (files.length) {
+      e.preventDefault();
+      await handleFiles(files);
+    }
+  });
+})();
+</script>
+</body>
+</html>
